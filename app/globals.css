@@ -42,3 +42,18 @@
 .article > p > img {
     @apply rounded-2xl mb-8;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 0.8s ease forwards;
+}

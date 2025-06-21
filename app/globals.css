@@ -8,11 +8,15 @@
 }
 
 .article > h1 {
-    @apply font-bold text-4xl mb-10 text-center tracking-tight;
+    @apply font-bold text-4xl mb-8 text-center tracking-tight;
 }
 
 .article > h2 {
-    @apply font-medium text-3xl mt-10 mb-10 text-center tracking-tight;
+    @apply font-medium text-3xl mt-8 mb-8 text-center tracking-tight;
+}
+
+.article > h3 {
+    @apply font-normal text-2xl mt-3 mb-3 text-center tracking-tight;
 }
 
 .article > ol {
@@ -36,5 +40,5 @@
 }
 
 .article > p > img {
-    @apply rounded-2xl mb-10;
+    @apply rounded-2xl mb-8;
 }

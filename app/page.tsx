@@ -1,9 +1,9 @@
 import ArticleItemList from "@/components/ArticleListItem"
 import { getCategoriesArticles } from "@/lib/articles"
 
-const HomePage = () => {
-  const articles = getCategoriesArticles()
-  console.log(articles)
+const HomePage = async () => {
+  const articles = await getCategoriesArticles()
+
   return (
     <section className="mx-auto w-11/12 md:w-1/2 mt-20 flex flex-col gap-16 mb-20">
       <header className="font-light text-6xl text-neutral-900 text-center">

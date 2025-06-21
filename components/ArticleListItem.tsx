@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { ArticleItem } from "@/types";
-import HomePage from "@/app/page";
 
 interface Props {
     category: string,

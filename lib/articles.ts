@@ -6,6 +6,7 @@ import { remark } from "remark"
 import html from "remark-html"
 
 import type { ArticleItem } from "@/types"
+import { title } from "process"
 
 const articlesDirectory = path.join(process.cwd(), "articles")
 const getSortedArticles = (): ArticleItem[] => {
@@ -68,7 +69,7 @@ export const getArticleData = async (id: string) => {
     return {
         id,
         contentHtml,
-        titile: matterResult.data.titile,
+        title: matterResult.data.title,
         category: matterResult.data.category,
         date: moment(matterResult.data.date, "DD-MM-YYYY").format("Do MMMM YYYY")
     }

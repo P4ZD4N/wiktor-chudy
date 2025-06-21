@@ -1,7 +1,9 @@
 ---
 title: 'What is the “Make It Attractive” law and how can you use it in business context?'
-category: "business"
 date: "08-06-2025"
+categories:
+    - Business
+    - Self-development
 ---
 
 # What is the “Make It Attractive” law and how can you use it in business context?

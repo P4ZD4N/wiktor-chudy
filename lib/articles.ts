@@ -20,7 +20,7 @@ const getSortedArticles = (): ArticleItem[] => {
             id,
             title: matterResult.data.title,
             date: matterResult.data.date,
-            category: matterResult.data.category
+            categories: matterResult.data.categories || []
         }
     })
 
@@ -44,15 +44,18 @@ export const getCategoriesArticles = (): Record<string, ArticleItem[]> => {
     const categorisedArticles: Record<string, ArticleItem[]> = {}
 
     sortedArticles.forEach((article) => {
-        if (!categorisedArticles[article.category]) {
-            categorisedArticles[article.category] = []
-        }
+        article.categories.forEach((category) => {
+            if (!categorisedArticles[category]) {
+                categorisedArticles[category] = []
+            }
 
-        categorisedArticles[article.category].push(article)
+            categorisedArticles[category].push(article)
+        })
     })
 
     return categorisedArticles
 }
+
 
 export const getArticleData = async (id: string) => {
     const fullPath = path.join(articlesDirectory, `${id}.md`)
@@ -69,7 +72,7 @@ export const getArticleData = async (id: string) => {
         id,
         contentHtml,
         title: matterResult.data.title,
-        category: matterResult.data.category,
+        categories: matterResult.data.categories || [],
         date: moment(matterResult.data.date, "DD-MM-YYYY").format("Do MMMM YYYY")
     }
 }

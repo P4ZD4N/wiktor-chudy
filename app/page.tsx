@@ -1,4 +1,5 @@
 import ArticleItemList from "@/components/ArticleListItem"
+import TechCarousel from "@/components/TechCarousel"
 import { getCategoriesArticles } from "@/lib/articles"
 
 const HomePage = async () => {
@@ -13,6 +14,8 @@ const HomePage = async () => {
         <h2 className="mb-4 text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in">Computer Science <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Student</span> @ PJATK</h2>
       
       </header>
+
+      <TechCarousel />
 
       <section className="md:grid md:grid-cols-2 flex flex-col gap-10">
         {articles !== null &&

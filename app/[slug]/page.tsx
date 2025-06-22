@@ -36,6 +36,11 @@ const Article = async ({ params }: PageProps) => {
                 className="article"
                 dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} 
             />
+
+            <Link href={"/"} className="mb-10 flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150">
+                <ArrowLeftIcon width={20} />
+                <p>Back to articles</p>
+            </Link>
         </section>
     )
 }

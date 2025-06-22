@@ -13,7 +13,15 @@ const TechCarousel = () => {
     { name: "Angular", icon: "/icons/angular.png" },
     { name: "Bootstrap", icon: "/icons/bootstrap.png" },
     { name: "HTML", icon: "/icons/html.png" },
-    { name: "CSS", icon: "/icons/css.png" }
+    { name: "CSS", icon: "/icons/css.png" },
+    { name: "SCSS", icon: "/icons/scss.webp" },
+    { name: "Thymeleaf", icon: "/icons/thymeleaf.png" },
+    { name: "Maven", icon: "/icons/maven.png" },
+    { name: "Git", icon: "/icons/git.png" },
+    { name: "Linux", icon: "/icons/linux.png" },
+    { name: "Docker", icon: "/icons/docker.png" },
+    { name: "MySQL", icon: "/icons/mysql.png" },
+    { name: "PostgreSQL", icon: "/icons/postgresql.png" }
   ]
 
   return (

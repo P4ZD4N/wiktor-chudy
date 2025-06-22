@@ -4,7 +4,8 @@ import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
 
 interface ProjectCardProps {
-  title: string
+  title: string,
+  industry: string,
   description: string
   image: string
   technologies: string[]
@@ -14,6 +15,7 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({
   title,
+  industry,
   description,
   image,
   technologies,
@@ -26,14 +28,10 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
       <div className="p-4 space-y-3">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
-        <p className="text-gray-600 dark:text-gray-400 text-sm">{description}</p>
-        <ul className="flex flex-wrap gap-2 text-xs text-white">
-          {technologies.map((tech) => (
-            <li key={tech} className="bg-blue-600 dark:bg-orange-500 px-2 py-1 rounded">{tech}</li>
-          ))}
-        </ul>
-        <div className="flex gap-4 mt-2">
+        <div>
+          <h3 className="mb-0 text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+          <h4 className="italic text-md font-medium text-gray-700 dark:text-gray-300 mb-2 tracking-wide">{industry}</h4>
+          <div className="flex gap-4 mt-2">
           {repoUrl && (
             <a href={repoUrl} target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 hover:text-orange-500 transition duration-150"  />
@@ -45,6 +43,16 @@ const ProjectCard: FC<ProjectCardProps> = ({
             </a>
           )}
         </div>
+        </div>
+        
+        
+        <p className="text-gray-600 dark:text-gray-400 text-sm">{description}</p>
+        <ul className="flex flex-wrap gap-2 text-xs text-white">
+          {technologies.map((tech) => (
+            <li key={tech} className="bg-blue-600 dark:bg-orange-500 px-2 py-1 rounded">{tech}</li>
+          ))}
+        </ul>
+        
       </div>
     </div>
   )

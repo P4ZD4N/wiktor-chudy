@@ -9,7 +9,7 @@ const projects = [
     title: "Miesiany Miesiany Kebab (Gastronomic industry)",
     description: "Full-stack application for a kebab restaurant created with Spring and Angular. Application is also intended to serve as a restaurant’s business card, in order to reach a larger number of customers, and to enable the fulfillment and tracking of orders.",
     image: "/kebab.jpg",
-    technologies: ["Java", "TypeScript", "Spring", "Angular", "Bootstrap", "Hibernate", "Thymeleaf", "Maven", "JUnit", "Mockito", "Maven", "PostgreSQL", "HTML", "SCSS", "Docker", "Bash"],
+    technologies: ["Java", "TypeScript", "Spring", "Angular", "Bootstrap", "Hibernate", "Thymeleaf", "Maven", "JUnit", "Mockito", "PostgreSQL", "HTML", "SCSS", "Docker", "Bash"],
     repoUrl: "https://github.com/P4ZD4N/miesiany-miesiany-kebab"
   },
   {

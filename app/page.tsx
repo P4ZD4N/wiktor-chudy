@@ -53,7 +53,7 @@ const HomePage = async () => {
       <header className="text-center">
 
         <div className="slide-in-from-right mb-6 md:mb-8 flex justify-center">
-          <div className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-blue-600 dark:ring-orange-500 shadow-lg">
+          <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-blue-600 dark:ring-orange-500 shadow-lg">
             <Image
               src="/me.jpg"
               alt="Wiktor's photo"

@@ -1,7 +1,10 @@
 // components/ProjectCard.tsx
+"use client"
+
 import { FC } from "react"
 import Image from "next/image"
 import { Github, ExternalLink } from "lucide-react"
+import { motion } from "framer-motion"
 
 interface ProjectCardProps {
   title: string,
@@ -23,7 +26,13 @@ const ProjectCard: FC<ProjectCardProps> = ({
   liveUrl,
 }) => {
   return (
-    <div className="rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 shadow-lg border border-gray-200 dark:border-zinc-700 hover:shadow-xl transition-shadow duration-300">
+    <motion.div 
+      className="rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 shadow-lg border border-gray-200 dark:border-zinc-700 hover:shadow-xl"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="relative w-full h-48 md:h-64">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
@@ -54,7 +63,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </ul>
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

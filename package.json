@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "framer-motion": "^12.23.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.522.0",
     "moment": "^2.30.1",

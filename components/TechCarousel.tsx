@@ -1,5 +1,7 @@
 "use client"
 
+import Image from 'next/image'
+
 const TechCarousel = () => {
 
   const technologies = [
@@ -29,7 +31,7 @@ const TechCarousel = () => {
       <div className="inline-flex animate-scroll space-x-8">
         {technologies.concat(technologies).map((tech, index) => (
           <div key={index} className="flex flex-col items-center w-24">
-            <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2" />
+            <Image src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2" />
             <span className="text-sm text-gray-700 dark:text-gray-300">{tech.name}</span>
           </div>
         ))}

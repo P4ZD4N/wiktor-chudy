@@ -1,3 +1,4 @@
+import ArticleCard from "@/components/ArticleCard"
 import ArticleItemList from "@/components/ArticleListItem"
 import ProjectCard from "@/components/ProjectCard"
 import TechCarousel from "@/components/TechCarousel"
@@ -71,7 +72,7 @@ const HomePage = async () => {
 
       <TechCarousel />
 
-      <section className="mx-auto w-full md:w-5/6 lg:w-4/5 xl:w-3/4 flex flex-col gap-16">
+      <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
 
         <h2 className="text-center mb-4 text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
        
@@ -79,6 +80,42 @@ const HomePage = async () => {
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
+
+        <h2 className="text-center text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">
+          Looking for
+          <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> inspiration </span>
+          or useful
+          <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> knowledge?</span>
+        </h2>
+       
+        <p className="slide-in-from-left text-center text-neutral-400">Check out my blog, where I share my experiences, write about the technologies I&apos;m currently learning and offer self-development tips! New posts, exciting insights, and plenty to discover. Let&apos;s explore my latest articles!</p>
+      
+        <div className="grid md:grid-cols-3 gap-8">
+          {articles !== null && 
+            Object.values(articles)
+              .flat()
+              .filter((article, index, array) => array.findIndex(a => a.id === article.id) === index) 
+              .sort((a, b) => {
+                const dateA = a.date.split('-').reverse().join('-');
+                const dateB = b.date.split('-').reverse().join('-');
+                
+                return dateB.localeCompare(dateA); 
+              })
+              .slice(0, 3)
+              .map(article => (
+                <ArticleCard
+                  key={article.id}
+                  id={article.id}
+                  title={article.title}
+                  date={article.date}
+                  categories={article.categories}
+                />
+              ))
+          }
         </div>
       </section>
 

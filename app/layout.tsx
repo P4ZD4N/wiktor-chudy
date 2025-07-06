@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,11 @@ export default function RootLayout({
       >
         <Navbar /> 
         {children}
+
+        <Script
+          src="https://kit.fontawesome.com/f2b1b3d7ed.js"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );

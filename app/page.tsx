@@ -2,6 +2,7 @@ import ArticleCard from "@/components/ArticleCard"
 import ArticleItemList from "@/components/ArticleListItem"
 import ContactSection from "@/components/ContactSection"
 import ProjectCard from "@/components/ProjectCard"
+import FadeInOnScroll from "@/components/SlideInOnScroll"
 import TechCarousel from "@/components/TechCarousel"
 import { getCategoriesArticles } from "@/lib/articles"
 import Image from "next/image"
@@ -75,10 +76,14 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
 
-        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
-       
-        <p className="slide-in-from-left text-center text-neutral-400">My work is not just about coding. It’s also about understanding the needs of different businesses, which is shown by the projects I’ve completed for clients in many industries.</p>
-      
+        <FadeInOnScroll direction="right" threshold={0.2}>
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
+        </FadeInOnScroll>
+
+        <FadeInOnScroll direction="left" threshold={0.2}>
+          <p className="slide-in-from-left text-center text-neutral-400">My work is not just about coding. It’s also about understanding the needs of different businesses, which is shown by the projects I’ve completed for clients in many industries.</p>
+        </FadeInOnScroll>
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
@@ -88,15 +93,19 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
 
-        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">
-          Looking for
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> inspiration </span>
-          or useful
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> knowledge?</span>
-        </h2>
+        <FadeInOnScroll direction="right" threshold={0.2}>
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">
+            Looking for
+            <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> inspiration </span>
+            or useful
+            <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> knowledge?</span>
+          </h2>
+        </FadeInOnScroll>
        
-        <p className="slide-in-from-left text-center text-neutral-400">Check out my blog, where I share my experiences, write about the technologies I&apos;m currently learning and offer self-development tips! New posts, exciting insights, and plenty to discover. Let&apos;s explore my latest articles!</p>
-      
+        <FadeInOnScroll direction="left" threshold={0.2}>
+          <p className="text-center text-neutral-400">Check out my blog, where I share my experiences, write about the technologies I&apos;m currently learning and offer self-development tips! New posts, exciting insights, and plenty to discover. Let&apos;s explore my latest articles!</p>
+        </FadeInOnScroll>
+
         <div className="grid md:grid-cols-3 gap-8">
           {articles !== null && 
             Object.values(articles)
@@ -124,8 +133,10 @@ const HomePage = async () => {
 
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
 
-        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">me</span></h2>
-       
+        <FadeInOnScroll direction="right" threshold={0.2}>
+          <h2 className="text-center text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">me</span></h2>
+        </FadeInOnScroll>
+
         <ContactSection />
         
       </section>

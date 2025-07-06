@@ -1,4 +1,7 @@
+"use client"
+
 import { Phone, Mail, Linkedin, Github } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const ContactSection = () => {
 
@@ -41,16 +44,28 @@ const ContactSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="text-center md:text-left">
+            <motion.div 
+              className="text-center md:text-left"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <h3 className="text-2xl  text-gray-900 dark:text-white mb-2">
                 Let&apos;s Connect
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 I&apos;m always open to discussing new opportunities, collaborations or just having a chat about technology and development.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="space-y-6">
+            <motion.div 
+              className="space-y-6"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               {socialMedia.map((contact, index) => {
                 const IconComponent = contact.icon;
                 return (
@@ -75,20 +90,32 @@ const ContactSection = () => {
                   </a>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
 
           <div className="space-y-8">
-            <div className="text-center md:text-left">
+            <motion.div 
+              className="text-center md:text-left"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <h3 className="text-2xl text-white mb-2">
                 Get in Touch
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 Feel free to reach out through any of these channels. I typically respond within 24 hours.
               </p>
-            </div>
+            </motion.div>
             
-            <div className="space-y-6">
+            <motion.div 
+              className="space-y-6"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon;
                 return (
@@ -113,11 +140,17 @@ const ContactSection = () => {
                   </a>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
         
-        <div className="text-center mt-16 p-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl text-white">
+        <motion.div 
+          className="text-center mt-16 p-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl text-white"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <h3 className="text-2xl font-bold mb-4">Ready to start your project?</h3>
           <p className="text-orange-100 mb-6 max-w-2xl mx-auto">
             Whether you need a website, web application, or just want to discuss your ideas, I&apos;m here to help bring your vision to life.
@@ -138,7 +171,7 @@ const ContactSection = () => {
               Send Email
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

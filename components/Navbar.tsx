@@ -40,7 +40,9 @@ export default function Navbar() {
       <div className="md:hidden fixed bottom-4 right-4 z-50">
         <button
           onClick={() => setIsOpen(prev => !prev)}
-          className="bg-orange-500 text-white p-4 rounded-full shadow-lg hover:bg-orange-800 transition"
+          className={`text-white p-4 rounded-full shadow-lg transition ${
+            isOpen ? "bg-orange-700" : "bg-orange-500 hover:bg-orange-600"
+          }`}
         >
           <i className="fa-solid fa-bars text-lg" />
         </button>

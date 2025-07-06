@@ -1,5 +1,6 @@
 import ArticleCard from "@/components/ArticleCard"
 import ArticleItemList from "@/components/ArticleListItem"
+import ContactSection from "@/components/ContactSection"
 import ProjectCard from "@/components/ProjectCard"
 import TechCarousel from "@/components/TechCarousel"
 import { getCategoriesArticles } from "@/lib/articles"
@@ -65,7 +66,7 @@ const HomePage = async () => {
         </div>
 
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white slide-in-from-left">Hey, I&apos;m <mark className="px-2 text-white bg-blue-600 rounded-sm dark:bg-orange-500">Wiktor</mark></h1>
-        <h2 className="mb-4 text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Software <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Developer</span> Intern</h2>
+        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Software <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Developer</span> Intern</h2>
         <p className="slide-in-from-left text-neutral-400">Intern @ Santander Bank Polska and Student @ PJATK with business-oriented approach to problem solving. My work is not just about coding. It’s also about understanding the needs of different businesses, which is shown by the projects I’ve completed for clients in many industries.</p>
       
       </header>
@@ -74,8 +75,10 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
 
-        <h2 className="text-center mb-4 text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
+        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
        
+        <p className="slide-in-from-left text-center text-neutral-400">My work is not just about coding. It’s also about understanding the needs of different businesses, which is shown by the projects I’ve completed for clients in many industries.</p>
+      
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
@@ -85,7 +88,7 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
 
-        <h2 className="text-center text-2xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">
+        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">
           Looking for
           <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> inspiration </span>
           or useful
@@ -117,6 +120,14 @@ const HomePage = async () => {
               ))
           }
         </div>
+      </section>
+
+      <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
+
+        <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">me</span></h2>
+       
+        <ContactSection />
+        
       </section>
 
       <section className="md:grid md:grid-cols-2 flex flex-col gap-10">

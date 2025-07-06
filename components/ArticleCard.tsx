@@ -15,7 +15,7 @@ interface ArticleCardProps {
 const ArticleCard: FC<ArticleCardProps> = ({ id, title, date, categories }) => {
   return (
     <motion.div 
-      className="rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 shadow-lg border border-gray-200 dark:border-zinc-700 hover:shadow-xl"
+      className="rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 shadow-lg border border-zinc-700"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

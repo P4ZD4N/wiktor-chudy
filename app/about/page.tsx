@@ -3,6 +3,7 @@ import EducationSection from "@/components/about/EducationSection"
 import StatisticsSection from "@/components/about/StatisticsSection"
 import TechSkillsSection from "@/components/about/TechSkillsSection"
 import WorkExceperienceSection from "@/components/about/WorkExperienceSection"
+import { Activity, BookOpen, Brain, Coffee } from "lucide-react"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -14,10 +15,25 @@ export default function AboutPage() {
     
         <section className="md:grid md:grid-cols-2 md:gap-10">
             <div className="slide-in-from-left">
-                <h1 className="text-4xl font-bold mb-4">About <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> me</span></h1>
-                <p className="text-neutral-600 dark:text-neutral-300 mb-4">
+                <h1 className="text-4xl font-bold mb-4">About <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> me</span></h1>
+                <p className="text-neutral-600 dark:text-neutral-300">
                     Software Developer Intern who combine solid full-stack development skills with a clear focus on business impact. Currently pursuing degree in Computer Science while actively developing applications that deliver measurable value. Passionate about clean code, best coding practices and elegant technical solutions. Always looking for opportunities where I can contribute to impactful projects that help businesses grow and succeed.
                 </p>
+                <ul className="space-y-3 mt-4 text-neutral-300 mb-4">
+                    <li className="flex items-center gap-2">
+                        <Brain className="text-orange-500 w-5 h-5 flex-none" /> Constant learner & tech explorer
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <BookOpen className="text-orange-500 w-5 h-5 flex-none" /> Passionate about self-development & business books
+                    </li>
+                    <li className="flex items-center gap-2">
+                        <Activity className="text-orange-500 w-5 h-5 flex-none" /> Runner, long-distance cyclist & gym regular
+                    </li>
+                    
+                    <li className="flex items-center gap-2">
+                        <Coffee className="text-orange-500 w-5 h-5 flex-none" /> Caffeinated focus: milk, no sugar
+                    </li>
+                </ul>
             </div>
 
             <div className="slide-in-from-right flex justify-center items-center">

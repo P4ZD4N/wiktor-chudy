@@ -1,5 +1,6 @@
 import FadeInOnScroll from "@/components/SlideInOnScroll"
 import TechSkillsSection from "@/components/TechSkillsSection"
+import WorkExceperienceSection from "@/components/WorkExperienceSection"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -44,6 +45,16 @@ export default function AboutPage() {
                     </p>
                 </FadeInOnScroll>
             </div>
+
+        </section>
+
+        <section className="flex flex-col gap-10">
+
+            <FadeInOnScroll direction="right" threshold={0.2}>
+                <h1 className="text-center text-4xl font-bold mb-4">Work <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> experiece</span></h1>
+            </FadeInOnScroll>
+
+            <WorkExceperienceSection />
 
         </section>
 

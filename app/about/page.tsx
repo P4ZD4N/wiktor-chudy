@@ -1,6 +1,7 @@
 import FadeInOnScroll from "@/components/SlideInOnScroll"
-import TechSkillsSection from "@/components/TechSkillsSection"
-import WorkExceperienceSection from "@/components/WorkExperienceSection"
+import StatisticsSection from "@/components/about/StatisticsSection"
+import TechSkillsSection from "@/components/about/TechSkillsSection"
+import WorkExceperienceSection from "@/components/about/WorkExperienceSection"
 import Image from "next/image"
 
 export default function AboutPage() {
@@ -29,6 +30,14 @@ export default function AboutPage() {
                 </div>
             </div>
         </section>
+
+        <FadeInOnScroll direction="bottom" threshold={0.2}>
+            <blockquote className="text-xl italic text-center text-neutral-500 dark:text-neutral-400">
+                &quot;Go to bed smarter than when you woke up.&quot; – Charlie Munger
+            </blockquote>
+        </FadeInOnScroll>
+
+        <StatisticsSection />
 
         <section className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-10">
 

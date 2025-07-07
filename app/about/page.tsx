@@ -1,4 +1,5 @@
 import FadeInOnScroll from "@/components/SlideInOnScroll"
+import EducationSection from "@/components/about/EducationSection"
 import StatisticsSection from "@/components/about/StatisticsSection"
 import TechSkillsSection from "@/components/about/TechSkillsSection"
 import WorkExceperienceSection from "@/components/about/WorkExperienceSection"
@@ -64,6 +65,18 @@ export default function AboutPage() {
             </FadeInOnScroll>
 
             <WorkExceperienceSection />
+
+        </section>
+
+        <section className="flex flex-col gap-10">
+
+            <FadeInOnScroll direction="left" threshold={0.2}>
+                <h1 className="text-center text-4xl font-bold mb-4">
+                    <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Education</span>
+                </h1>
+            </FadeInOnScroll>
+
+            <EducationSection />
 
         </section>
 

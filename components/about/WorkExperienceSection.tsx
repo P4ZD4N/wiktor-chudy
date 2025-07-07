@@ -153,10 +153,10 @@ export default function WorkExceperienceSection() {
         <div className="flex flex-col gap-10">
             {experiences.map((experience, index) => (
               <div key={index} className="flex flex-col md:flex-row items-stretch justify-between w-full">
-                  <div className="text-left md:w-1/2">
+                  <div className="text-left md:w-1/3">
                     <h2 className="text-2xl font-bold">{`${experience.start_date} - ${experience.end_date}`}</h2>
                   </div>
-                  <div className="text-left md:w-1/2">
+                  <div className="text-left md:w-2/3">
                     <h2 className="text-2xl"><mark className="px-2 text-white bg-orange-500 rounded-sm font-bold">{experience.title}</mark></h2>
                     <h3 className="text-xl">{`${experience.company} | ${experience.employment_type}`}</h3>
                     <h3 className="text-xl mb-4">

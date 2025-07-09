@@ -25,7 +25,7 @@ const Article = async ({ params }: PageProps) => {
                 {articleData.categories.map((category: string) => (
                 <span
                     key={category}
-                    className="bg-orange-500 text-natural text-xs font-medium px-2.5 py-0.5 rounded dark:bg-orange-500 dark:text-natural"
+                    className="text-xs font-medium px-2.5 py-0.5 rounded bg-orange-500 text-natural"
                 >
                     #{category}
                 </span>

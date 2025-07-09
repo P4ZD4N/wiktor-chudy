@@ -32,7 +32,7 @@ const TechCarousel = () => {
         {technologies.concat(technologies).map((tech, index) => (
           <div key={index} className="flex flex-col items-center w-24">
             <Image src={tech.icon} alt={tech.name} width={48} height={48} className="w-12 h-12 mb-2" />
-            <span className="text-sm text-gray-700 dark:text-gray-300">{tech.name}</span>
+            <span className="text-sm text-gray-300">{tech.name}</span>
           </div>
         ))}
       </div>

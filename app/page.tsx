@@ -56,7 +56,7 @@ const HomePage = async () => {
       <header className="text-center">
 
         <div className="slide-in-from-right mb-6 md:mb-8 flex justify-center">
-          <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-blue-600 dark:ring-orange-500 shadow-lg">
+          <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-orange-500 shadow-lg">
             <Image
               src="/me.jpg"
               alt="Wiktor's photo"
@@ -66,8 +66,8 @@ const HomePage = async () => {
           </div> 
         </div>
 
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white slide-in-from-left">Hey, I&apos;m <mark className="px-2 text-white bg-blue-600 rounded-sm dark:bg-orange-500">Wiktor</mark></h1>
-        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white slide-in-from-right">Software <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Developer</span> Intern</h2>
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white slide-in-from-left">Hey, I&apos;m <mark className="px-2 text-white rounded-sm bg-orange-500">Wiktor</mark></h1>
+        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white slide-in-from-right">Software <span className="underline underline-offset-3 decoration-6 decoration-orange-500">Developer</span> Intern</h2>
         <p className="slide-in-from-left text-neutral-400">Intern @ Santander Bank Polska and Student @ PJATK with business-oriented approach to problem solving. My work is not just about coding. It’s also about understanding the needs of different businesses, which is shown by the projects I’ve completed for clients in many industries.</p>
       
       </header>
@@ -77,7 +77,7 @@ const HomePage = async () => {
       <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
 
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">projects</span></h2>
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">Know my most important <span className="underline underline-offset-3 decoration-6 decoration-orange-500">projects</span></h2>
         </FadeInOnScroll>
 
         <FadeInOnScroll direction="left" threshold={0.2}>
@@ -94,11 +94,11 @@ const HomePage = async () => {
       <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
 
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Looking for
-            <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> inspiration </span>
+            <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> inspiration </span>
             or useful
-            <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> knowledge?</span>
+            <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> knowledge?</span>
           </h2>
         </FadeInOnScroll>
        
@@ -134,7 +134,7 @@ const HomePage = async () => {
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
 
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">me</span></h2>
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-500">me</span></h2>
         </FadeInOnScroll>
 
         <ContactSection />

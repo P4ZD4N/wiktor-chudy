@@ -11,14 +11,14 @@ const ContactSection = () => {
       label: "LinkedIn",
       value: "linkedin.com/in/wiktor-chudy",
       href: "https://linkedin.com/in/wiktor-chudy",
-      color: "text-blue-700 dark:text-blue-300"
+      color: "text-blue-300"
     },
     {
       icon: Github,
       label: "GitHub",
       value: "github.com/P4ZD4N",
       href: "https://github.com/P4ZD4N",
-      color: "text-gray-800 dark:text-gray-200"
+      color: "text-gray-200"
     }
   ];
 
@@ -28,14 +28,14 @@ const ContactSection = () => {
       label: "Phone",
       value: "+48 880 219 318",
       href: "tel:+48880219318",
-      color: "text-green-600 dark:text-green-400"
+      color: "text-green-400"
     },
     {
       icon: Mail,
       label: "Email",
       value: "wiktorchudy@proton.me",
       href: "mailto:wiktorchudy@proton.me",
-      color: "text-blue-600 dark:text-blue-400"
+      color: "text-blue-400"
     }
   ];
 
@@ -51,10 +51,10 @@ const ContactSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h3 className="text-2xl  text-gray-900 dark:text-white mb-2">
+              <h3 className="text-2xl text-white mb-2">
                 Let&apos;s Connect
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 I&apos;m always open to discussing new opportunities, collaborations or just having a chat about technology and development.
               </p>
             </motion.div>
@@ -104,7 +104,7 @@ const ContactSection = () => {
               <h3 className="text-2xl text-white mb-2">
                 Get in Touch
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-lg leading-relaxed">
                 Feel free to reach out through any of these channels. I typically respond within 24 hours.
               </p>
             </motion.div>

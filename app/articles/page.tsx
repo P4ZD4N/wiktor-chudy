@@ -1,21 +1,57 @@
+import ArticleCard from "@/components/ArticleCard";
 import ArticleItemList from "@/components/ArticleListItem";
+import FadeInOnScroll from "@/components/SlideInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 
 export default async function ContactPage() {
   const articles = await getCategoriesArticles();
 
   return (
-    <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 mt-20 flex flex-col gap-16 mb-20">
-      <section className="md:grid md:grid-cols-2 flex flex-col gap-10">
+    <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-8/12 mt-20 flex flex-col gap-16 mb-20">
+      <div className="fade-in fixed top-1/2 lg:left-1/80 left-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full -translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
+      <div className="fade-in fixed top-1/2 lg:right-1/80 right-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
+
+      <FadeInOnScroll direction="left" threshold={0.2}>
+        <h1 className="text-4xl font-bold text-center">
+          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+            Articles
+          </span>
+        </h1>
+      </FadeInOnScroll>
+
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
         {articles !== null &&
-          Object.keys(articles).map((article) => (
-            <ArticleItemList
-              category={article}
-              articles={articles[article]}
-              key={article}
-            />
-          ))}
-      </section>
+          Object.values(articles)
+            .flat()
+            .filter(
+              (article, index, array) =>
+                array.findIndex((a) => a.id === article.id) === index
+            )
+            .sort((a, b) => {
+              const dateA = a.date.split("-").reverse().join("-");
+              const dateB = b.date.split("-").reverse().join("-");
+
+              return dateB.localeCompare(dateA);
+            })
+            .map((article) => (
+              <ArticleCard
+                key={article.id}
+                id={article.id}
+                title={article.title}
+                date={article.date}
+                categories={article.categories}
+              />
+            ))}
+      </div>
+
+      {articles !== null &&
+        Object.keys(articles).map((article) => (
+          <ArticleItemList
+            category={article}
+            articles={articles[article]}
+            key={article}
+          />
+        ))}
     </section>
   );
 }

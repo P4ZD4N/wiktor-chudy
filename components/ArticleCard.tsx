@@ -21,7 +21,6 @@ const ArticleCard: FC<ArticleCardProps> = ({ id, title, date, categories }) => {
     >
       <a
         href={id}
-        target="_blank"
         rel="noopener noreferrer"
         className="flex items-center h-full gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
       >

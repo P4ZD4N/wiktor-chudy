@@ -14,7 +14,7 @@ const Article = async ({ params }: PageProps) => {
     return (
         <section className="mx-auto w-10/12 md:w-1/2 mt-20 flex flex-col gap-5">
             <div className="flex justify-between">
-                <Link href={"/"} className="flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150">
+                <Link href={"/articles"} className="flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150">
                     <ArrowLeftIcon width={20} />
                     <p>Back</p>
                 </Link>
@@ -37,7 +37,7 @@ const Article = async ({ params }: PageProps) => {
                 dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} 
             />
 
-            <Link href={"/"} className="mb-10 flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150">
+            <Link href={"/articles"} className="mb-10 flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150">
                 <ArrowLeftIcon width={20} />
                 <p>Back to articles</p>
             </Link>

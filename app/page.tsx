@@ -134,7 +134,7 @@ const HomePage = async () => {
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
 
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-500">me</span></h2>
+          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">me</span></h2>
         </FadeInOnScroll>
 
         <ContactSection />

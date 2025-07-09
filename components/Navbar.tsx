@@ -9,7 +9,7 @@ const links = [
   { href: "/about", icon: "fa-address-card", label: "About me", regular: true },
   { href: "/", icon: "fa-flask", label: "Work" },
   { href: "/", icon: "fa-book", label: "Articles" },
-  { href: "/", icon: "fa-phone", label: "Contact" },
+  { href: "/contact", icon: "fa-phone", label: "Contact" },
 ]
 
 export default function Navbar() {

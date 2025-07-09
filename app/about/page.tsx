@@ -16,7 +16,7 @@ export default function AboutPage() {
         <section className="md:grid md:grid-cols-2 md:gap-10">
             <div className="slide-in-from-left">
                 <h1 className="text-4xl font-bold mb-4">About <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> me</span></h1>
-                <p className="text-neutral-600 dark:text-neutral-300">
+                <p className="text-neutral-300">
                     Software Developer Intern who combine solid full-stack development skills with a clear focus on business impact. Currently pursuing degree in Computer Science while actively developing applications that deliver measurable value. Passionate about clean code, best coding practices and elegant technical solutions. Always looking for opportunities where I can contribute to impactful projects that help businesses grow and succeed.
                 </p>
                 <ul className="space-y-3 mt-4 text-neutral-300 mb-4">
@@ -49,7 +49,7 @@ export default function AboutPage() {
         </section>
 
         <FadeInOnScroll direction="bottom" threshold={0.2}>
-            <blockquote className="text-xl italic text-center text-neutral-500 dark:text-neutral-400">
+            <blockquote className="text-xl italic text-center text-neutral-400">
                 &quot;Go to bed smarter than when you woke up.&quot; – Charlie Munger
             </blockquote>
         </FadeInOnScroll>
@@ -62,7 +62,7 @@ export default function AboutPage() {
 
             <div>
                 <FadeInOnScroll direction="right" threshold={0.2}>
-                    <h1 className="text-4xl font-bold mb-4">Technical <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> skills</span></h1>
+                    <h1 className="text-4xl font-bold mb-4">Technical <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> skills</span></h1>
                 </FadeInOnScroll>
 
                 <FadeInOnScroll direction="left" threshold={0.2}>
@@ -77,7 +77,7 @@ export default function AboutPage() {
         <section className="flex flex-col gap-10">
 
             <FadeInOnScroll direction="right" threshold={0.2}>
-                <h1 className="text-center text-4xl font-bold mb-4">Work <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500"> experiece</span></h1>
+                <h1 className="text-center text-4xl font-bold mb-4">Work <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> experiece</span></h1>
             </FadeInOnScroll>
 
             <WorkExceperienceSection />
@@ -88,7 +88,7 @@ export default function AboutPage() {
 
             <FadeInOnScroll direction="left" threshold={0.2}>
                 <h1 className="text-center text-4xl font-bold mb-4">
-                    <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">Education</span>
+                    <span className="underline underline-offset-3 decoration-6 decoration-orange-500">Education</span>
                 </h1>
             </FadeInOnScroll>
 

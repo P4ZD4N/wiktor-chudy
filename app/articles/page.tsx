@@ -3,7 +3,7 @@ import ArticleItemList from "@/components/ArticleListItem";
 import FadeInOnScroll from "@/components/SlideInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 
-export default async function ContactPage() {
+export default async function ArticlesPage() {
   const articles = await getCategoriesArticles();
 
   return (

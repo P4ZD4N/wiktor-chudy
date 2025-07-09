@@ -9,7 +9,7 @@ export default function ContactPage() {
             <div className="fade-in fixed top-1/2 lg:right-1/80 right-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
         
             <FadeInOnScroll direction="right" threshold={0.2}>
-                <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-500">me</span></h2>
+                <h1 className="text-4xl font-bold text-center">Contact <span className="underline underline-offset-3 decoration-6 decoration-orange-500"> me</span></h1>
             </FadeInOnScroll>
 
             <ContactSection />

@@ -29,8 +29,8 @@ export default function Navbar() {
             href={href}
             className="group relative flex items-center justify-center text-neutral-400 hover:text-orange-500 transition"
           >
-            <i className={`${regular ? "fa-regular" : "fa-solid"} ${icon} text-xl`} />
-            <span className="absolute left-8 whitespace-nowrap text-sm bg-neutral-800 text-white px-3 py-1 rounded-md opacity-0 invisible translate-x-2 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 transition-all duration-200 z-50 shadow-lg">
+            <i className={`${regular ? "fa-regular" : "fa-solid"} ${icon} text-2xl lg:text-3xl`} />
+            <span className="absolute left-8 lg:left-10 whitespace-nowrap text-sm bg-neutral-800 text-white px-3 py-1 rounded-md opacity-0 invisible translate-x-2 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 transition-all duration-200 z-50 shadow-lg">
               {label}
             </span>
           </Link>

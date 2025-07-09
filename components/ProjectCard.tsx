@@ -26,7 +26,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
   return (
     <motion.div 
-      className="rounded-2xl overflow-hidden bg-zinc-900 shadow-lg border border-zinc-700 hover:shadow-xl"
+      className="rounded-2xl overflow-hidden bg-transparent shadow-lg border border-zinc-700 hover:shadow-xl"
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

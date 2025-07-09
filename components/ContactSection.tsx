@@ -40,7 +40,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="mx-auto w-full flex flex-col gap-16 py-16"> 
+    <section className="mx-auto w-full flex flex-col gap-16"> 
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -74,7 +74,7 @@ const ContactSection = () => {
                     href={contact.href}
                     target={contact.href.startsWith('http') ? '_blank' : '_self'}
                     rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
                   >
                     <div className={`p-3 rounded-full bg-zinc-700 ${contact.color} group-hover:scale-110 transition-transform duration-300`}>
                       <IconComponent size={24} />
@@ -124,7 +124,7 @@ const ContactSection = () => {
                     href={contact.href}
                     target={contact.href.startsWith('http') ? '_blank' : '_self'}
                     rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
                   >
                     <div className={`p-3 rounded-full bg-zinc-700 ${contact.color} group-hover:scale-110 transition-transform duration-300`}>
                       <IconComponent size={24} />

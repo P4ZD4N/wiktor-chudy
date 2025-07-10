@@ -25,6 +25,10 @@ Each button on remote control clicked by user sends some command to music player
 
 ## Implementation (Kotlin)
 
+### Project structure
+
+![Project structure](/programming/utils/command-1.png)
+
 ### MusicPlayerCommand.kt
 
 ```kotlin
@@ -127,6 +131,10 @@ fun main() {
     remote.pressButton()
 }
 ```
+
+### Output
+
+![Output](/programming/utils/command-2.png)
 
 ### Explanation
 

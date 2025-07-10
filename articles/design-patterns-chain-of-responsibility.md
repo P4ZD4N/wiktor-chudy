@@ -25,6 +25,10 @@ Mom requested the first child (let’s say that it’s Ania) to get the jar. If 
 
 ## Implementation (Kotlin)
 
+### Project structure
+
+![Project structure](/programming/utils/cor-1.png)
+
 ### Shelf.kt
 
 ```kotlin
@@ -105,6 +109,10 @@ fun main() {
     ania.processRequest(motherRequest)
 }
 ```
+
+### Output
+
+![Output](/programming/utils/cor-2.png)
 
 ### Explanation
 

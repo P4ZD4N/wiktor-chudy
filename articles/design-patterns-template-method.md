@@ -17,6 +17,10 @@ All people have their own daily routine. Each routine consists of activities com
 
 ## Implementation (Kotlin)
 
+### Project structure
+
+![Project structure](/programming/utils/template-method-1.png)
+
 ### TypeOfTransport.kt
 
 ```kotlin
@@ -111,6 +115,11 @@ fun main() {
     myFriendDay.everyDayIsExactlyTheSame(TypeOfTransport.TRAM)
 }
 ```
+
+### Output
+
+![Output](/programming/utils/template-method-2.png)
+
 
 ### Explanation
 

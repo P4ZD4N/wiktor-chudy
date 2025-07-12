@@ -1,6 +1,6 @@
-import ArticleCard from "@/components/ArticleCard";
+import ArticleCard from "@/components/articles/ArticleCard";
 import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
-import FadeInOnScroll from "@/components/SlideInOnScroll";
+import FadeInOnScroll from "@/components/home/FadeInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 
 interface ArticlesPageProps {

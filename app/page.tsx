@@ -1,8 +1,8 @@
-import ArticleCard from "@/components/ArticleCard";
-import ContactSection from "@/components/ContactSection";
-import ProjectCard from "@/components/ProjectCard";
-import FadeInOnScroll from "@/components/SlideInOnScroll";
-import TechCarousel from "@/components/TechCarousel";
+import ArticleCard from "@/components/articles/ArticleCard";
+import ContactSection from "@/components/common/ContactSection";
+import ProjectCard from "@/components/home/ProjectCard";
+import FadeInOnScroll from "@/components/home/FadeInOnScroll";
+import TechCarousel from "@/components/home/TechCarousel";
 import { getCategoriesArticles } from "@/lib/articles";
 import Image from "next/image";
 

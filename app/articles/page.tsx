@@ -1,5 +1,6 @@
 import ArticleCard from "@/components/ArticleCard";
 import ArticleItemList from "@/components/ArticleListItem";
+import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
 import FadeInOnScroll from "@/components/SlideInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 
@@ -12,11 +13,15 @@ export default async function ArticlesPage() {
       <div className="fade-in fixed top-1/2 lg:right-1/80 right-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
 
       <FadeInOnScroll direction="left" threshold={0.2}>
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-4xl font-semibold text-center">
           <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
             Articles
           </span>
         </h1>
+      </FadeInOnScroll>
+
+      <FadeInOnScroll direction="left" threshold={0.2}>
+            <HorizontalArticleFilter categories={Object.keys(articles)}/>
       </FadeInOnScroll>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">

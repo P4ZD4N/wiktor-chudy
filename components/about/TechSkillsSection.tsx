@@ -115,11 +115,7 @@ export default function TechSkillsSection() {
     >
       <div
         ref={scrollContainerRef}
-        className="h-full w-full overflow-y-scroll text-white scrollbar-hide"
-        style={{
-          scrollbarWidth: "none",
-          msOverflowStyle: "none",
-        }}
+        className="h-full w-full overflow-y-scroll text-white custom-scrollbar"
       >
         <h2 className="text-2xl font-bold mb-6">
           Main{" "}
@@ -166,8 +162,33 @@ export default function TechSkillsSection() {
       </div>
 
       <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
+        .custom-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+
+        .custom-scrollbar {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        @media (min-width: 1024px) {
+          .custom-scrollbar::-webkit-scrollbar {
+            display: block;
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #f97316
+          border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #f97316 transparent;
         }
       `}</style>
     </motion.div>

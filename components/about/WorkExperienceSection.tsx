@@ -132,11 +132,7 @@ export default function WorkExceperienceSection() {
     >
       <div
         ref={scrollContainerRef}
-        className="h-full w-full overflow-y-scroll text-white scrollbar-hide"
-        style={{
-          scrollbarWidth: "none",
-          msOverflowStyle: "none",
-        }}
+        className="h-full w-full overflow-y-scroll text-white md:scrollbar-hide custom-scrollbar"
       >
         <div className="flex flex-col gap-10">
           {experiences.map((experience, index) => (
@@ -179,8 +175,33 @@ export default function WorkExceperienceSection() {
       </div>
 
       <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
+        .custom-scrollbar::-webkit-scrollbar {
           display: none;
+        }
+
+        .custom-scrollbar {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+
+        @media (min-width: 1024px) {
+          .custom-scrollbar::-webkit-scrollbar {
+            display: block;
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #f97316
+          border-radius: 4px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #f97316 transparent;
         }
       `}</style>
     </motion.div>

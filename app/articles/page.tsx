@@ -1,5 +1,4 @@
 import ArticleCard from "@/components/ArticleCard";
-import ArticleItemList from "@/components/ArticleListItem";
 import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
 import FadeInOnScroll from "@/components/SlideInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";

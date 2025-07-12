@@ -75,15 +75,6 @@ export default async function ArticlesPage({
           />
         ))}
       </div>
-
-      {filteredArticles &&
-        Object.keys(filteredArticles).map((category) => (
-          <ArticleItemList
-            category={category}
-            articles={filteredArticles[category]}
-            key={category}
-          />
-        ))}
     </section>
   );
 }

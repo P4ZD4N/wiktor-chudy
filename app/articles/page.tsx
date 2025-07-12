@@ -4,8 +4,45 @@ import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilt
 import FadeInOnScroll from "@/components/SlideInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 
-export default async function ArticlesPage() {
+interface ArticlesPageProps {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}
+
+export default async function ArticlesPage({
+  searchParams,
+}: ArticlesPageProps) {
   const articles = await getCategoriesArticles();
+  const params = await searchParams;
+
+  const selectedCategories: string[] = params.categories 
+    ? Array.isArray(params.categories) 
+      ? params.categories.filter((cat): cat is string => typeof cat === 'string' && cat !== undefined)
+      : typeof params.categories === 'string' ? [params.categories] : []
+    : [];
+
+  const filteredArticles =
+    selectedCategories.length > 0
+      ? Object.keys(articles)
+          .filter((category) => selectedCategories.includes(category))
+          .reduce((acc, category) => {
+            acc[category] = articles[category];
+            return acc;
+          }, {} as typeof articles)
+      : articles;
+
+  const flatArticles = filteredArticles
+    ? Object.values(filteredArticles)
+        .flat()
+        .filter(
+          (article, index, array) =>
+            array.findIndex((a) => a.id === article.id) === index
+        )
+        .sort((a, b) => {
+          const dateA = a.date.split("-").reverse().join("-");
+          const dateB = b.date.split("-").reverse().join("-");
+          return dateB.localeCompare(dateA);
+        })
+    : [];
 
   return (
     <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-8/12 mt-20 flex flex-col gap-16 mb-20">
@@ -21,40 +58,30 @@ export default async function ArticlesPage() {
       </FadeInOnScroll>
 
       <FadeInOnScroll direction="left" threshold={0.2}>
-            <HorizontalArticleFilter categories={Object.keys(articles)}/>
+        <HorizontalArticleFilter
+          categories={Object.keys(articles)}
+          selectedCategories={selectedCategories}
+        />
       </FadeInOnScroll>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {articles !== null &&
-          Object.values(articles)
-            .flat()
-            .filter(
-              (article, index, array) =>
-                array.findIndex((a) => a.id === article.id) === index
-            )
-            .sort((a, b) => {
-              const dateA = a.date.split("-").reverse().join("-");
-              const dateB = b.date.split("-").reverse().join("-");
-
-              return dateB.localeCompare(dateA);
-            })
-            .map((article) => (
-              <ArticleCard
-                key={article.id}
-                id={article.id}
-                title={article.title}
-                date={article.date}
-                categories={article.categories}
-              />
-            ))}
+        {flatArticles.map((article) => (
+          <ArticleCard
+            key={article.id}
+            id={article.id}
+            title={article.title}
+            date={article.date}
+            categories={article.categories}
+          />
+        ))}
       </div>
 
-      {articles !== null &&
-        Object.keys(articles).map((article) => (
+      {filteredArticles &&
+        Object.keys(filteredArticles).map((category) => (
           <ArticleItemList
-            category={article}
-            articles={articles[article]}
-            key={article}
+            category={category}
+            articles={filteredArticles[category]}
+            key={category}
           />
         ))}
     </section>

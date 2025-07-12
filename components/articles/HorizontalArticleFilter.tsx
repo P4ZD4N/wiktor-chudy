@@ -1,18 +1,45 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter, useSearchParams } from "next/navigation";
 
-const HorizontalArticleFilter = ({ categories }: { categories: string[] }) => {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+interface HorizontalArticleFilterProps {
+  categories: string[];
+  selectedCategories: string[];
+}
+
+const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
+  categories,
+  selectedCategories: initialSelectedCategories,
+}) => {
+  const [selectedCategories, setSelectedCategories] = useState<string[]>(
+    initialSelectedCategories
+  );
   const [open, setOpen] = useState(false);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    setSelectedCategories(initialSelectedCategories);
+  }, [initialSelectedCategories]);
 
   const handleCheckboxChange = (category: string) => {
-    setSelectedCategories((prev) =>
-      prev.includes(category)
-        ? prev.filter((item) => item !== category)
-        : [...prev, category]
-    );
+    const newSelectedCategories = selectedCategories.includes(category)
+      ? selectedCategories.filter((item) => item !== category)
+      : [...selectedCategories, category];
+
+    setSelectedCategories(newSelectedCategories);
+
+    const params = new URLSearchParams(searchParams);
+    if (newSelectedCategories.length > 0) {
+      params.delete("categories");
+      newSelectedCategories.forEach((cat) => params.append("categories", cat));
+    } else {
+      params.delete("categories");
+    }
+
+    router.replace(`/articles?${params.toString()}`);
   };
 
   return (
@@ -94,7 +121,8 @@ const HorizontalArticleFilter = ({ categories }: { categories: string[] }) => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="text-xl font-medium px-2 py-2 rounded bg-orange-500 text-neutral-50"
+              className="text-xl font-medium px-2 py-2 rounded bg-orange-500 text-neutral-50 cursor-pointer"
+              onClick={() => handleCheckboxChange(category)}
             >
               #{category}
             </motion.span>

@@ -154,7 +154,7 @@ export default function WorkExceperienceSection() {
                   {experience.location ? `${experience.location} | ` : ""}
                   {experience.location_type}
                 </h3>
-                <ul className="text-lg text-neutral-300 space-y-2">
+                <ul className="text-lg text-neutral-400 space-y-2">
                   {experience.description.length > 0 &&
                     experience.description.map((item, idx) => (
                       <li key={idx}>🟠 {item}</li>

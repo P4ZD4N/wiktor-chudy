@@ -90,7 +90,7 @@ const ContactSection = () => {
                       <h4 className="font-medium text-white">
                         {contact.label}
                       </h4>
-                      <p className="text-gray-300 text-sm">{contact.value}</p>
+                      <p className="text-neutral-400 text-sm">{contact.value}</p>
                     </div>
                   </a>
                 );

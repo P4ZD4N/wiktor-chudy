@@ -21,7 +21,7 @@ export default function AboutPage() {
               me
             </span>
           </h1>
-          <p className="text-neutral-300">
+          <p className="text-neutral-400">
             Software Developer Intern who combine solid full-stack development
             skills with a clear focus on business impact. Currently pursuing
             degree in Computer Science while actively developing applications
@@ -30,7 +30,7 @@ export default function AboutPage() {
             opportunities where I can contribute to impactful projects that help
             businesses grow and succeed.
           </p>
-          <ul className="space-y-3 mt-4 text-neutral-300 mb-4">
+          <ul className="space-y-3 mt-4 text-neutral-400 mb-4">
             <li className="flex items-center gap-2">
               <Brain className="text-orange-500 w-5 h-5 flex-none" /> Constant
               learner & tech explorer
@@ -86,7 +86,7 @@ export default function AboutPage() {
           </FadeInOnScroll>
 
           <FadeInOnScroll direction="left" threshold={0.2}>
-            <p className="text-neutral-300 mb-4 md:mb-0">
+            <p className="text-neutral-400 mb-4 md:mb-0">
               Because I enjoy selecting the right tools tailored to the specific
               problem, I am highly adaptable and flexible person - always eager
               to learn new ones. As a Full-stack Software Developer I have

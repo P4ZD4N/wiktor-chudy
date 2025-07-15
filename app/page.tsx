@@ -101,7 +101,7 @@ const HomePage = async () => {
             Wiktor
           </mark>
         </h1>
-        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white slide-in-from-right">
+        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight lg:text-4xl text-white slide-in-from-right">
           Software{" "}
           <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
             Developer
@@ -121,7 +121,7 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+          <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Know my most important{" "}
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
               projects
@@ -146,7 +146,7 @@ const HomePage = async () => {
 
       <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+          <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Looking for
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
               {" "}
@@ -198,7 +198,7 @@ const HomePage = async () => {
 
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="mb-16 text-center text-3xl font-normal leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+          <h2 className="mb-16 text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Contact{" "}
             <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">
               me

@@ -44,7 +44,7 @@ export default function Navbar() {
       <div className="md:hidden fixed bottom-4 right-4 z-50">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className={`text-white p-4 rounded-full shadow-lg transition ${
+          className={`cursor-pointer text-white p-4 rounded-full shadow-lg transition ${
             isOpen ? "bg-orange-700" : "bg-orange-500 hover:bg-orange-600"
           }`}
         >
@@ -59,7 +59,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-20 right-4 z-40 flex flex-col items-end space-y-4 bg-neutral-900 p-4 rounded-xl shadow-xl"
+            className="fixed bottom-20 right-4 z-40 flex flex-col items-start space-y-4 bg-neutral-900 p-4 rounded-xl shadow-xl"
           >
             {links.map(({ href, icon, label, regular }) => (
               <Link
@@ -71,9 +71,9 @@ export default function Navbar() {
                 <i
                   className={`${
                     regular ? "fa-regular" : "fa-solid"
-                  } ${icon} text-md`}
+                  } ${icon} text-xl`}
                 />
-                <span>{label}</span>
+                <span className="text-xl">{label}</span>
               </Link>
             ))}
           </motion.div>

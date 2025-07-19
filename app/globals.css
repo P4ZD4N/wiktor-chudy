@@ -54,7 +54,7 @@
   @apply text-gray-400 pl-5 italic border-l-2 border-neutral-600;
 }
 
-.article > p {
+.article > p, ul {
   @apply text-gray-400;
 }
 

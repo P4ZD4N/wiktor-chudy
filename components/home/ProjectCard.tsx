@@ -56,9 +56,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
 
         <p className="text-neutral-400">{description}</p>
-        <ul className="flex flex-wrap gap-2 text-sm text-white">
+        <ul className="flex flex-wrap gap-2 text-sm">
           {technologies.map((tech) => (
-            <li key={tech} className="bg-orange-500 px-2 py-1 rounded">
+            <li key={tech} className="bg-orange-500 px-2 py-1 rounded text-white">
               {tech}
             </li>
           ))}

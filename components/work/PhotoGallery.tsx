@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Image from 'next/image';
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface PhotoGalleryProps {
@@ -49,6 +49,10 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             />
           </div>
         ))}
+
+        <div className="absolute bottom-2 right-2 bg-black/50 text-white text-sm px-2 py-1 rounded-md z-30">
+          {currentIndex + 1} / {images.length}
+        </div>
       </div>
 
       {isOpen && (
@@ -63,7 +67,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             className="relative w-full h-full max-w-5xl max-h-[90vh]"
           >
             <Image
-              src={images[currentIndex]} 
+              src={images[currentIndex]}
               alt={`Fullscreen Image ${currentIndex + 1}`}
               className="object-contain"
               fill
@@ -95,6 +99,10 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             >
               <ChevronRight className="text-black" />
             </button>
+
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
+              {currentIndex + 1} / {images.length}
+            </div>
           </motion.div>
         </div>
       )}

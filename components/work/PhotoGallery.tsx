@@ -32,7 +32,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
 
   return (
     <div className="relative w-full">
-      <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
+      <div className="relative h-45 h-64 md:h-128 overflow-hidden rounded-lg">
         {images.map((src, index) => (
           <div
             key={index}
@@ -43,7 +43,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             <Image
               src={src}
               alt={`Image ${index + 1}`}
-              className="w-full h-full object-cover cursor-pointer"
+              className="w-full h-full object-contain cursor-pointer"
               fill
               onClick={() => openModal(index)}
             />

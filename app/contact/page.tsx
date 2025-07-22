@@ -1,5 +1,5 @@
 import ContactSection from "@/components/common/ContactSection";
-import FadeInOnScroll from "@/components/home/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/FadeInOnScroll";
 
 export default function ContactPage() {
   return (

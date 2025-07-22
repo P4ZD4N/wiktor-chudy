@@ -1,4 +1,4 @@
-import FadeInOnScroll from "@/components/home/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/FadeInOnScroll";
 import ProjectSection from "@/components/work/ProjectSection";
 
 const projects = [

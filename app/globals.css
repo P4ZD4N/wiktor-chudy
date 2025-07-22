@@ -114,12 +114,18 @@
 
 .slide-in-from-left {
   animation: slideInFromLeft 0.8s ease forwards;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 .slide-in-from-right {
   animation: slideInFromRight 0.8s ease forwards;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 .slide-in-from-bottom {
   animation: slideInFromBottom 0.8s ease forwards;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
 }

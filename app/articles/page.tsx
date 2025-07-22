@@ -1,6 +1,6 @@
 import ArticleCard from "@/components/articles/ArticleCard";
 import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
-import FadeInOnScroll from "@/components/home/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/FadeInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 

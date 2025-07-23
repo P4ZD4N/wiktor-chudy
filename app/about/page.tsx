@@ -3,7 +3,6 @@ import EducationSection from "@/components/about/EducationSection";
 import StatisticsSection from "@/components/about/StatisticsSection";
 import TechSkillsSection from "@/components/about/TechSkillsSection";
 import WorkExceperienceSection from "@/components/about/WorkExperienceSection";
-import { Activity, BookOpen, Brain, Coffee } from "lucide-react";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -21,6 +20,7 @@ export default function AboutPage() {
               me
             </span>
           </h1>
+
           <p className="text-neutral-400">
             Software Developer Intern who combine solid full-stack development
             skills with a clear focus on business impact. Currently pursuing
@@ -30,25 +30,17 @@ export default function AboutPage() {
             opportunities where I can contribute to impactful projects that help
             businesses grow and succeed.
           </p>
-          <ul className="space-y-3 mt-4 text-neutral-400 mb-4">
-            <li className="flex items-center gap-2">
-              <Brain className="text-orange-500 w-5 h-5 flex-none" /> Constant
-              learner & tech explorer
-            </li>
-            <li className="flex items-center gap-2">
-              <BookOpen className="text-orange-500 w-5 h-5 flex-none" />{" "}
-              Passionate about self-development & business books
-            </li>
-            <li className="flex items-center gap-2">
-              <Activity className="text-orange-500 w-5 h-5 flex-none" /> Runner,
-              long-distance cyclist & gym regular
-            </li>
 
-            <li className="flex items-center gap-2">
-              <Coffee className="text-orange-500 w-5 h-5 flex-none" />{" "}
-              Caffeinated focus: milk, no sugar
-            </li>
-          </ul>
+          <p className="text-neutral-400 mt-4 mb-6 md:mb-0">
+            What about hobbies? In my free time I love delve into the next books
+            from self-development and business categories - there is always
+            something new to learn and apply. I am also passionate about various
+            sports, but my favorite are gym, long-distance bike and running.
+            Travel is another deep passion of mine - exploring new places brings
+            me a lot of joy. And something just for fun on the end: I'm a big
+            fan of coffee with milk and without sugar - simple pleasure :) You
+            can read more about all of this below!
+          </p>
         </div>
 
         <div className="slide-in-from-right flex justify-center items-center">

@@ -7,7 +7,6 @@ import { getCategoriesArticles } from "@/lib/articles";
 import Image from "next/image";
 import mostImportantProjects from "@/lib/most-important-projects";
 
-
 const HomePage = async () => {
   const articles = await getCategoriesArticles();
 
@@ -42,11 +41,12 @@ const HomePage = async () => {
           Intern
         </h2>
         <p className="slide-in-from-left text-neutral-400">
-          Intern @ Santander Bank Polska and Student @ PJATK with
-          business-oriented approach to problem solving. My work is not just
-          about coding. It’s also about understanding the needs of different
-          businesses, which is shown by the projects I’ve completed for clients
-          in many industries.
+          Software Developer Intern @ Santander Bank Polska and Computer Science
+          Student @ PJATK who combine solid full-stack development skills with a
+          clear focus on business impact. Passionate about clean code, best coding
+          practices and elegant technical solutions. Always looking for
+          opportunities where I can contribute to impactful projects that help
+          businesses grow and succeed.
         </p>
       </header>
 

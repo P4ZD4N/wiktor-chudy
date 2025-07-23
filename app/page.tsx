@@ -1,4 +1,3 @@
-import ArticleCard from "@/components/articles/ArticleCard";
 import ContactSection from "@/components/common/ContactSection";
 import ProjectCard from "@/components/home/ProjectCard";
 import FadeInOnScroll from "@/components/common/FadeInOnScroll";
@@ -6,6 +5,7 @@ import TechCarousel from "@/components/home/TechCarousel";
 import { getCategoriesArticles } from "@/lib/articles";
 import Image from "next/image";
 import mostImportantProjects from "@/lib/most-important-projects";
+import RecentArticles from "@/components/home/RecentArticles";
 
 const HomePage = async () => {
   const articles = await getCategoriesArticles();
@@ -33,6 +33,7 @@ const HomePage = async () => {
             Wiktor
           </mark>
         </h1>
+
         <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight lg:text-4xl text-white slide-in-from-right">
           Software{" "}
           <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
@@ -40,11 +41,12 @@ const HomePage = async () => {
           </span>{" "}
           Intern
         </h2>
+
         <p className="slide-in-from-left text-neutral-400">
           Software Developer Intern @ Santander Bank Polska and Computer Science
           Student @ PJATK who combine solid full-stack development skills with a
-          clear focus on business impact. Passionate about clean code, best coding
-          practices and elegant technical solutions. Always looking for
+          clear focus on business impact. Passionate about clean code, best
+          coding practices and elegant technical solutions. Always looking for
           opportunities where I can contribute to impactful projects that help
           businesses grow and succeed.
         </p>
@@ -102,31 +104,7 @@ const HomePage = async () => {
           </p>
         </FadeInOnScroll>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {articles !== null &&
-            Object.values(articles)
-              .flat()
-              .filter(
-                (article, index, array) =>
-                  array.findIndex((a) => a.id === article.id) === index
-              )
-              .sort((a, b) => {
-                const dateA = a.date.split("-").reverse().join("-");
-                const dateB = b.date.split("-").reverse().join("-");
-
-                return dateB.localeCompare(dateA);
-              })
-              .slice(0, 3)
-              .map((article) => (
-                <ArticleCard
-                  key={article.id}
-                  id={article.id}
-                  title={article.title}
-                  date={article.date}
-                  categories={article.categories}
-                />
-              ))}
-        </div>
+        <RecentArticles allArticles={articles} />
       </section>
 
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">

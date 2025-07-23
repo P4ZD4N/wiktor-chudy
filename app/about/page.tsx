@@ -37,7 +37,7 @@ export default function AboutPage() {
             something new to learn and apply. I am also passionate about various
             sports, but my favorite are gym, long-distance bike and running.
             Travel is another deep passion of mine - exploring new places brings
-            me a lot of joy. And something just for fun on the end: I'm a big
+            me a lot of joy. And something just for fun on the end: I&apos;m a big
             fan of coffee with milk and without sugar - simple pleasure :) You
             can read more about all of this below!
           </p>

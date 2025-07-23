@@ -3,14 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-
-const links = [
-  { href: "/", icon: "fa-house", label: "Home" },
-  { href: "/about", icon: "fa-address-card", label: "About me", regular: true },
-  { href: "/work", icon: "fa-flask", label: "Work" },
-  { href: "/articles", icon: "fa-book", label: "Articles" },
-  { href: "/contact", icon: "fa-phone", label: "Contact" },
-];
+import links from "@/lib/links";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

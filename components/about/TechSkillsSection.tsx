@@ -3,36 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-
-const mainTechnologies = [
-  { name: "Java", icon: "/icons/java.png" },
-  { name: "JavaScript", icon: "/icons/javascript.png" },
-  { name: "TypeScript", icon: "/icons/typescript.png" },
-  { name: "Spring", icon: "/icons/spring.svg" },
-  { name: "Angular", icon: "/icons/angular.png" },
-  { name: "Hibernate", icon: "/icons/hibernate.png" },
-  { name: "HTML", icon: "/icons/html.png" },
-  { name: "CSS", icon: "/icons/css.png" },
-  { name: "SCSS", icon: "/icons/scss.webp" },
-  { name: "Bootstrap", icon: "/icons/bootstrap.png" },
-  { name: "Maven", icon: "/icons/maven.png" },
-  { name: "MySQL", icon: "/icons/mysql.png" },
-  { name: "PostgreSQL", icon: "/icons/postgresql.png" },
-  { name: "Git", icon: "/icons/git.png" },
-  { name: "Linux", icon: "/icons/linux.png" },
-  { name: "Docker", icon: "/icons/docker.png" },
-];
-
-const alsoWorkedWith = [
-  { name: "Python", icon: "/icons/python.png" },
-  { name: "Kotlin", icon: "/icons/kotlin.png" },
-  { name: "C++", icon: "/icons/cpp.png" },
-  { name: "Bash", icon: "/icons/bash.png" },
-  { name: "Thymeleaf", icon: "/icons/thymeleaf.png" },
-  { name: "Figma", icon: "/icons/figma.png" },
-  { name: "Postman", icon: "/icons/postman.png" },
-  { name: "AWS", icon: "/icons/aws.svg" },
-];
+import mainTechnologies from "@/lib/main-technologies";
+import alsoWorkedWithTechnologies from "@/lib/also-worked-with-technologies";
 
 export default function TechSkillsSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -146,7 +118,7 @@ export default function TechSkillsSection() {
         </h2>
 
         <div className="grid grid-cols-3 gap-x-8 gap-y-8">
-          {alsoWorkedWith.map((tech, index) => (
+          {alsoWorkedWithTechnologies.map((tech, index) => (
             <div key={index} className="flex flex-col items-stretch w-full">
               <Image
                 src={tech.icon}

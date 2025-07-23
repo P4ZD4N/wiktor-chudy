@@ -1,43 +1,11 @@
 "use client";
 
-import { Phone, Mail, Linkedin, Github } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import socialMedia from "@/lib/social-media";
+import contactInfo from "@/lib/contact-info";
 
 const ContactSection = () => {
-  const socialMedia = [
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/wiktor-chudy",
-      href: "https://linkedin.com/in/wiktor-chudy",
-      color: "text-blue-300",
-    },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "github.com/P4ZD4N",
-      href: "https://github.com/P4ZD4N",
-      color: "text-gray-200",
-    },
-  ];
-
-  const contactInfo = [
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+48 880 219 318",
-      href: "tel:+48880219318",
-      color: "text-green-400",
-    },
-    {
-      icon: Mail,
-      label: "Email",
-      value: "wiktorchudy@proton.me",
-      href: "mailto:wiktorchudy@proton.me",
-      color: "text-blue-400",
-    },
-  ];
-
   return (
     <section className="mx-auto w-full flex flex-col gap-16">
       <div className="max-w-6xl mx-auto px-4">
@@ -90,7 +58,9 @@ const ContactSection = () => {
                       <h4 className="font-medium text-white">
                         {contact.label}
                       </h4>
-                      <p className="text-neutral-400 text-sm">{contact.value}</p>
+                      <p className="text-neutral-400 text-sm">
+                        {contact.value}
+                      </p>
                     </div>
                   </a>
                 );

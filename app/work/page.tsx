@@ -8,6 +8,27 @@ const projects = [
     description:
       "Full-stack application for a kebab restaurant created with Spring and Angular. Application is also intended to serve as a restaurant’s business card, in order to reach a larger number of customers, and to enable the fulfillment and tracking of orders.",
     images: ["/projects/miesiany-miesiany-kebab/logo.png"],
+    features: [
+      "Session-based authentication system, taking into data security. For this purpose, I implemented storing passwords encrypted with the bcrypt algorithm in database.",
+      "Eye-catching, well-tailored and well-thought user interface,",
+      "Responsive Web Design to improve accessibility of page at all types of devices,",
+      "Multilingual pages (Polish or English),",
+      "Multilingual validation for all forms. Validation messages are sent by backend in appropriate language specified in request header,",
+      "Integration with TomTom Map API to add map with pointer, which aims to help potential customers easily locate restaurant,",
+      "Bash script, which starts PostgreSQL database, backend and frontend with one command,",
+      "Possibility to follow application flow and diagnose potential issues by accessing informational, warning and error logs in console,",
+      "Possibility to display home page. This is the 'first contact section', which means, that clients see it firstly, after navigating to /. For this reason, this section had to be best thought out from a marketing perspective. I placed there many informations, that can encourage potential customer to place the order. Home page is divided to four subsections: hero section, about us, awards and location. Subsections contain, among others, many marketing slogans, certificates, guarantees, acknowledgments and a map with a pointer,",
+      "Possibility to display highlighted with proper color opening hours of restaurant on each day. Manager can easily update these hours,",
+      "Possibility to display menu of the restaurant. In menu section clients can see three tables: meals, addons to your meal and beverages, which contains each item details like name, price, capacity or ingredients. This entire section is manageable by the manager. Employee with this role can add, update and remove each type of item. Items in each table are sorted by name,",
+      "Possibility to display contact details. In contact section clients can see contact data (including phone number and email address), nicknames at social media and map with location pointer. Contact data is editable by manager,",
+      "Job board, which enable to publish dateiled job offers by manager. Manager can add job offer with information such as position name, description, list of mandatory requirements, list of nice to have requirements, list of employment types and hourly wage gross. Once added, each job offer is fully customizable. Website guests can apply to each job offer by fulfilling form (with attaching a CV in PDF/DOC format). Manager has possibility to display all candidates, which applied to job offer, remove those who do not fit the position or peek/download attached CV of desired candidate,",
+      "Promotions for meals, beverages and addons. It is possible to display promotions details in proper section on website by all users. If some menu position is already added to certain promotion, users can see price change in menu section on website. All promotions are editable and easy to maintain by manager. Manager can add, update and delete promotions,",
+      "Multilingual newsletter with email verification implemented with usage of Observer design pattern. Each customer has possibility to sign up to newsletter focused on promotions and choose preffered language of email messages (Polish or English). When manager adds some promotion, then email is sent to all verified subscribers. Some methods were created as asynchronous to enhance application preformance. It is also possibility to unsubscribe newsletter at any time,",
+      "Discount codes with which customers can reduct price of order. Each discount code has its expiration date and number of remaining uses. Such codes are automatically generated and sending to customers, who provide their email adresse during ordering process - either after every 10 orders or when the order total price exceeds 100 PLN. Manager can add, update and delete discount codes (allowing for manual distribution as well),",
+      "Possibility to place order by customers in easy and concise way. Each menu position can be selected and added to such order and partially customized (by choosing size, meat, sauce, quantity or capacity). After adding item, customer may continue adding more items, proceed to the next step, or come back later - all order details are saved in local storage. Next step is choosing preferred delivery method: pickup at the restaurant or home delivery. Depending on the choice, a dedicated panel is shown to collect the necessary information. Finally, the customer has the option to leave additional comments and enter a discount code, if available, to receive a price reduction. Managers and employees can add, update and delete orders,",
+      "Track order panel, where customers can easily monitor status of their order in real time. Here they can find information such as order id (number of order displayed on the screen in restaurant), total price, delivery address (if home delivery method was selected), payment methods, ordered items details and current order status. Customers can access this panel for up to two hours after the last update to their order,",
+      "Order status display for in-restaurant screen, which shows numbers of orders currently being prepared (in gray color) and those, that are ready (in green color). This provides clear information to customers waiting in the restaurant, improving communication and overall experience."
+    ],
     technologies: [
       "Java 21",
       "TypeScript",
@@ -57,6 +78,22 @@ const projects = [
       "/projects/bibliotheca-chudyana/21.png",
       "/projects/bibliotheca-chudyana/22.png",
     ],
+    features: [
+      "Secure user registration and authentication system, which use bcrypt encryption algorithm to ensure data protection.",
+      "Ability for users to change the email address and password.",
+      "Browsing full catalog of books and searching them based on selected criteria and keywords.",
+      "Adding new books and updating existing ones by users with appropriate roles.",
+      "Viewing most popular categories and newly added books (books, which were added to library in past 7 days)",
+      "Viewing available discounts, with option to add new or update existing by users with appropriate roles.",
+      "Adding, updating or deleting. review or rating for each book by authenticated users.",
+      "Viewing and managing own profile for authenticated users.",
+      "Adding or removing books from wishlist.",
+      "Adding or removing books from cart.",
+      "Placing orders using items from cart.",
+      "Admin panel enabling administrators to manage books, users, orders, reviews, and discounts.",
+      "Manager panel enabling managers to manage books, orders, reviews and discounts.",
+      "Employee panel enabling employees to manage books and orders."
+    ],
     technologies: [
       "Java",
       "Spring",
@@ -102,6 +139,22 @@ const projects = [
       "/projects/globogym/20.png",
       "/projects/globogym/21.png",
     ],
+    features: [
+      "All user interactions and data changes are saved to file and visible after restarting app due to used serialization mechanisms.",
+      "All input fields across the application are validated to ensure data integrity.",
+      "Registration. Both club member and coach account can be created. Coach accounts require manual approval by authorized employee.",
+      "Authentication. Mechanism to login to user account after registration.",
+      "Real-time access to gym opening hours and open/closed status based on current time and date.",
+      "Personalized user dashboard with possibility to update personal data (with setting up specializations on coach accounts) and upload avatar.",
+      "Interactive calendar-based schedule view with highlighted classes and other events on appropriate days and times.",
+      "Possibility to see some statistics related to account, which is currently authenticated.",
+      "Payments module allowing users to deposit money, follow up their account balance and view transaction history.",
+      "Membership management view allowing to purchase/renew membership and visualize appearance of their membership card.",
+      "Intelligent class booking system for club members and coaches with validation (by checking active membership, availability, future dates or duplicates).",
+      "Possibility to add classes to schedule by coaches with active membership, employees and managers.",
+      "Possibility to add other events to schedule by employees and managers.",
+      "Administration panels for employees and managers."
+    ],
     technologies: ["Java", "JavaFX", "Lombok", "Maven", "CSS"],
     repoUrl: "https://github.com/P4ZD4N/globogym",
     completed: true,
@@ -113,6 +166,7 @@ const projects = [
       "Comprehensive marketing strategy for a client operating in the electrical industry. My work included: lightweight website, full branding package (custom logo design, vehicle decals for company car, branded t-shirts and jackets for staff, promotional banners highlighting new services and large banner installed on a pole near office), boosting online presence by setting up and optimizing Facebook business page and Google Maps listing to improve local discoverability.",
     images: [
       "/projects/instalatorstwo-elektryczne/logo.png",
+      "/projects/instalatorstwo-elektryczne/banner.png",
       "/projects/instalatorstwo-elektryczne/1.png",
       "/projects/instalatorstwo-elektryczne/2.png",
       "/projects/instalatorstwo-elektryczne/3.png",
@@ -121,6 +175,11 @@ const projects = [
       "/projects/instalatorstwo-elektryczne/6.png",
       "/projects/instalatorstwo-elektryczne/7.png",
       "/projects/instalatorstwo-elektryczne/1.gif",
+    ],
+    features: [
+      "Designed and developed lightweight website, which is intended to serve as a business card. Created using HTML, SCSS, Bootstrap and vanilla JavaScript. Chose framework-free implementation to reduce overhead and better align with long-term maintainability and budget constraints. One of the most important features is integration with Google Analytics for tracking website traffic in easy way.",
+      "Created full branding package including custom logo design, vehicle decals for company car, branded t-shirts and jackets for staff, promotional banners highlighting new services and large banner installed on a pole near office.",
+      "Boosted online presence by setting up and optimizing Facebook business page and Google Maps listing to improve local discoverability."
     ],
     technologies: ["JavaScript", "HTML", "SCSS", "Bootstrap"],
     repoUrl: "https://github.com/P4ZD4N/instalatorstwo-elektryczne",
@@ -131,8 +190,15 @@ const projects = [
     title: "Wiktor Chudy",
     industry: "Personal website and blog",
     description:
-      "Place where other people can discover most information about me (projects, work experience, education etc.) or read articles, where I share my experiences and knowledge",
+      "My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.",
     images: ["/projects/wiktor-chudy/logo.png"],
+    features: [
+      "Home page - quick introduction and all essential information in one place. Section includes tech carousel showcasing my core technical skills, project cards highlighting my most important projects, article cards featuring my three most recent articles and contact section with my social links and contact data.",
+      "Work page - place where you can discover detailed insights into my projects including image galleries, full descriptions, features lists and technologies lists.",
+      "About me page - section where you can get to know me better. Contains detailed information about me both as a professional and as a person.",
+      "Articles page - browse all of my published articles and filter them by category to find topics that interest you.",
+      "Contact page - get in touch with me directly. Here you will find my contact details and social media links, making it easy to reach out."
+    ],
     technologies: [
       "TypeScript",
       "React",
@@ -150,7 +216,15 @@ const projects = [
     industry: "Social networking",
     description:
       "Full-stack app intended to share memories with other people, who uses it. During development I am mainly responsible for backend development. It is collaborative app, which I create with my friend. During development we do code reviews and exchange our ideas to solve problems more effectively.",
-    images: [],
+    images: [
+      "/projects/baloney/social.jpg"
+    ],
+    features: [
+      "User registration and authentication system implemented with JWT for token-based sessions and bcrypt for secure password hashing.",
+      "Support for uploading user avatars integrated with AWS S3 for file storage.",
+      "Email verification via JavaMailSender, using OTP for confirmation.",
+      "Forgot password feature, allowing users to reset forgotten passwords through JavaMailSender."
+    ],
     technologies: [
       "Java 21",
       "Spring Boot",
@@ -174,6 +248,13 @@ const projects = [
     description:
       "Authorial Relational Database Management System (RDBMS) created with C++20. App is intended to serve as a storage, which enable to manage data with query language similar to SQL. User can create and manage multiple databases within the entire system. While building this system, I learned how relational databases work under the hood - including how they handle schemas, data types, constraints, and foreign keys. This helped me better understand how higher-level tools work and how to connect application development with how databases are actually built.",
     images: ["/projects/dbee/logo.png"],
+    features: [
+      "Possibility to manage multiple independent databases in one environment.",
+      "Support for creating and managing tables with the ability to define columns with precisely defined data types: INTEGER, FLOAT or TEXT.",
+      "Possibility to add important constraints on columns to ensure data integrity: PRIMARY KEY, FOREIGN KEY, UNIQUE or NOT NULL.",
+      "Parser, which has ability to interpret queries written in a SQL-like syntax and execute proper operations based on entered query.",
+      "Possibility to save and read RDBMS data from file. Enable to restore the entire RDBMS structure including databases, tables, columns, constraints and data."
+    ],
     technologies: ["C++20", "CMake"],
     repoUrl: "https://github.com/P4ZD4N/dbee",
     completed: true,
@@ -192,6 +273,17 @@ const projects = [
       "/projects/area-intruders/6.png",
       "/projects/area-intruders/1.gif",
     ],
+    features: [
+      "Main menu, in which user can enter nickname, choose ship appearance, display instructions, settings and top 10 scores.",
+      "Player can control ship using arrow keys on the keyboard or special buttons in the window.",
+      "Player can shoot using spacebar or special button in the window.",
+      "Player can pause game.",
+      "Player can end game at any time and be included in the top 10 results, if he has achieved the appropriate number of points.",
+      "Player has a lot of setting options including: default difficulty levels (easy, normal, hard), game modes (normal, disco, mirror) and custom settings (enemy rows, enemy columns, enemy rows falling time). ",
+      "Player earn points for hitting an enemy. Number of points depends on the selected difficulty level and game mode (possibly on player's custom settings).",
+      "Scores are saved to the file, based on which the top 10 scores is prepared.",
+      "Game offers the option of replaying game on previous settings after losing or finishing the game."
+    ],
     technologies: ["Java", "Swing", "AWT"],
     repoUrl: "https://github.com/P4ZD4N/area-intruders",
     completed: true,
@@ -208,6 +300,7 @@ const projects = [
       "/projects/distributed-averaging-system/4.gif",
       "/projects/distributed-averaging-system/5.png",
     ],
+    features: [],
     technologies: ["Java 8"],
     repoUrl: "https://github.com/P4ZD4N/distributed-averaging-system",
     completed: true,
@@ -228,6 +321,7 @@ const projects = [
       "/projects/centralized-computing-system/8.png",
       "/projects/centralized-computing-system/9.png",
     ],
+    features: [],
     technologies: ["Java 8"],
     repoUrl: "https://github.com/P4ZD4N/centralized-computing-system",
     completed: true,

@@ -1,15 +1,17 @@
 "use client";
 
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import PhotoGallery from "./PhotoGallery";
+import ProjectFeatures from "./ProjectFeatures";
 
 interface ProjectCardProps {
   title: string;
   industry: string;
   description: string;
   images: string[];
+  features: string[]
   technologies: string[];
   repoUrl?: string;
   liveUrl?: string;
@@ -20,10 +22,13 @@ const ProjectSection: FC<ProjectCardProps> = ({
   industry,
   description,
   images,
+  features,
   technologies,
   repoUrl,
   liveUrl,
 }) => {
+  const [featuresOpen, setFeaturesOpen] = useState(false);
+
   return (
     <motion.div
       className="overflow-hidden bg-transparent"
@@ -33,7 +38,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
       viewport={{ once: true, amount: 0.2 }}
     >
       <PhotoGallery images={images} />
-      
+
       <div className="pb-4 pt-4 space-y-3">
         <div>
           <h3 className="text-center mt-5 lg:mt-10 mb-0 text-xl lg:text-2xl font-semibold text-white">{title}</h3>
@@ -54,7 +59,17 @@ const ProjectSection: FC<ProjectCardProps> = ({
           </div>
         </div>
 
-        <p className="text-neutral-400 lg:text-lg">{description}</p>
+        <p className="text-neutral-400 lg:text-lg">
+          {description}
+          {features.length > 0 && (
+            <span
+              onClick={() => setFeaturesOpen(true)}
+              className="hover:text-orange-500 transition duration-150 cursor-pointer"
+            >
+              &nbsp;Click to see features.
+            </span>
+          )}
+        </p>
         <ul className="flex flex-wrap gap-2 text-sm lg:text-base">
           {technologies.map((tech) => (
             <li key={tech} className="bg-orange-500 px-2 py-1 rounded text-white">
@@ -63,6 +78,8 @@ const ProjectSection: FC<ProjectCardProps> = ({
           ))}
         </ul>
       </div>
+
+      <ProjectFeatures projectTitle={title} features={features} isOpen={featuresOpen} onClose={() => setFeaturesOpen(false)} />
     </motion.div>
   );
 };

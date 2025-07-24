@@ -34,12 +34,19 @@ export default function AboutPage() {
           <p className="text-neutral-400 mt-4 mb-6 md:mb-0">
             What about hobbies? In my free time I love delve into the next books
             from self-development and business categories - there is always
-            something new to learn and apply. I am also passionate about various
-            sports, but my favorite are gym, long-distance bike and running.
-            Travel is another deep passion of mine - exploring new places brings
-            me a lot of joy. And something just for fun on the end: I&apos;m a big
-            fan of coffee with milk and without sugar - simple pleasure :) You
-            can read more about all of this below!
+            something new to learn and apply{" "}
+            <a
+              className="hover:text-orange-500 transition duration-150"
+              href="https://www.goodreads.com/user/show/185563841-wiktor-chudy"
+              target="_blank"
+            >
+              (Click to discover my books)
+            </a>
+            . I am also passionate about various sports, but my favorite are
+            gym, long-distance bike and running. Travel is another deep passion
+            of mine - exploring new places brings me a lot of joy. And something
+            just for fun on the end: I&apos;m a big fan of coffee with milk and
+            without sugar - simple pleasure :)
           </p>
         </div>
 

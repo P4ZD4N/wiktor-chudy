@@ -1,5 +1,5 @@
-import ArticleCard from "@/components/articles/ArticleCard";
 import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
+import PaginatedArticles from "@/components/articles/PaginatedArticles";
 import FadeInOnScroll from "@/components/common/FadeInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -44,12 +44,10 @@ export default async function ArticlesPage({
         })
     : [];
 
-
-    const page = parseInt(params.page as string) || 1;
+  const page = parseInt(params.page as string) || 1;
   const ARTICLES_PER_PAGE = 12;
   const startIndex = (page - 1) * ARTICLES_PER_PAGE;
   const endIndex = startIndex + ARTICLES_PER_PAGE;
-  const paginatedArticles = flatArticles.slice(startIndex, endIndex);
 
   return (
     <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-8/12 mt-20 flex flex-col gap-16 mb-20">
@@ -71,17 +69,7 @@ export default async function ArticlesPage({
         />
       </FadeInOnScroll>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {paginatedArticles.map((article) => (
-          <ArticleCard
-            key={article.id}
-            id={article.id}
-            title={article.title}
-            date={article.date}
-            categories={article.categories}
-          />
-        ))}
-      </div>
+      <PaginatedArticles flatArticles={flatArticles} params={params} />
 
       <div className="flex justify-center mt-10 gap-4">
         {page > 1 && (

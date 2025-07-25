@@ -19,6 +19,10 @@
   @apply font-normal text-2xl mt-3 mb-3 text-center tracking-tight;
 }
 
+.article > h4 {
+  @apply font-normal text-xl mt-3 mb-3 text-center tracking-tight;
+}
+
 .article > ol {
   @apply list-decimal flex flex-col mx-10 gap-2;
 }

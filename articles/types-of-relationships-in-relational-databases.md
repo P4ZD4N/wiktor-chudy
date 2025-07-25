@@ -5,7 +5,7 @@ categories:
     - Databases
 ---
 
-# WHERE vs. HAVING in SQL
+# Types of relationships in Relational Databases
 
 ![Blog image](/databases/databases-relationships.png)
 

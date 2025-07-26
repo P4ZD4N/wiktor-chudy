@@ -20,7 +20,7 @@
 }
 
 .article > h4 {
-  @apply font-normal text-xl mt-3 mb-3 text-center tracking-tight;
+  @apply font-normal text-xl mt-1.5 mb-1.5 text-center tracking-tight;
 }
 
 .article > ol {

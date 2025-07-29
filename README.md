@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wiktor Chudy - Personal website and blog
 
-## Getting Started
+<p align="center">
+  <img src="./public/projects/wiktor-chudy/logo.png" alt="Logo" />
+</p>
 
-First, run the development server:
+## 👀 About
+
+My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.
+
+## 🔧 Tech Stack
+
+**Frontend:** TypeScript, React, Next.js 15, HTML, CSS, Tailwind
+**Integrations:** Google Analytics
+
+## 💡 Features
+
+- Home page - quick introduction and all essential information in one place. Section includes tech carousel showcasing my core technical skills, project cards highlighting my most important projects, article cards featuring my three most recent articles and contact section with my social links and contact data.
+- Work page - place where you can discover detailed insights into my projects including image galleries, full descriptions, features lists and technologies lists.
+- About me page - section where you can get to know me better. Contains detailed information about me both as a professional and as a person.
+- Articles page - browse all of my published articles and filter them by category to find topics that interest you.
+- Contact page - get in touch with me directly. Here you will find my contact details and social media links, making it easy to reach out.
+- Integration with Google Analytics for tracking website traffic in easy way.
+
+## ▶️ Run
+
+Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:P4ZD4N/wiktor-chudy.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+cd /path/to/wiktor-chudy
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build production version of app
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the app in production mode
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+By default, the server runs on http://localhost:3000

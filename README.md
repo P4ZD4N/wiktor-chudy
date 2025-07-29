@@ -11,6 +11,7 @@ My personal website combined with blog is a place where others can discover who 
 ## 🔧 Tech Stack
 
 **Frontend:** TypeScript, React, Next.js 15, HTML, CSS, Tailwind
+
 **Integrations:** Google Analytics
 
 ## 💡 Features

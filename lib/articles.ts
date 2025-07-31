@@ -58,6 +58,9 @@ export const getCategoriesArticles = (): Record<string, ArticleItem[]> => {
 
 export const getArticleData = async (id: string) => {
   const fullPath = path.join(articlesDirectory, `${id}.md`);
+  
+  if (!fs.existsSync(fullPath)) return null;
+
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const matterResult = matter(fileContents);
 

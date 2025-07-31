@@ -75,13 +75,13 @@ export default function AboutPage() {
 
         <div>
           <FadeInOnScroll direction="right" threshold={0.2}>
-            <h1 className="text-4xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Technical{" "}
               <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
                 {" "}
                 skills
               </span>
-            </h1>
+            </h2>
           </FadeInOnScroll>
 
           <FadeInOnScroll direction="left" threshold={0.2}>
@@ -99,13 +99,13 @@ export default function AboutPage() {
 
       <section className="flex flex-col gap-10">
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h1 className="text-center text-4xl font-bold mb-4">
+          <h2 className="text-center text-4xl font-bold mb-4">
             Work{" "}
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
               {" "}
               experiece
             </span>
-          </h1>
+          </h2>
         </FadeInOnScroll>
 
         <WorkExceperienceSection />
@@ -113,11 +113,11 @@ export default function AboutPage() {
 
       <section className="flex flex-col gap-10">
         <FadeInOnScroll direction="left" threshold={0.2}>
-          <h1 className="text-center text-4xl font-bold mb-4">
+          <h2 className="text-center text-4xl font-bold mb-4">
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
               Education
             </span>
-          </h1>
+          </h2>
         </FadeInOnScroll>
 
         <EducationSection />

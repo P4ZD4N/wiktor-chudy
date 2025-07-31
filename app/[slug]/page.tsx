@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
 import { getArticleData } from "@/lib/articles";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -9,6 +10,8 @@ interface PageProps {
 const Article = async ({ params }: PageProps) => {
   const { slug } = await params;
   const articleData = await getArticleData(slug);
+
+  if (!articleData) notFound();
 
   return (
     <section className="mx-auto w-10/12 md:w-1/2 mt-20 flex flex-col gap-5">

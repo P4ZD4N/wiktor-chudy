@@ -187,7 +187,24 @@ const projects = [
     industry: "Personal website and blog",
     description:
       "My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.",
-    images: ["/projects/wiktor-chudy/logo.png"],
+    images: [
+      "/projects/wiktor-chudy/logo.png",
+      "/projects/wiktor-chudy/1.png",
+      "/projects/wiktor-chudy/2.png",
+      "/projects/wiktor-chudy/3.png",
+      "/projects/wiktor-chudy/4.png",
+      "/projects/wiktor-chudy/5.png",
+      "/projects/wiktor-chudy/6.png",
+      "/projects/wiktor-chudy/7.png",
+      "/projects/wiktor-chudy/8.png",
+      "/projects/wiktor-chudy/9.png",
+      "/projects/wiktor-chudy/10.png",
+      "/projects/wiktor-chudy/11.png",
+      "/projects/wiktor-chudy/1.gif",
+      "/projects/wiktor-chudy/2.gif",
+      "/projects/wiktor-chudy/3.gif",
+      "/projects/wiktor-chudy/4.gif"
+    ],
     features: [
       "Home page - quick introduction and all essential information in one place. Section includes tech carousel showcasing my core technical skills, project cards highlighting my most important projects, article cards featuring my three most recent articles and contact section with my social links and contact data.",
       "Work page - place where you can discover detailed insights into my projects including image galleries, full descriptions, features lists and technologies lists.",

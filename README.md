@@ -50,3 +50,21 @@ npm start
 ```
 
 By default, the server runs on http://localhost:3000
+
+## 📺 Demo
+
+![](./demo/1.png)
+![](./demo/2.png)
+![](./demo/3.png)
+![](./demo/4.png)
+![](./demo/5.png)
+![](./demo/6.png)
+![](./demo/7.png)
+![](./demo/8.png)
+![](./demo/9.png)
+![](./demo/10.png)
+![](./demo/11.png)
+![](./demo/1.gif)
+![](./demo/2.gif)
+![](./demo/3.gif)
+![](./demo/4.gif)

@@ -14,10 +14,18 @@ export default async function ArticlesPage({
   const articles = await getCategoriesArticles();
   const params = await searchParams;
 
-  const selectedCategories: string[] = params.categories 
-    ? Array.isArray(params.categories) 
-      ? params.categories.filter((cat): cat is string => typeof cat === 'string' && cat !== undefined)
-      : typeof params.categories === 'string' ? [params.categories] : []
+  const selectedCategories: string[] = params.categories
+    ? Array.isArray(params.categories)
+      ? params.categories.filter(
+          (cat): cat is string => typeof cat === "string"
+        )
+      : typeof params.categories === "string"
+      ? params.categories
+          .split(",")
+          .filter(
+            (cat): cat is string => typeof cat === "string" && cat.trim() !== ""
+          )
+      : []
     : [];
 
   const filteredArticles =
@@ -76,9 +84,9 @@ export default async function ArticlesPage({
           <FadeInOnScroll direction="right" threshold={0.2}>
             <a
               href={`?${new URLSearchParams({
-              ...params,
-              page: (page - 1).toString(),
-              categories: selectedCategories.join(','),
+                ...params,
+                page: (page - 1).toString(),
+                categories: selectedCategories.join(","),
               }).toString()}`}
             >
               <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-orange-500 shadow flex items-center justify-center transition-all duration-200">
@@ -94,7 +102,7 @@ export default async function ArticlesPage({
               href={`?${new URLSearchParams({
                 ...params,
                 page: (page + 1).toString(),
-                categories: selectedCategories.join(','),
+                categories: selectedCategories.join(","),
               }).toString()}`}
             >
               <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-orange-500 shadow flex items-center justify-center transition-all duration-200">
@@ -104,7 +112,6 @@ export default async function ArticlesPage({
           </FadeInOnScroll>
         )}
       </div>
-
     </section>
   );
 }

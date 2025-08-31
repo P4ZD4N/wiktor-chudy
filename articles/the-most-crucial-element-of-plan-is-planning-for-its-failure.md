@@ -14,7 +14,7 @@ categories:
 
 ## Why planning for failure matters?
 
-We can of course do our best to maximize chances for our success, but not everything dependens on us. For this reason we should always leave margin of safety which can be understood in different ways depending on specific case - extra cash, more time, buffer of energy. Without it, even the smartest strategy can fail. It protects us from surprises when the unexpected happens. 
+We can of course do our best to maximize chances for our success, but not everything depends on us. For this reason we should always leave margin of safety which can be understood in different way depending on specific case - extra cash, more time, buffer of energy. Without it, even the smartest strategy can fail. It protects us from surprises when the unexpected happens. 
 
 Think of successful companies - what sets them apart is not just their ambition, but their ability to survive long enough for that ambition to come true. They can survive in unexpected situations - whether that is economic crisis, failed product launch or sudden expenses - because they included safety mechanisms in their plans. The same principle can be applied by any person or company.
 

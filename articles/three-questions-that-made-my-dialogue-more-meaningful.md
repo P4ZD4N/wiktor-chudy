@@ -9,7 +9,7 @@ categories:
 
 ![Blog image](/ro/ro-three-questions-dialogue.png)
 
-Centuries ago Socrates offered guideline for speech know as **Triple Filter test**. It is about asking ourselves three questions before sharing information.
+Centuries ago Socrates offered guideline for speech known as **Triple Filter test**. It is about asking ourselves three questions before sharing information.
 
 ## 1. Is it true?
 

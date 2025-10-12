@@ -27,21 +27,21 @@ Not everything true, kind or positive is necessarily relevant. If the informatio
 
 ##### You notice some function in code is missing input validation.
 
-- **Is it true?** Yes, inputs aren't checked.
+🟠 **Is it true?** Yes, inputs aren't checked.
 
-- **Is it good?** Yes, adding validation prevents bugs and other issues.
+🟠 **Is it good?** Yes, adding validation prevents bugs and other issues.
 
-- **Is it useful?** Yes, fix is actionable before deployment.
+🟠 **Is it useful?** Yes, fix is actionable before deployment.
 
 ✅ Passes the filter.
 
 ##### You tell a coworker in the middle of a meeting: "That presentation was boring"
 
-- **Is it true?** Maybe subjective opinion.
+🟠 **Is it true?** Maybe subjective opinion.
 
-- **Is it good?** No, humiliating someone publicly is unkind.
+🟠 **Is it good?** No, humiliating someone publicly is unkind.
 
-- **Is it useful?** Not really, it doesn't help improve the presentation in that moment.
+🟠 **Is it useful?** Not really, it doesn't help improve the presentation in that moment.
 
 ❌ Fails the filter.
 

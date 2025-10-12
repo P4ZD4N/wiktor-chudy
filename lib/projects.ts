@@ -187,24 +187,7 @@ const projects = [
     industry: "Personal website and blog",
     description:
       "My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.",
-    images: [
-      "/projects/wiktor-chudy/logo.png",
-      "/projects/wiktor-chudy/1.png",
-      "/projects/wiktor-chudy/2.png",
-      "/projects/wiktor-chudy/3.png",
-      "/projects/wiktor-chudy/4.png",
-      "/projects/wiktor-chudy/5.png",
-      "/projects/wiktor-chudy/6.png",
-      "/projects/wiktor-chudy/7.png",
-      "/projects/wiktor-chudy/8.png",
-      "/projects/wiktor-chudy/9.png",
-      "/projects/wiktor-chudy/10.png",
-      "/projects/wiktor-chudy/11.png",
-      "/projects/wiktor-chudy/1.gif",
-      "/projects/wiktor-chudy/2.gif",
-      "/projects/wiktor-chudy/3.gif",
-      "/projects/wiktor-chudy/4.gif"
-    ],
+    images: [],
     features: [
       "Home page - quick introduction and all essential information in one place. Section includes tech carousel showcasing my core technical skills, project cards highlighting my most important projects, article cards featuring my three most recent articles and contact section with my social links and contact data.",
       "Work page - place where you can discover detailed insights into my projects including image galleries, full descriptions, features lists and technologies lists.",
@@ -229,7 +212,7 @@ const projects = [
     industry: "Social networking",
     description:
       "Full-stack app intended to share memories with other people, who uses it. During development I am mainly responsible for backend development. It is collaborative app, which I create with my friend. During development we do code reviews and exchange our ideas to solve problems more effectively.",
-    images: ["/projects/baloney/social.jpg"],
+    images: [],
     features: [
       "User registration and authentication system implemented with JWT for token-based sessions and bcrypt for secure password hashing.",
       "Support for uploading user avatars integrated with AWS S3 for file storage.",
@@ -258,7 +241,7 @@ const projects = [
     industry: "Data storage systems",
     description:
       "Authorial Relational Database Management System (RDBMS) created with C++20. App is intended to serve as a storage, which enable to manage data with query language similar to SQL. User can create and manage multiple databases within the entire system. While building this system, I learned how relational databases work under the hood - including how they handle schemas, data types, constraints, and foreign keys. This helped me better understand how higher-level tools work and how to connect application development with how databases are actually built.",
-    images: ["/projects/dbee/logo.png"],
+    images: [],
     features: [
       "Possibility to manage multiple independent databases in one environment.",
       "Support for creating and managing tables with the ability to define columns with precisely defined data types: INTEGER, FLOAT or TEXT.",

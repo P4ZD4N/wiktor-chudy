@@ -10,7 +10,7 @@ const workExperience = [
     description: [
         "Maintained and developed UI/UX of vulnerability management application in the cybersecurity department."
     ],
-    tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "CSS", "Linux"],
+    tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "SCSS", "Linux"],
   },
   {
     title: "Software Developer Apprentice",

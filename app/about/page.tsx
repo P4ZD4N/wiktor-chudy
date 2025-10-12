@@ -21,7 +21,7 @@ export default function AboutPage() {
             </span>
           </h1>
 
-          <p className="text-neutral-400">
+          <p className="text-lg text-neutral-400">
             Software Developer Intern who combine solid full-stack development
             skills with a clear focus on business impact. Currently pursuing
             degree in Computer Science while actively developing applications
@@ -31,12 +31,12 @@ export default function AboutPage() {
             businesses grow and succeed.
           </p>
 
-          <p className="text-neutral-400 mt-4 mb-6 md:mb-0">
+          <p className="text-lg text-neutral-400 mt-4 mb-6 md:mb-0">
             What about hobbies? In my free time I love delve into the next books
             from self-development and business categories - there is always
             something new to learn and apply{" "}
             <a
-              className="hover:text-orange-500 transition duration-150"
+              className="hover:text-orange-500 transition duration-150 text-orange-500 md:text-neutral-400"
               href="https://www.goodreads.com/user/show/185563841-wiktor-chudy"
               target="_blank"
             >
@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       <FadeInOnScroll direction="bottom" threshold={0.2}>
-        <blockquote className="text-xl italic text-center text-neutral-400">
+        <blockquote className="text-2xl italic text-center text-neutral-400">
           &quot;Go to bed smarter than when you woke up.&quot; – Charlie Munger
         </blockquote>
       </FadeInOnScroll>
@@ -85,7 +85,7 @@ export default function AboutPage() {
           </FadeInOnScroll>
 
           <FadeInOnScroll direction="left" threshold={0.2}>
-            <p className="text-neutral-400 mb-4 md:mb-0">
+            <p className="text-lg text-neutral-400 mb-4 md:mb-0">
               Because I enjoy selecting the right tools tailored to the specific
               problem, I am highly adaptable and flexible person - always eager
               to learn new ones. As a Full-stack Software Developer I have

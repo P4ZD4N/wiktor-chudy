@@ -18,7 +18,7 @@ export default function WorkPage() {
         </FadeInOnScroll>
 
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <p className="text-center text-neutral-400">
+          <p className="text-lg text-center text-neutral-400">
             My work is not just about coding. It’s also about understanding the
             needs of different businesses, which is shown by the projects I’ve
             completed for clients in many industries.

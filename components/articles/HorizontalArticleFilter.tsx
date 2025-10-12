@@ -100,7 +100,7 @@ const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
                         onChange={() => handleCheckboxChange(category)}
                         checked={selectedCategories.includes(category)}
                       />
-                      <span className="text-sm font-medium text-white">
+                      <span className="text-lg font-medium text-white">
                         {category}
                       </span>
                     </label>

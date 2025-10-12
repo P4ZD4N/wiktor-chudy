@@ -37,26 +37,26 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </div>
       <div className="p-4 space-y-3">
         <div>
-          <h3 className="mb-0 text-xl font-semibold text-white">{title}</h3>
-          <h4 className="italic text-lg font-medium text-gray-300 mb-2 tracking-wide">
+          <h3 className="mb-0 text-2xl font-semibold text-white">{title}</h3>
+          <h4 className="italic text-xl font-medium text-gray-300 mb-2 tracking-wide">
             {industry}
           </h4>
           <div className="flex gap-4 mt-2">
             {repoUrl && (
               <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-                <Github className="w-6 h-6 hover:text-orange-500 transition duration-150" />
+                <Github className="w-7 h-7 hover:text-orange-500 transition duration-150" />
               </a>
             )}
             {liveUrl && (
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="w-6 h-6 hover:text-orange-500 transition duration-150" />
+                <ExternalLink className="w-7 h-7 hover:text-orange-500 transition duration-150" />
               </a>
             )}
           </div>
         </div>
 
-        <p className="text-neutral-400">{description}</p>
-        <ul className="flex flex-wrap gap-2 text-sm">
+        <p className="text-lg text-neutral-400">{description}</p>
+        <ul className="flex flex-wrap gap-2 text-md">
           {technologies.map((tech) => (
             <li key={tech} className="bg-orange-500 px-2 py-1 rounded text-white">
               {tech}

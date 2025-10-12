@@ -12,11 +12,10 @@ const TechCarousel = () => {
             <Image
               src={tech.icon}
               alt={tech.name}
-              width={48}
-              height={48}
-              className="w-12 h-12 mb-2"
+              width={64}
+              height={64}
+              className="w-14 h-14 mb-2"
             />
-            <span className="text-sm text-gray-300">{tech.name}</span>
           </div>
         ))}
       </div>

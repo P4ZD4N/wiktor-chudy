@@ -31,14 +31,14 @@ const ArticleCard: FC<ArticleCardProps> = ({ id, title, date, categories }) => {
             {categories.map((category: string) => (
               <span
                 key={category}
-                className="text-sm font-medium px-2.5 py-0.5 rounded bg-orange-500 text-natural"
+                className="text-md font-medium px-2.5 py-0.5 rounded bg-orange-500 text-natural"
               >
                 #{category}
               </span>
             ))}
           </div>
 
-          <p className="text-neutral-400">
+          <p className="text-lg text-neutral-400">
             {moment(date, "DD-MM-YYYY").format("Do MMMM YYYY")}
           </p>
         </div>

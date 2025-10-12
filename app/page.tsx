@@ -6,6 +6,7 @@ import { getCategoriesArticles } from "@/lib/articles";
 import Image from "next/image";
 import mostImportantProjects from "@/lib/most-important-projects";
 import RecentArticles from "@/components/home/RecentArticles";
+import TypingText from "@/components/home/TypingText";
 
 const HomePage = async () => {
   const articles = await getCategoriesArticles();
@@ -27,34 +28,33 @@ const HomePage = async () => {
           </div>
         </div>
 
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-white slide-in-from-left">
-          Hey, I&apos;m{" "}
-          <mark className="px-2 text-white rounded-sm bg-orange-500">
-            Wiktor
-          </mark>
-        </h1>
-
-        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight lg:text-4xl text-white slide-in-from-right">
-          Software{" "}
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
-            Developer
-          </span>{" "}
-          Intern
+        <h2 className="mb-4 text-3xl font-normal leading-none tracking-tight lg:text-5xl text-white slide-in-from-right">
+          Hey, my name is
         </h2>
 
-        <p className="slide-in-from-left text-neutral-400">
-          Software Developer Intern @ Santander Bank Polska and Computer Science
-          Student @ PJATK who combine solid full-stack development skills with a
-          clear focus on business impact. Passionate about clean code, best
-          coding practices and elegant technical solutions. Always looking for
-          opportunities where I can contribute to impactful projects that help
-          businesses grow and succeed.
+        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-6xl lg:text-7xl text-white slide-in-from-left">
+          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+            Wiktor Chudy.
+          </span>
+        </h1>
+
+        <h2 className="mb-4 text-3xl font-bold leading-none tracking-tight lg:text-5xl text-white slide-in-from-right">
+          <TypingText />
+        </h2>
+
+        <p className="text-lg slide-in-from-left text-neutral-400">
+          Software Engineer who combine solid front-end and back-end skills with
+          a strong focus on business impact. Currently pursuing degree in
+          Computer Science while actively delivering full-stack solutions @
+          Santander. Always looking for opportunities where I
+          can contribute to impactful projects that help businesses grow and
+          succeed.
         </p>
       </header>
 
       <TechCarousel />
 
-      <section className="mx-auto w-full w-6/6 flex flex-col gap-16">
+      <section className="mx-auto w-full w-6/6 flex flex-col gap-8">
         <FadeInOnScroll direction="right" threshold={0.2}>
           <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Know my most important{" "}
@@ -65,7 +65,7 @@ const HomePage = async () => {
         </FadeInOnScroll>
 
         <FadeInOnScroll direction="left" threshold={0.2}>
-          <p className="slide-in-from-left text-center text-neutral-400">
+          <p className="slide-in-from-left text-lg text-center text-neutral-400">
             My work is not just about coding. It’s also about understanding the
             needs of different businesses, which is shown by the projects I’ve
             completed for clients in many industries.
@@ -79,7 +79,7 @@ const HomePage = async () => {
         </div>
       </section>
 
-      <section className="mx-auto w-full :w-4/4 flex flex-col gap-16">
+      <section className="mx-auto w-full :w-4/4 flex flex-col gap-8">
         <FadeInOnScroll direction="right" threshold={0.2}>
           <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Looking for
@@ -96,7 +96,7 @@ const HomePage = async () => {
         </FadeInOnScroll>
 
         <FadeInOnScroll direction="left" threshold={0.2}>
-          <p className="text-center text-neutral-400">
+          <p className="text-lg text-center text-neutral-400">
             Check out my blog, where I share my experiences, write about the
             technologies I&apos;m currently learning and offer self-development
             tips! New posts, exciting insights, and plenty to discover.
@@ -109,7 +109,7 @@ const HomePage = async () => {
 
       <section className="mx-auto mb-4 w-full w-6/6 flex flex-col">
         <FadeInOnScroll direction="right" threshold={0.2}>
-          <h2 className="mb-16 text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+          <h2 className="mb-8 text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             Contact{" "}
             <span className="underline underline-offset-3 decoration-6 decoration-orange-400 dark:decoration-orange-500">
               me

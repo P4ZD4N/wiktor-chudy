@@ -64,7 +64,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
           {features.length > 0 && (
             <span
               onClick={() => setFeaturesOpen(true)}
-              className="hover:text-orange-500 transition duration-150 cursor-pointer"
+              className="hover:text-orange-500 transition duration-150 cursor-pointer text-orange-500 md:text-neutral-400"
             >
               &nbsp;Click to see features.
             </span>

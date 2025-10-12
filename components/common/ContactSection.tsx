@@ -47,10 +47,10 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
                   >
                     <div
-                      className={`p-3 rounded-full bg-zinc-700 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
+                      className={`p-2 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
                     >
                       <IconComponent size={24} />
                     </div>
@@ -107,7 +107,7 @@ const ContactSection = () => {
                     className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
                   >
                     <div
-                      className={`p-3 rounded-full bg-zinc-700 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
+                      className={`p-2 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
                     >
                       <IconComponent size={24} />
                     </div>

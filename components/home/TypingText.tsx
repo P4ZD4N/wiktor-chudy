@@ -6,13 +6,13 @@ export default function TypingText() {
   return (
     <TypeAnimation
       sequence={[
-        "I am a Full-stack Software Engineer.",
+        "I am a Fullstack Software Engineer.",
         2000,
         "I deliver business value through software.",
         2000,
         "I build web applications.",
         2000,
-        "I am passionate about best coding practises.",
+        "I am passionate about best coding practices.",
         2000,
       ]}
       wrapper="span"

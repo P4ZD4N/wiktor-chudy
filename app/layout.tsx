@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Wiktor Chudy | Software Developer Intern",
+  title: "Wiktor Chudy | Software Engineer Intern",
   description:
-    "Hey, I'm Wiktor! Software Developer Intern at Santander Bank Polska and Computer Science Student at PJATK who combine solid full-stack development skills with a clear focus on business impact.",
+    "Hey, I'm Wiktor! Software Engineer Intern at Santander Bank Polska and Computer Science Student at PJATK who combine solid full-stack development skills with a clear focus on business impact.",
 };
 
 export default function RootLayout({

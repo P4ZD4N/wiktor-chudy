@@ -22,7 +22,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-lg text-neutral-400">
-            Software Developer Intern who combine solid full-stack development
+            Software Engineer Intern who combine solid fullstack development
             skills with a clear focus on business impact. Currently pursuing
             degree in Computer Science while actively developing applications
             that deliver measurable value. Passionate about clean code, best
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <p className="text-lg text-neutral-400 mb-4 md:mb-0">
               Because I enjoy selecting the right tools tailored to the specific
               problem, I am highly adaptable and flexible person - always eager
-              to learn new ones. As a Full-stack Software Developer I have
+              to learn new ones. As a Fullstack Software Engineer I have
               worked with a wide range of technologies (both through my personal
               projects and professional work) demonstrating a high level of
               proficiency in both frontend and backend development.

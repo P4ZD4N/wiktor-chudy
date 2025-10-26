@@ -30,7 +30,7 @@ Most important -  don’t  add "am I right?" or something similar. Just be silen
 
 Other person will fill silence, either confirm and explain ("That's right, because...") or correct you and give the real reason ("No, the issue is...").
 
-## Why does this work?
+## Why does it work?
 
 By naming a negative emotion like frustration or fear you defuse it. 
 

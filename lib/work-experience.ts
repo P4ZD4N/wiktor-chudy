@@ -1,6 +1,6 @@
 const workExperience = [
   {
-    title: "Software Developer Intern",
+    title: "Software Engineer Intern",
     employment_type: "Internship",
     company: "Santander Bank Polska",
     start_date: "July 2025",
@@ -8,7 +8,10 @@ const workExperience = [
     location: "",
     location_type: "Remote",
     description: [
-        "Maintained and developed UI/UX of vulnerability management application in the cybersecurity department."
+        "Significantly reduced frontend error and bug occurrences (from over 1000 per day to zero) through deep log analysis and root cause identification in Kibana.",
+        "Developed and enhanced key frontend features for Vulnerability / Compliance management app in cybersecurity department using Angular, directly supporting Cybersecurity Analysts in tracking and resolving security threats.",
+        "Contributed to multi-version Angular migration (from v9 to v15), identified and refactored legacy modules.",
+        "Collaborated closely with Cybersecurity Analysts and Backend Engineers (Django) to translate complex security requirements into intuitive UI features."
     ],
     tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "SCSS", "Linux"],
   },

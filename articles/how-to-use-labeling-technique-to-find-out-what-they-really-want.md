@@ -12,7 +12,7 @@ categories:
 
 You really want to know what is other person thinking about. When you hear "I have to think it over" or "It is complicated" it seems that your interlocutor doesn’t tell you directly all key information. And in such situations **labeling method** can be really helpful.
 
-## Don't Feel Their Pain, Label It
+## Don't feel their pain, label it
 
 ### **1. Label directly what you see (emotion / resistance / doubt)**
 

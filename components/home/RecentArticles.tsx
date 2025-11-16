@@ -22,13 +22,14 @@ export default function RecentArticles({ allArticles }: RecentArticlesProps) {
             return dateB.localeCompare(dateA);
           })
           .slice(0, 3)
-          .map((article) => (
+          .map((article, index) => (
             <ArticleCard
               key={article.id}
               id={article.id}
               title={article.title}
               date={article.date}
               categories={article.categories}
+              animationDelay={`${index * 0.2}s`}
             />
           ))}
     </div>

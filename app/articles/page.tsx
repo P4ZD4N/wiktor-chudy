@@ -1,6 +1,6 @@
 import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
 import PaginatedArticles from "@/components/articles/PaginatedArticles";
-import FadeInOnScroll from "@/components/common/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
 import { getCategoriesArticles } from "@/lib/articles";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 

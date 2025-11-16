@@ -3,21 +3,28 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import moment from "moment";
+import FadeUp from "../common/animations/FadeUp";
 
 interface ArticleCardProps {
   id: string;
   title: string;
   date: string;
   categories: string[];
+  animationDelay?: string;
 }
 
-const ArticleCard: FC<ArticleCardProps> = ({ id, title, date, categories }) => {
+const ArticleCard: FC<ArticleCardProps> = ({
+  id,
+  title,
+  date,
+  categories,
+  animationDelay,
+}) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
+    <FadeUp
+      duration="0.6s"
+      delay={`${animationDelay ? animationDelay : "0s"}`}
+      threshold={0.2}
     >
       <a
         href={id}
@@ -43,7 +50,7 @@ const ArticleCard: FC<ArticleCardProps> = ({ id, title, date, categories }) => {
           </p>
         </div>
       </a>
-    </motion.div>
+    </FadeUp>
   );
 };
 

@@ -1,4 +1,4 @@
-import FadeInOnScroll from "@/components/common/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
 import EducationSection from "@/components/about/EducationSection";
 import StatisticsSection from "@/components/about/StatisticsSection";
 import TechSkillsSection from "@/components/about/TechSkillsSection";

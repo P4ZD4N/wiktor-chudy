@@ -1,4 +1,4 @@
-import FadeInOnScroll from "@/components/common/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
 
 export default function NotFound() {
   return (

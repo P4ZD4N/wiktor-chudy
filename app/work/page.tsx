@@ -1,4 +1,4 @@
-import FadeInOnScroll from "@/components/common/FadeInOnScroll";
+import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
 import ProjectSection from "@/components/work/ProjectSection";
 import projects from "@/lib/projects";
 

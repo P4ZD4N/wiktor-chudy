@@ -1,9 +1,5 @@
 # Wiktor Chudy - Personal website and blog
 
-<p align="center">
-  <img src="./public/projects/wiktor-chudy/logo.png" alt="Logo" />
-</p>
-
 ## 👀 About
 
 My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.
@@ -51,20 +47,3 @@ npm start
 
 By default, the server runs on http://localhost:3000
 
-## 📺 Demo
-
-![](./demo/1.png)
-![](./demo/2.png)
-![](./demo/3.png)
-![](./demo/4.png)
-![](./demo/5.png)
-![](./demo/6.png)
-![](./demo/7.png)
-![](./demo/8.png)
-![](./demo/9.png)
-![](./demo/10.png)
-![](./demo/11.png)
-![](./demo/1.gif)
-![](./demo/2.gif)
-![](./demo/3.gif)
-![](./demo/4.gif)

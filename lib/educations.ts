@@ -1,4 +1,4 @@
-const schools = [
+const educations = [
   {
     title: "Engineer's degree",
     field: "Computer Science",
@@ -18,4 +18,4 @@ const schools = [
   },
 ];
 
-export default schools;
+export default educations;

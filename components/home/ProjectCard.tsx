@@ -50,7 +50,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             {technologies.map((tech) => (
               <li
                 key={tech}
-                className="bg-orange-500 px-2 py-1 rounded text-white"
+                className="px-3 py-1 text-sm bg-orange-500 border border-neutral-700 rounded-full text-white"
               >
                 {tech}
               </li>

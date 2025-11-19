@@ -8,7 +8,7 @@ import contactInfo from "@/lib/contact-info";
 const ContactSection = () => {
   return (
     <section className="mx-auto w-full flex flex-col gap-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <motion.div
@@ -47,10 +47,10 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
                   >
                     <div
-                      className={`p-2 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
+                      className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}
                     >
                       <IconComponent size={36} />
                     </div>
@@ -104,10 +104,10 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
                   >
                     <div
-                      className={`p-2 ${contact.color} group-hover:scale-110 transition-transform duration-300`}
+                      className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}
                     >
                       <IconComponent size={36} />
                     </div>

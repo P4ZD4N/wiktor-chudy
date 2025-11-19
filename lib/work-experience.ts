@@ -13,7 +13,7 @@ const workExperience = [
         "Contributed to multi-version Angular migration (from v9 to v15), identified and refactored legacy modules.",
         "Collaborated closely with Cybersecurity Analysts and Backend Engineers (Django) to translate complex security requirements into intuitive UI features."
     ],
-    tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "SCSS", "Linux"],
+    tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "SCSS", "Linux", "GitLab"],
   },
   {
     title: "Software Developer Apprentice",
@@ -47,7 +47,7 @@ const workExperience = [
       "Testing, diagnostics and repair of computer hardware and peripheral devices, ",
       "Preparing reports on tested computer hardware and peripheral devices.",
     ],
-    tech_stack: [],
+    tech_stack: ["Linux", "Networking", "Operating systems", "Hardware"],
   },
 ];
 

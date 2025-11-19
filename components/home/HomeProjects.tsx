@@ -10,8 +10,8 @@ const PARAGRAPH = `My work is not just about coding. It's also about understandi
 
 export default function HomeProjects() {
   return (
-    <section className="bg-neutral-950">
-      <section className="mt-20 mb-20 mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 w-full w-6/6 flex flex-col gap-8">
+    <div className="bg-neutral-950">
+      <section className="mt-20 mb-20 mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 flex flex-col gap-8">
         <SlideBlur duration="0.8s">
           <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
             {HEADER_FIRST_PART}
@@ -33,6 +33,6 @@ export default function HomeProjects() {
           ))}
         </div>
       </section>
-    </section>
+    </div>
   );
 }

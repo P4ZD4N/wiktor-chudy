@@ -47,7 +47,7 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
                   >
                     <div
                       className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}
@@ -104,7 +104,7 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
                   >
                     <div
                       className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}

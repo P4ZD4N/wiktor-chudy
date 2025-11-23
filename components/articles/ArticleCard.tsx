@@ -29,7 +29,7 @@ const ArticleCard: FC<ArticleCardProps> = ({
       <a
         href={id}
         rel="noopener noreferrer"
-        className="flex items-center h-full gap-4 p-4 rounded-xl bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+        className="flex items-center h-full gap-4 p-4 rounded-xl bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
       >
         <div className="p-4 space-y-3">
           <h3 className="text-xl font-semibold text-white">{title}</h3>

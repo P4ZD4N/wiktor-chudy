@@ -44,7 +44,7 @@ const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
 
   return (
     <div className="space-y-4">
-      <div className="rounded bg-transparent border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg shadow-sm cursor-pointer">
+      <div className="rounded bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg shadow-sm cursor-pointer">
         <button
           className="cursor-pointer w-full flex items-center justify-between gap-2 p-3 text-white transition-colors"
           onClick={() => setOpen(!open)}

@@ -1,6 +1,8 @@
 import { ArticleItem } from "@/types";
 import ArticleCard from "./ArticleCard";
 
+const ARTICLES_PER_PAGE = 12;
+
 interface PaginatedArticlesProps {
   flatArticles: ArticleItem[];
   params: { [key: string]: string | string[] | undefined };
@@ -11,7 +13,6 @@ export default function PaginatedArticles({
   params,
 }: PaginatedArticlesProps) {
   const page = parseInt(params.page as string) || 1;
-  const ARTICLES_PER_PAGE = 12;
   const startIndex = (page - 1) * ARTICLES_PER_PAGE;
   const endIndex = startIndex + ARTICLES_PER_PAGE;
   const paginatedArticles = flatArticles.slice(startIndex, endIndex);

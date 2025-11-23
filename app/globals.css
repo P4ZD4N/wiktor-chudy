@@ -20,15 +20,15 @@
 }
 
 .article > h2 {
-  @apply font-medium text-3xl mt-8 mb-8 text-center tracking-tight;
+  @apply font-semibold text-3xl mt-4 mb-4 text-left border-l-4 border-orange-500 pl-4;
 }
 
 .article > h3 {
-  @apply font-normal text-2xl mt-3 mb-3 text-center tracking-tight;
+  @apply font-medium text-2xl mb-3 text-left flex items-center gap-2;
 }
 
 .article > h4 {
-  @apply font-normal text-xl mt-1.5 mb-1.5 text-center tracking-tight;
+  @apply font-normal text-xl mb-2 text-left text-white;
 }
 
 .article > ol {

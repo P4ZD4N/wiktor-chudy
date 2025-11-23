@@ -1,7 +1,6 @@
 "use client";
 
 import { FC } from "react";
-import { motion } from "framer-motion";
 import moment from "moment";
 import FadeUp from "../common/animations/FadeUp";
 

@@ -1,5 +1,4 @@
 import { getCategoriesArticles } from "@/lib/articles";
-import FadeInOnScroll from "../common/animations/FadeInOnScroll";
 import RecentArticles from "./RecentArticles";
 import FadeUp from "../common/animations/FadeUp";
 

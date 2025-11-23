@@ -34,10 +34,10 @@ export default function Navbar() {
         ))}
       </motion.nav>
 
-      <div className="md:hidden fixed bottom-4 right-4 z-50">
+      <div className="md:hidden fixed bottom-4 right-4 z-10000">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className={`cursor-pointer text-white p-4 rounded-full shadow-lg transition ${
+          className={`cursor-pointer text-white p-4 rounded-full shadow-xl transition ${
             isOpen ? "bg-orange-700" : "bg-orange-500 hover:bg-orange-600"
           }`}
         >
@@ -52,21 +52,20 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-20 right-4 z-40 flex flex-col items-start space-y-4 bg-neutral-900 p-4 rounded-xl shadow-xl"
+            className="fixed bottom-20 right-4 z-40 flex flex-col items-start space-y-2"
           >
             {links.map(({ href, icon, label, regular }) => (
               <Link
                 key={label}
                 href={href}
                 onClick={() => setIsOpen(false)}
-                className="flex items-center gap-2 text-white hover:text-orange-500 transition"
+                className="w-full bg-orange-500 p-3 rounded-full flex items-center gap-2 text-white hover:text-orange-500 transition"
               >
                 <i
                   className={`${
                     regular ? "fa-regular" : "fa-solid"
-                  } ${icon} text-xl`}
+                  } ${icon} text-xl w-full text-center`}
                 />
-                <span className="text-xl">{label}</span>
               </Link>
             ))}
           </motion.div>

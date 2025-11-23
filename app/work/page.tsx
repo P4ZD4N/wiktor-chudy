@@ -32,7 +32,7 @@ export default function WorkPage() {
 
           xl:col-span-1 xl:relative xl:block
           
-          fixed left-0 top-0 w-full h-screen z-50
+          fixed left-0 top-0 w-full h-screen z-1000 xl:z-49
           transform transition-transform duration-300 ease-in-out 
           ${openSidebar ? "translate-y-0" : "-translate-y-full"}
           

@@ -1,35 +1,91 @@
-import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
+"use client";
+
+import { useState } from "react";
 import ProjectSection from "@/components/work/ProjectSection";
 import projects from "@/lib/projects";
+import GentlePop from "@/components/common/animations/GentlePop";
+
+const HEADER = "Work";
+const PARAGRAPH = `My work is not just about coding. It’s also about understanding the
+  needs of different businesses, which is shown by the projects I’ve
+  completed for clients in many industries.`;
+const FIRST_BUTTON = "Projects list";
+const SECOND_BUTTON = "X";
 
 export default function WorkPage() {
+  const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const [openSidebar, setOpenSidebar] = useState(false);
+
   return (
-    <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 mt-20 flex flex-col gap-16 mb-20">
-      <div className="fade-in fixed top-1/2 lg:left-1/80 left-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full -translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
-      <div className="fade-in fixed top-1/2 lg:right-1/80 right-1/4 lg:w-96 lg:h-96 w-64 h-64 bg-orange-500/15 rounded-full translate-x-1/2 -translate-y-1/2 filter blur-3xl pointer-events-none z-0" />
+    <section className="grid grid-cols-1 xl:grid-cols-3 h-screen">
+      <button
+        className="xl:hidden w-full p-4 bg-orange-500 text-white text-xl font-bold"
+        onClick={() => setOpenSidebar((prev) => !prev)}
+      >
+        {FIRST_BUTTON}
+      </button>
 
-      <div>
-        <FadeInOnScroll direction="right" threshold={0.2}>
-          <h1 className="text-4xl font-bold text-center mb-4">
-            <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
-              Work
-            </span>
+      <div
+        className={`
+          bg-neutral-950 flex flex-col gap-4 overflow-y-auto scrollbar-hidden
+          p-10 md:p-20
+
+          xl:col-span-1 xl:relative xl:block
+          
+          fixed left-0 top-0 w-full h-screen z-50
+          transform transition-transform duration-300 ease-in-out 
+          ${openSidebar ? "translate-y-0" : "-translate-y-full"}
+          
+          xl:translate-y-0
+        `}
+      >
+        <GentlePop>
+          <button
+            className="xl:hidden absolute top-4 right-4 px-3 py-1 bg-orange-500 text-white font-bold rounded-md"
+            onClick={() => setOpenSidebar(false)}
+          >
+            {SECOND_BUTTON}
+          </button>
+          <h1 className="text-4xl font-bold mb-4 text-center underline underline-offset-3 decoration-6 decoration-orange-500">
+            {HEADER}
           </h1>
-        </FadeInOnScroll>
-
-        <FadeInOnScroll direction="right" threshold={0.2}>
-          <p className="text-lg text-center text-neutral-400">
-            My work is not just about coding. It’s also about understanding the
-            needs of different businesses, which is shown by the projects I’ve
-            completed for clients in many industries.
+          <p className="text-lg text-neutral-400 text-center mb-6">
+            {PARAGRAPH}
           </p>
-        </FadeInOnScroll>
+        </GentlePop>
+
+        <ul className="flex flex-col gap-3">
+          {projects.map((project, index) => (
+            <GentlePop
+              key={project.title}
+              delay={`${index * 0.2}s`}
+              threshold={0}
+            >
+              <li
+                key={project.title}
+                className={`cursor-pointer py-2 px-3 rounded-lg transform transition-all duration-200
+                ${
+                  selectedProject.title === project.title
+                    ? "bg-orange-500 text-white font-bold shadow-lg scale-105"
+                    : "bg-neutral-900 hover:bg-neutral-800 hover:scale-105 hover:shadow-md"
+                }`}
+                onClick={() => {
+                  setSelectedProject(project);
+                  setOpenSidebar(false);
+                }}
+              >
+                <div className="flex flex-col">
+                  <span className="text-white font-bold">{project.title}</span>
+                  <span className="italic">{project.industry}</span>
+                </div>
+              </li>
+            </GentlePop>
+          ))}
+        </ul>
       </div>
 
-      <div className="grid gap-20 lg:gap-40">
-        {projects.map((project) => (
-          <ProjectSection key={project.title} {...project} />
-        ))}
+      <div className="col-span-2 p-10 md:p-20 h-full overflow-y-auto scrollbar-hidden">
+        <ProjectSection key={selectedProject.title} {...selectedProject} />
       </div>
     </section>
   );

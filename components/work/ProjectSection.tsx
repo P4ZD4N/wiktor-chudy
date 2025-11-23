@@ -1,17 +1,23 @@
 "use client";
 
-import { FC, useState } from "react";
-import { Github, ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
+import { FC } from "react";
+import {
+  Github,
+  ExternalLink,
+  PencilLine,
+  Lightbulb,
+  Wrench,
+  Camera,
+} from "lucide-react";
 import PhotoGallery from "./PhotoGallery";
-import ProjectFeatures from "./ProjectFeatures";
+import FadeUp from "../common/animations/FadeUp";
 
 interface ProjectCardProps {
   title: string;
   industry: string;
   description: string;
   images: string[];
-  features: string[]
+  features: string[];
   technologies: string[];
   repoUrl?: string;
   liveUrl?: string;
@@ -27,60 +33,88 @@ const ProjectSection: FC<ProjectCardProps> = ({
   repoUrl,
   liveUrl,
 }) => {
-  const [featuresOpen, setFeaturesOpen] = useState(false);
-
   return (
-    <motion.div
-      className="overflow-hidden bg-transparent"
-      initial={{ opacity: 0, x: -50 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      {images.length > 0 && <PhotoGallery images={images} />}
-
-      <div className="pb-4 pt-4 space-y-3">
+    <div className="overflow-hidden bg-transparent">
+      <FadeUp duration="0.5s" threshold={0.1}>
         <div>
-          <h3 className="text-center mt-5 lg:mt-10 mb-0 text-2xl font-semibold text-white">{title}</h3>
-          <h4 className="text-center  italic text-xl font-medium text-gray-300 mb-2 tracking-wide">
+          <h3 className="text-center text-4xl sm:text-6xl font-bold text-white">{title}</h3>
+
+          <h4 className="mt-2 text-center italic text-xl sm:text-3xl font-medium text-gray-300 tracking-wide">
             {industry}
           </h4>
-          <div className="justify-center flex gap-4 mt-2">
-            {repoUrl && (
-              <a href={repoUrl} target="_blank" rel="noopener noreferrer">
-                <Github className=" w-7 h-7 hover:text-orange-500 transition duration-150" />
-              </a>
-            )}
-            {liveUrl && (
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="w-7 h-7 hover:text-orange-500 transition duration-150" />
-              </a>
-            )}
-          </div>
         </div>
 
-        <p className="text-neutral-400 text-lg">
-          {description}
-          {features.length > 0 && (
-            <span
-              onClick={() => setFeaturesOpen(true)}
-              className="hover:text-orange-500 transition duration-150 cursor-pointer text-orange-500 md:text-neutral-400"
+        <div className="justify-center flex gap-4 mt-2">
+          {repoUrl && (
+            <a
+              className="group p-1 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-orange-500 transition duration-150"
+              href={repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              &nbsp;Click to see features.
-            </span>
+              <Github className="duration-150 group-hover:text-orange-500 text-gray-300 w-6 h-6 sm:w-8 sm:h-8" />
+            </a>
           )}
-        </p>
+          {liveUrl && (
+            <a
+              className="group p-1 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-orange-500 transition duration-150"
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLink className="duration-150 group-hover:text-orange-500 text-gray-300 w-6 h-6 sm:w-8 sm:h-8" />
+            </a>
+          )}
+        </div>
+
+        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-orange-500 text-center font-bold text-2xl sm:text-3xl">
+          <PencilLine className="w-6 h-6 sm:w-8 sm:h-8" />
+          Description
+        </h3>
+
+        <p className="text-neutral-400 text-md sm:text-lg">{description}</p>
+
+        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-orange-500 text-center font-bold text-2xl sm:text-3xl">
+          <Wrench className="w-6 h-6 sm:w-8 sm:h-8" />
+          Tech stack
+        </h3>
+
         <ul className="flex flex-wrap gap-2 text-md">
           {technologies.map((tech) => (
-            <li key={tech} className="bg-orange-500 px-2 py-1 rounded text-white">
+            <li
+              key={tech}
+              className="px-3 py-1 text-md sm:text-lg bg-neutral-950 border border-neutral-700 rounded-full text-white"
+            >
               {tech}
             </li>
           ))}
         </ul>
-      </div>
 
-      <ProjectFeatures projectTitle={title} features={features} isOpen={featuresOpen} onClose={() => setFeaturesOpen(false)} />
-    </motion.div>
+        {features.length > 0 && (
+          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-orange-500 text-center font-bold text-2xl sm:text-3xl">
+            <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8" />
+            Features
+          </h3>
+        )}
+
+        <ul className="flex flex-col gap-2 text-md sm:text-lg mt-4">
+          {features.map((feat) => (
+            <li key={feat}>
+              <span className="text-orange-500 text-xl">•</span> {feat}
+            </li>
+          ))}
+        </ul>
+
+        {images.length > 0 && (
+          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-orange-500 text-center font-bold text-2xl sm:text-3xl">
+            <Camera className="w-6 h-6 sm:w-8 sm:h-8" />
+            Gallery
+          </h3>
+        )}
+
+        {images.length > 0 && <PhotoGallery images={images} />}
+      </FadeUp>
+    </div>
   );
 };
 

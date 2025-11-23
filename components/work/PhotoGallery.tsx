@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ModalPortal from "./ModalPortal";
 
 interface PhotoGalleryProps {
   images: string[];
@@ -56,6 +57,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
       </div>
 
       {isOpen && (
+        <ModalPortal>
         <div
           className="fixed inset-0 bg-transparent bg-opacity-40 backdrop-blur-md z-50 flex items-center justify-center"
           onClick={closeModal}
@@ -64,7 +66,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="relative w-full h-full max-w-5xl max-h-[90vh]"
+            className="relative w-full h-full max-h-[90vh]"
           >
             <Image
               src={images[currentIndex]}
@@ -105,6 +107,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
             </div>
           </motion.div>
         </div>
+        </ModalPortal>
       )}
 
       {!isOpen && (

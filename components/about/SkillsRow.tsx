@@ -14,7 +14,7 @@ interface SkillsRowProps {
 
 export default function SkillsRow({ skills, header }: SkillsRowProps) {
   return (
-    <section>
+    <section >
       <SlideBlur duration="0.4s" delay="0.2s">
         <h2 className="text-center lg:text-left text-2xl font-bold mb-6">
           <mark className="px-2 text-white bg-orange-500 rounded-sm">

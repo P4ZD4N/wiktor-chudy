@@ -13,7 +13,7 @@ export default function AboutSkills() {
   return (
     <section className="mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12">
       <div className="mb-10">
-        <SlideBlur duration="0.4s" delay="0s">
+        <SlideBlur duration="0.4s" delay="0s" threshold={0.2}>
           <h2 className="text-center text-4xl font-bold mb-4">
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
               {HEADER}
@@ -21,7 +21,7 @@ export default function AboutSkills() {
           </h2>
         </SlideBlur>
 
-        <SlideBlur duration="0.4s" delay="0.2s">
+        <SlideBlur duration="0.4s" delay="0.2s" threshold={0.1}>
           <p className="text-center text-lg text-neutral-400 mb-4">
             {PARAGRAPH}
           </p>

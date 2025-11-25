@@ -3,27 +3,19 @@ import { useEffect, useRef, useState } from "react";
 
 export default function GentlePop({
   children,
-  duration = "0.6s",
+  duration = "0.5s",
   delay = "0s",
-  threshold = 0.5,
 }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold }
-    );
+    const timeout = setTimeout(() => {
+      setVisible(true);
+    }, 10); 
 
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, [threshold]);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <div
@@ -32,9 +24,8 @@ export default function GentlePop({
         opacity: visible ? 1 : 0,
         transform: visible
           ? "scale(1) translateY(0)"
-          : "scale(0.85) translateY(20px)",
-        transition: `opacity ${duration} cubic-bezier(0.34, 1.56, 0.64, 1) ${delay},
-                     transform ${duration} cubic-bezier(0.34, 1.56, 0.64, 1) ${delay}`,
+          : "scale(0.9) translateY(10px)",
+        transition: `opacity ${duration} ease ${delay}, transform ${duration} ease ${delay}`,
       }}
     >
       {children}

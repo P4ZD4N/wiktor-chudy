@@ -12,7 +12,7 @@ export default function WorkExceperienceSection() {
           key={index}
           duration="0.5s"
           delay={`${index * 0.2}s`}
-          threshold={0.2}
+          threshold={0.1}
         >
           <WorkExperienceRow experience={experience} />
         </FadeScale>

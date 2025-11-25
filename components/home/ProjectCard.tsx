@@ -30,7 +30,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <SlideBlur
       duration="0.6s"
       delay={`${animationDelay ? animationDelay : "0s"}`}
-      threshold={0.2}
+      threshold={0.1}
     >
       <div className="rounded-2xl overflow-hidden bg-transparent shadow-lg border border-zinc-700 hover:shadow-xl">
         <div className="relative w-full h-48 md:h-64">

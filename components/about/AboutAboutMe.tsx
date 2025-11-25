@@ -25,7 +25,7 @@ export default function AboutAboutMe() {
   return (
     <section className="mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 relative flex flex-col gap-10 lg:flex-row lg:gap-16 items-center">
       <div className="lg:w-3/5">
-        <FadeUp duration="0.5s" delay="0s">
+        <FadeUp duration="0.5s" delay="0s" threshold={0.1}>
           <h1 className="text-center lg:text-left text-4xl font-bold mb-4">
             {FIRST_HEADER_FIRST_PART}
             <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
@@ -34,11 +34,11 @@ export default function AboutAboutMe() {
           </h1>
         </FadeUp>
 
-        <FadeUp duration="0.5s" delay="0.2s">
+        <FadeUp duration="0.5s" delay="0.2s" threshold={0.1}>
           <p className="text-lg text-neutral-400 mb-4">{FIRST_PARAGRAPH}</p>
         </FadeUp>
 
-        <FadeUp duration="0.5s" delay="0.4s">
+        <FadeUp duration="0.5s" delay="0.4s" threshold={0.1}>
           <p className="text-lg text-neutral-400 mt-4 mb-6 md:mb-0">
             {SECOND_PARAGRAPH_FIRST_PART}
             <a
@@ -54,7 +54,7 @@ export default function AboutAboutMe() {
       </div>
 
       <div className="slide-in-from-right flex justify-center items-center mt-8 lg:mt-0 lg:w-2/5">
-        <FadeUp duration="0.5s" delay="0.6s">
+        <FadeUp duration="0.5s" delay="0.6s" threshold={0.1}>
           <div className="relative w-80 h-80 sm:w-120 md:h-120 lg:w-90 lg:h-120 2xl:w-120 aspect-square overflow-hidden shadow-2xl shadow-orange-900/50 transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
             <Image
               src="/me2.jpeg"

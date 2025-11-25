@@ -1,4 +1,4 @@
-import GentlePop from "../common/animations/GentlePop";
+import GentlePopThreshold from "../common/animations/GentlePopThreshold";
 import Image from "next/image";
 import SlideBlur from "../common/animations/SlideBlur";
 
@@ -15,7 +15,7 @@ interface SkillsRowProps {
 export default function SkillsRow({ skills, header }: SkillsRowProps) {
   return (
     <section >
-      <SlideBlur duration="0.4s" delay="0.2s">
+      <SlideBlur duration="0.4s" delay="0.2s" threshold={0.1}>
         <h2 className="text-center lg:text-left text-2xl font-bold mb-6">
           <mark className="px-2 text-white bg-orange-500 rounded-sm">
             {header}
@@ -26,7 +26,7 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 mb-8">
         {skills.map((tech, index) => (
           <div key={index}>
-            <GentlePop delay={`${index * 0.2}s`}>
+            <GentlePopThreshold delay={`${index * 0.2}s`} threshold={0.1}>
               <div
                 className="
                   h-30 p-5 bg-neutral-950 rounded-2xl flex flex-col items-center justify-center
@@ -48,7 +48,7 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
                   {tech.name}
                 </span>
               </div>
-            </GentlePop>
+            </GentlePopThreshold>
           </div>
         ))}
       </div>

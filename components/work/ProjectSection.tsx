@@ -35,7 +35,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="overflow-hidden bg-transparent">
-      <FadeUp duration="0.5s" threshold={0.1}>
+      <FadeUp duration="0.5s" threshold={0}>
         <div>
           <h3 className="text-center text-4xl sm:text-6xl font-bold text-white">{title}</h3>
 

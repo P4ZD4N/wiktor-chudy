@@ -9,18 +9,18 @@ const SECOND_BUTTON = "X";
 
 export default function ProjectList({
   projects,
-  selectedTitle,
+  selectedProjectUrl,
   header,
   paragraph,
 }: {
-  projects: { title: string; industry: string }[];
-  selectedTitle: string;
+  projects: { title: string; industry: string, url: string }[];
+  selectedProjectUrl: string;
   header: string;
   paragraph: string;
 }) {
   const [openSidebar, setOpenSidebar] = useState(false);
-  const projectUrl = (title: string) => {
-    return `?project=${encodeURIComponent(title)}`;
+  const projectUrl = (url: string) => {
+    return `?project=${encodeURIComponent(url)}`;
   };
 
   return (
@@ -65,12 +65,12 @@ export default function ProjectList({
           {projects.map((project, index) => {
             const listItem = (
               <Link
-                href={projectUrl(project.title)}
+                href={projectUrl(project.url)}
                 key={project.title}
                 className={`
                   cursor-pointer py-2 px-3 rounded-lg transform transition-all duration-200 block
                   ${
-                    selectedTitle === project.title
+                    selectedProjectUrl === project.url
                       ? "bg-orange-500 text-white font-bold shadow-lg scale-105"
                       : "bg-neutral-900 hover:bg-neutral-800 hover:scale-105 hover:shadow-md"
                   }

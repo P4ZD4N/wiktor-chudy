@@ -46,6 +46,7 @@ export default function PhotoGallery({ images }: PhotoGalleryProps) {
               alt={`Image ${index + 1}`}
               className="w-full h-full object-contain cursor-pointer"
               fill
+              unoptimized
               onClick={() => openModal(index)}
             />
           </div>

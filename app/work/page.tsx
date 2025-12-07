@@ -11,15 +11,15 @@ type Params = Promise<{ project: string }>
 
 export default async function WorkPage(props: { searchParams: Params }) {
   const params = await props.searchParams;
-  const selectedProjectTitle = params.project || projects[0].title;
+  const selectedProjectUrl = params.project || projects[0].url;
   const selectedProject =
-    projects.find((p) => p.title === selectedProjectTitle) || projects[0];
-    
+    projects.find((p) => p.url === selectedProjectUrl) || projects[0];
+
   return (
     <section className="grid grid-cols-1 xl:grid-cols-3 min-h-screen xl:h-screen">
       <ProjectList
         projects={projects}
-        selectedTitle={selectedProject.title}
+        selectedProjectUrl={selectedProject.url}
         header={HEADER}
         paragraph={PARAGRAPH}
       />

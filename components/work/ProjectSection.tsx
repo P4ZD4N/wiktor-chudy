@@ -72,7 +72,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
           Description
         </h3>
 
-        <p className="text-neutral-400 text-md sm:text-lg">{description}</p>
+        <p className="whitespace-pre-line text-neutral-400 text-md sm:text-lg">{description}</p>
 
         <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-orange-500 text-center font-bold text-2xl sm:text-3xl">
           <Wrench className="w-6 h-6 sm:w-8 sm:h-8" />

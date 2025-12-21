@@ -5,11 +5,12 @@ import Image from "next/image";
 
 const FIRST_HEADER = "Hey, my name is";
 const SECOND_HEADER = "Wiktor Chudy.";
-const PARAGRAPH = `Software Engineer who combine solid frontend and backend skills with a
-  strong focus on business impact. Currently pursuing degree in Computer
-  Science while actively delivering fullstack solutions at Santander.
-  Always looking for opportunities where I can contribute to impactful
-  projects that help businesses grow and succeed.`;
+const PARAGRAPH = `Fullstack Software Engineer specializing in Java and 
+  Angular. Aimed at providing real value to projects while 
+  constantly learning new skills and refining currently acquired. 
+  Passionate about clean code, best user experience 
+  and delivering highest quality solutions.
+  `;
 const FIRST_BUTTON = "Know me better";
 const SECOND_BUTTON = "View my work";
 
@@ -44,7 +45,7 @@ export default function Hero() {
       </FadeScale>
 
       <FadeScale duration="0.4s" delay="0.3s">
-        <h2 className="mb-4 text-xl font-bold leading-none tracking-tight md:text-3xl lg:text-5xl text-white">
+        <h2 className="mb-4 text-2xl font-bold leading-none tracking-tight md:text-4xl text-white">
           <TypingText />
         </h2>
       </FadeScale>

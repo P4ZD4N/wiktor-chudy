@@ -3,9 +3,9 @@ import FadeUp from "../common/animations/FadeUp";
 
 const FIRST_HEADER_FIRST_PART = "About ";
 const FIRST_HEADER_SECOND_PART = "me";
-const FIRST_PARAGRAPH = `Software Engineer who combine solid fullstack development
-  skills with a clear focus on business impact. Currently pursuing
-  degree in Computer Science while actively developing applications
+const FIRST_PARAGRAPH = `Full of energy and commitment Software Engineer who combine 
+  solid fullstack development skills with a clear focus on business impact. 
+  Currently pursuing degree in Computer Science while actively developing applications
   that deliver measurable value. Passionate about clean code, best
   coding practices and elegant technical solutions. Always looking for
   opportunities where I can contribute to impactful projects that help

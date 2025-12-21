@@ -1,5 +1,4 @@
 const frontendTechnologies = [
-  { name: "JavaScript", icon: "/icons/javascript.png" },
   { name: "TypeScript", icon: "/icons/typescript.png" },
   { name: "Angular", icon: "/icons/angular.png" },
   { name: "HTML", icon: "/icons/html.png" },

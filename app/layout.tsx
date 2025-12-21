@@ -12,9 +12,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Wiktor Chudy | Software Engineer Intern",
+  title: "Wiktor Chudy | Fullstack Software Engineer",
   description:
-    "Hey, I'm Wiktor! Software Engineer Intern at Santander Bank Polska and Computer Science Student at PJATK who combine solid full-stack development skills with a clear focus on business impact.",
+    "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
 };
 
 export default function RootLayout({

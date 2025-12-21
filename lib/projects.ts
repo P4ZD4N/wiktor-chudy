@@ -165,7 +165,15 @@ const projects = [
   {
     title: "GloboGym",
     industry: "Fitness & Health industry",
-    description: `Robust desktop application developed with usage of JavaFX designed to support major of operations of a modern fitness club. System has been carefully architected to address a wide range of business scenarios for both customers and employees. Development process involved deep research, precise modeling of use cases and rigorous attention to detail to ensure system reliability and intuitive UX. It covers all important business processes - user registration, membership management, scheduling, payments, role-based access and so on. Project demonstrates not only strong technical skills (Java, JavaFX, UI/UX design, OOP) but also ability to analyze real business requirements and translate them into robust, user-friendly solutions. It automates key operations, reduces human errors and enhances user experience with an intuitive, responsive interface. Also shows, how thoughtful system design can support digital transformation and improve efficiency of business in fitness industry.`,
+    description: `
+      Desktop application created with JavaFX and other GUI technnologies (CSS) to support most important operations typical for modern fitness club. System was implemented with usage of serialization mechanisms to store all changes in file and make them visible after restarting application.
+
+      What is most important, development process involved deep research and precise modeling of use cases, helping me understand the business-oriented approach  and how to translate requirements into tech solutions early in my career. I approached implementation of system with attention to detail ensuring system reliability and UX on high level. Finally addressed wide range of business scenarios for both customers and employees.
+
+      Starting with perspective of coach / member, system provides features like registration and authentication, possibility to see opening hours of club or membership management. Thanks to such solutions people can buy / renew their membership without going to gym on-site, saving a lot of time and any doubts. Interesting features for this group of users are also individual user profile with possibility to update avatar / data, schedule displayed as calendar with possibility to sign up for classes, payments history or unique view of membership card appearance. Key operations are much easier to execute and human mistakes are significantly reduced.
+
+      Application also delivers panels for staff (employees and managers) where they can easily manage schedule or access other administration panels, facilitating their daily work.
+    `,
     images: [
       "/projects/globogym/logo.png",
       "/projects/globogym/1.png",

@@ -3,7 +3,7 @@
 import SlideBlur from "../common/animations/SlideBlur";
 import { FC } from "react";
 import Image from "next/image";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Info } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -11,6 +11,7 @@ interface ProjectCardProps {
   description: string;
   image: string;
   technologies: string[];
+  projectUrl?: string;
   repoUrl?: string;
   liveUrl?: string;
   animationDelay?: string;
@@ -22,6 +23,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   description,
   image,
   technologies,
+  projectUrl,
   repoUrl,
   liveUrl,
   animationDelay,
@@ -59,29 +61,48 @@ const ProjectCard: FC<ProjectCardProps> = ({
 
           <hr className="border-t-2 border-zinc-700 mb-5 mt-5" />
 
-          <div className="flex justify-between items-center">
-            {repoUrl && (
-              <a
-                className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
-                href={repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="w-6 h-6" />
-                <span>Code</span>
-              </a>
-            )}
-            {liveUrl && (
-              <a
-                className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ExternalLink className="w-6 h-6" />
-                <span>Live</span>
-              </a>
-            )}
+          <div className="grid grid-cols-3 items-center">
+            <div className="flex justify-start">
+              {repoUrl && (
+                <a
+                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  href={repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-6 h-6" />
+                  <span>Code</span>
+                </a>
+              )}
+            </div>
+
+            <div className="flex justify-center">
+              {projectUrl && (
+                <a
+                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  href={`/work?project=${projectUrl}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Info className="w-6 h-6" />
+                  <span>More</span>
+                </a>
+              )}
+            </div>
+
+            <div className="flex justify-end">
+              {liveUrl && (
+                <a
+                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="w-6 h-6" />
+                  <span>Live</span>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>

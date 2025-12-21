@@ -3,7 +3,7 @@ const mostImportantProjects = [
     title: "Miesiany Miesiany Kebab",
     industry: "Food & Restaurant industry",
     description:
-      "Fullstack app for business from gastronomic industry mainly intended to serve as a business card, to reach more customers and to encourage them to stay longer. Apart from enabling easy order accomplishment and tracking, system takes care of availability of all valuable for customer information in a convenient way. Comfortable for employees of restaurant by enabling to manage restaurant, handle orders and customers more efficiently.",
+      "Fullstack application for business from gastronomic industry created with Spring on backend and Angular on frontend. Intended to serve as digital business card to reach more customers, encourage them to stay longer and to solve problems typical for this industry.",
     image: "/projects/miesiany-miesiany-kebab/kebab.jpg",
     technologies: [
       "Java",
@@ -22,13 +22,14 @@ const mostImportantProjects = [
       "Docker",
       "Bash",
     ],
+    projectUrl: "miesiany-miesiany-kebab",
     repoUrl: "https://github.com/P4ZD4N/miesiany-miesiany-kebab",
   },
   {
     title: "Bibliotheca Chudyana",
-    industry: "Library industry",
+    industry: "Library & Bookstore industry",
     description:
-      "Backend app with subtle frontend elements created for fictional library, which implements functionalities, that allows to effectively manage company. Automating processes like book and order management, user registration saves time for both employees and customers. Improves customer experience by making it easier to search for books, place orders or leave reviews, leading to higher satisfaction and convenience. Digitization of such library services is attractive to new customers because of easy access to its resources online. Users can browse the library 24/7, which can increase the number of orders placed.",
+      "Backend application (Spring) created to facilitate Library / Bookstore business management and to make interaction with potential customers more effective. A subtle dark-themed interface was also implemented to ensure a better user experience.",
     image: "/projects/bibliotheca-chudyana/library.jpg",
     technologies: [
       "Java",
@@ -44,15 +45,17 @@ const mostImportantProjects = [
       "SCSS",
       "Docker",
     ],
+    projectUrl: "bibliotheca-chudyana",
     repoUrl: "https://github.com/P4ZD4N/bibliotheca-chudyana",
   },
   {
     title: "GloboGym",
     industry: "Fitness & Health industry",
     description:
-      "Robust desktop app developed to support major of operations of a modern fitness club. System has been carefully architected to address a wide range of business scenarios for both customers and employees. Before creating the app, most actions (like member registration, schedule management, payments etc.) would have to be done manually and on-site. I solved this problem and thanks to it app can increase efficiency and revenues. Both gym users and employees can save a lot of time, reduce risk of mistakes and have greater convenience. Customer service and satisfaction are improved, leading to higher loyalty and growth in membership.",
+      "Desktop application created with JavaFX and other GUI technologies (CSS) to support most important operations typical for modern fitness club. System was implemented with usage of serialization mechanisms to store all changes in file and make them visible after restarting application.",
     image: "/projects/globogym/gym.jpg",
     technologies: ["Java", "JavaFX", "Lombok", "Maven", "CSS"],
+    projectUrl: "globogym",
     repoUrl: "https://github.com/P4ZD4N/globogym",
   },
   {
@@ -63,6 +66,7 @@ const mostImportantProjects = [
     image: "/projects/instalatorstwo-elektryczne/electrician.jpeg",
     technologies: ["JavaScript", "HTML", "SCSS", "Bootstrap"],
     repoUrl: "https://github.com/P4ZD4N/instalatorstwo-elektryczne",
+    projectUrl: "instalatorstwo-elektryczne",
     liveUrl: "https://marcinchudy.com",
   },
 ];

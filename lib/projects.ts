@@ -94,7 +94,7 @@ const projects = [
   },
   {
     title: "Bibliotheca Chudyana",
-    industry: "Library industry",
+    industry: "Library & Bookstore industry",
     description: `
       Backend application (Spring) created to facilitate Library / Bookstore business management and to make interaction with potential customers more effective. A subtle dark-themed interface was also implemented to ensure a better user experience.
 

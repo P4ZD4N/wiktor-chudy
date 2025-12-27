@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   title: "Wiktor Chudy | Fullstack Software Engineer",
   description:
     "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+  metadataBase: new URL("https://wiktorchudy.me"),
+  openGraph: {
+    title: "Wiktor Chudy | Fullstack Software Engineer",
+    description: "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    url: "https://wiktorchudy.me",
+    siteName: "Wiktor Chudy",
+    locale: "pl_PL",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Wiktor Chudy – Fullstack Software Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wiktor Chudy | Fullstack Software Engineer",
+    description: "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

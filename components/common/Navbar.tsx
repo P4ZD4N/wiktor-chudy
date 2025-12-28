@@ -37,6 +37,7 @@ export default function Navbar() {
       <div className="md:hidden fixed bottom-4 right-4 z-10000">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
+          aria-label={isOpen ? "Open navigation menu" : "Close navigation menu"}
           className={`cursor-pointer text-white p-4 rounded-full shadow-xl transition ${
             isOpen ? "bg-orange-700" : "bg-orange-500 hover:bg-orange-600"
           }`}

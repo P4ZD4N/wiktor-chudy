@@ -62,7 +62,7 @@ const mostImportantProjects = [
     title: "Instalatorstwo elektryczne",
     industry: "Electrical industry",
     description:
-      "Comprehensive marketing strategy for a client operating in the electrical industry. My work included: lightweight website, full branding package (custom logo design, vehicle decals for company car, branded t-shirts and jackets for staff, promotional banners highlighting new services and large banner installed on a pole near office), boosting online presence by setting up and optimizing Facebook business page and Google Maps listing to improve local discoverability.",
+      "Comprehensive marketing strategy for a client operating in the electrical industry. Most important from software development perspective was designing and creating lightweight website, which will be intended to serve as a business card.",
     image: "/projects/instalatorstwo-elektryczne/electrician.jpeg",
     technologies: ["JavaScript", "HTML", "SCSS", "Bootstrap"],
     repoUrl: "https://github.com/P4ZD4N/instalatorstwo-elektryczne",

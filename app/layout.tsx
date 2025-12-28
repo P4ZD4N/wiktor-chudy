@@ -51,7 +51,10 @@ export default function RootLayout({
         className={`bg-neutral-900 text-white antialiased`}
       >
         <Navbar />
-        {children}
+
+        <main id="main-content">
+          {children}
+        </main>
 
         <Script
           strategy="afterInteractive"

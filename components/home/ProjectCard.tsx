@@ -83,6 +83,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                   href={`/work?project=${projectUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`More information about ${title}`}
                 >
                   <Info className="w-6 h-6" />
                   <span>More</span>

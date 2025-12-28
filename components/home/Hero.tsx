@@ -10,8 +10,6 @@ const PARAGRAPH = `Fullstack Software Engineer specializing in Java and
   Passionate about clean code, best user experience 
   and delivering highest quality solutions.
   `;
-const FIRST_BUTTON = "Know me better";
-const SECOND_BUTTON = "View my work";
 
 export default function Hero() {
   return (

@@ -87,6 +87,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
                 >
                   <Info className="w-6 h-6" />
                   <span>More</span>
+                  <span className="sr-only"> about {title} project</span>
                 </a>
               )}
             </div>

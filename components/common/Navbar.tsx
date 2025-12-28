@@ -20,6 +20,7 @@ export default function Navbar() {
           <Link
             key={label}
             href={href}
+            aria-label={label}
             className="group relative flex items-center justify-center text-neutral-400 hover:text-orange-500 transition"
           >
             <i

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import FadeScale from "../common/animations/FadeScale";
 import TypingText from "./TypingText";
 import Image from "next/image";
@@ -54,23 +53,6 @@ export default function Hero() {
         <p className="mb-6 text-lg slide-in-from-left text-neutral-400">
           {PARAGRAPH}
         </p>
-      </FadeScale>
-
-      <FadeScale duration="0.4s" delay="0.5s">
-        <div className="hidden sm:flex gap-4 justify-center">
-          <Link
-            href="/about"
-            className="text-lg bg-white text-orange-500 px-4 py-3 rounded-lg duration-200 transform hover:scale-105"
-          >
-            {FIRST_BUTTON}
-          </Link>
-          <Link
-            href="/work"
-            className="text-lg bg-orange-500 text-white px-4 py-3 rounded-lg duration-200 transform hover:scale-105"
-          >
-            {SECOND_BUTTON}
-          </Link>
-        </div>
       </FadeScale>
     </header>
   );

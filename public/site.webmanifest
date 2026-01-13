@@ -1,0 +1,21 @@
+{
+  "name": "Wiktor Chudy | Fullstack Software Engineer",
+  "short_name": "Wiktor Chudy",
+  "description": "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#000000",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

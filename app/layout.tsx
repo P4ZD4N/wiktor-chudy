@@ -38,6 +38,25 @@ export const metadata: Metadata = {
     description: "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
     images: ["/og-image.png"],
   },
+  applicationName: "Wiktor Chudy | Fullstack Software Engineer",
+  appleWebApp: {
+    capable: true,
+    title: "Wiktor Chudy | Fullstack Software Engineer",
+    statusBarStyle: "default",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

@@ -10,15 +10,15 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Wiktor Chudy | Fullstack Software Engineer",
+  title: "Wiktor Chudy | Full Stack Software Engineer",
   description:
-    "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
   metadataBase: new URL("https://wiktorchudy.me"),
   openGraph: {
-    title: "Wiktor Chudy | Fullstack Software Engineer",
-    description: "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    title: "Wiktor Chudy | Full Stack Software Engineer",
+    description:
+      "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
     url: "https://wiktorchudy.me",
     siteName: "Wiktor Chudy",
     locale: "pl_PL",
@@ -28,20 +28,21 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Wiktor Chudy – Fullstack Software Engineer",
+        alt: "Wiktor Chudy – Full Stack Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wiktor Chudy | Fullstack Software Engineer",
-    description: "Hey, I'm Wiktor — Fullstack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    title: "Wiktor Chudy | Full Stack Software Engineer",
+    description:
+      "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
     images: ["/og-image.png"],
   },
-  applicationName: "Wiktor Chudy | Fullstack Software Engineer",
+  applicationName: "Wiktor Chudy | Full Stack Software Engineer",
   appleWebApp: {
     capable: true,
-    title: "Wiktor Chudy | Fullstack Software Engineer",
+    title: "Wiktor Chudy | Full Stack Software Engineer",
     statusBarStyle: "default",
   },
   icons: {
@@ -66,14 +67,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={jetbrainsMono.className}>
-      <body
-        className={`bg-neutral-900 text-white antialiased`}
-      >
+      <body className={`bg-neutral-900 text-white antialiased`}>
         <Navbar />
 
-        <main id="main-content">
-          {children}
-        </main>
+        <main id="main-content">{children}</main>
 
         <Script
           strategy="afterInteractive"

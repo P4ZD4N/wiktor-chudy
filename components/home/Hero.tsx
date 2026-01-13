@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const FIRST_HEADER = "Hey, my name is";
 const SECOND_HEADER = "Wiktor Chudy.";
-const PARAGRAPH = `Fullstack Software Engineer specializing in Java and 
+const PARAGRAPH = `Full Stack Software Engineer specializing in Java and 
   Angular. Aimed at providing real value to projects while 
   constantly learning new skills and refining currently acquired. 
   Passionate about clean code, best user experience 

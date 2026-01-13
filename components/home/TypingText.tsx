@@ -6,7 +6,7 @@ export default function TypingText() {
   return (
     <TypeAnimation
       sequence={[
-        "I am a Fullstack Software Engineer.",
+        "I am a Full Stack Software Engineer.",
         2000,
         "I deliver business value through software.",
         2000,

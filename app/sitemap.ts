@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
-    { path: "", lastModified: "2025-12-27" },
+    { path: "", lastModified: "2026-01-13" },
     { path: "/articles", lastModified: "2025-12-27" },
     { path: "/contact", lastModified: "2025-12-27" },
     { path: "/work", lastModified: "2025-12-27" },

@@ -3,7 +3,7 @@ const mostImportantProjects = [
     title: "Miesiany Miesiany Kebab",
     industry: "Food & Restaurant industry",
     description:
-      "Fullstack application for business from gastronomic industry created with Spring on backend and Angular on frontend. Intended to serve as digital business card to reach more customers, encourage them to stay longer and to solve problems typical for this industry.",
+      "Full Stack application for business from gastronomic industry created with Spring on backend and Angular on frontend. Intended to serve as digital business card to reach more customers, encourage them to stay longer and to solve problems typical for this industry.",
     image: "/projects/miesiany-miesiany-kebab/kebab.jpg",
     technologies: [
       "Java",

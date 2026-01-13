@@ -3,7 +3,7 @@ const projects = [
     title: "Miesiany Miesiany Kebab",
     industry: "Food & Restaurant industry",
     description: `
-      Fullstack application for business from gastronomic industry created with Spring on backend and Angular on frontend. Intended to serve as digital business card to reach more customers, encourage them to stay longer and to solve problems typical for this industry. 
+      Full Stack application for business from gastronomic industry created with Spring on backend and Angular on frontend. Intended to serve as digital business card to reach more customers, encourage them to stay longer and to solve problems typical for this industry. 
 
       System provides convenient UI (RWD, multilingual pages, eye-catching colors, customizable by manager paragraphs) and all essential information in one place. Offers a set of marketing tools that enhance brand strength, customer engagement and support business growth - marketing slogans, discount codes, newsletter or gamification systems while placing orders. Ensures real impact on repeat visits and building better relationships with customers.
 
@@ -220,10 +220,28 @@ const projects = [
     completed: true,
   },
   {
+    title: "Wyszczaj.to",
+    industry: "Events & Nightlife",
+    description: `
+      Do you struggle with a weak bladder or need quick access to public toilet? Wyszczaj.to makes outdoor events stress-free by helping you locate the nearest public toilet or convenient place to go in just a few seconds. Built as a Progressive Web Application (PWA) works seamlessly on mobile devices and can be installed like a native application for our users convenience.
+    `,
+    images: [],
+    features: [],
+    technologies: ["TypeScript", "HTML", "Tailwind", "DaisyUI"],
+    url: "wyszczaj-to",
+    repoUrl: "https://github.com/surferhand",
+    completed: true,
+  },
+  {
     title: "Instalatorstwo elektryczne",
     industry: "Electrical industry",
-    description:
-      "Comprehensive marketing strategy for a client operating in the electrical industry. My work included: lightweight website, full branding package (custom logo design, vehicle decals for company car, branded t-shirts and jackets for staff, promotional banners highlighting new services and large banner installed on a pole near office), boosting online presence by setting up and optimizing Facebook business page and Google Maps listing to improve local discoverability.",
+    description: `
+      Comprehensive marketing strategy created for a client from electrical industry. Project includes improvements in both visual identity and online presence. Goal was not only to design a modern and functional website, but also to build a brand image and increase visibility within the local community.
+
+      Most important from software development perspective was designing and creating lightweight website, which will be intended to serve as a business card. Solution was created using HTML, SCSS, Bootstrap and vanilla JavaScript. Chose framework-free implementation to reduce overhead, better align with long-term maintainability and budget constraints. One of the most important features is integration with Google Analytics for tracking website traffic in easy way.
+
+      More entrepreneurial challenge was to create full branding package, including logo design, vehicle decals for company car, branded t-shirts and jackets, promotional banners highlighting new services and large banner installed on a pole near office. I had also opportunity to work on online presence boost by setting up and optimizing Facebook business page and Google Maps to improve local discoverability.
+    `,
     images: [
       "/projects/instalatorstwo-elektryczne/logo.png",
       "/projects/instalatorstwo-elektryczne/banner.png",
@@ -251,7 +269,9 @@ const projects = [
     title: "Wiktor Chudy",
     industry: "Personal website and blog",
     description:
-      "My personal website combined with blog is a place where others can discover who I am both professionally and personally. It brings detailed insights into my projects, work expierience, education and the skills I have developed over time. Beyond being a digital portfolio, it's also space where I share knowledge, reflect on my experiences and document my growth. Intended for anyone who wants to get to know me better, what I care about and what I’m capable of.",
+      `
+      My personal website combined with a blog serves as a central place where visitors can discover who I am, both professionally and personally. It offers a comprehensive overview of my journey, presenting my projects, work experience, education, and the skills I have developed over time. More than just a digital portfolio, the website is also a space for sharing knowledge, reflecting on my experiences and documenting my continuous growth as a Software Developer and individual. It is designed for anyone who wants to better understand what I do, what I care about and what I am capable of delivering. Integrated with Google Analytics to enable easy and effective tracking of user traffic and engagement. Built with SEO best practises to ensure strong visibility in search engines.
+    `,
     images: [],
     features: [
       "Home page - quick introduction and all essential information in one place. Section includes tech carousel showcasing my core technical skills, project cards highlighting my most important projects, article cards featuring my three most recent articles and contact section with my social links and contact data.",
@@ -271,13 +291,17 @@ const projects = [
     url: "wiktor-chudy",
     repoUrl: "https://github.com/P4ZD4N/wiktor-chudy",
     liveUrl: "https://wiktorchudy.me",
-    completed: false,
+    completed: true,
   },
   {
     title: "Baloney",
     industry: "Social networking",
     description:
-      "Full-stack app intended to share memories with other people, who uses it. During development I am mainly responsible for backend development. It is collaborative app, which I create with my friend. During development we do code reviews and exchange our ideas to solve problems more effectively.",
+      `
+      Full-stack application intended to share memories with friends and other people. During development I am mainly responsible for backend (Spring). Plans for frontend was to create mobile application (Flutter) by rest of team members. Web version was not considered so far.
+
+      Although project was not finished, I had opportunity to work in collaborate in two-person team. With my more experienced friend, I actively participated in code reviews and ideas exchanging to solve problems more effectively. Features worth to mention at this point:
+    `,
     images: [],
     features: [
       "User registration and authentication system implemented with JWT for token-based sessions and bcrypt for secure password hashing.",

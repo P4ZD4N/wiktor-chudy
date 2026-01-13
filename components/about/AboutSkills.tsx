@@ -4,7 +4,7 @@ import SkillsSection from "./SkillsSection";
 const HEADER = "Skills";
 const PARAGRAPH = `Because I enjoy selecting the right tools tailored to the specific
   problem, I am highly adaptable and flexible person - always eager to
-  learn new ones. As a Fullstack Software Engineer I have worked with a
+  learn new ones. As a Full Stack Software Engineer I have worked with a
   wide range of technologies (both through my personal projects and
   professional work) demonstrating a high level of proficiency in both
   frontend and backend development.`;

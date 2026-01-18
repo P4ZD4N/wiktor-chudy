@@ -2,7 +2,7 @@
 
 ## 👀 About
 
-My personal website combined with a blog serves as a central place where visitors can discover who I am, both professionally and personally. It offers a comprehensive overview of my journey, presenting my projects, work experience, education and the skills I have developed over time. More than just a digital portfolio, the website is also a space for sharing knowledge, reflecting on my experiences and documenting my continuous growth as a Software Developer and individual. It is designed for anyone who wants to better understand what I do, what I care about and what I am capable of delivering.
+My personal website combined with a blog serves as a central place where visitors can discover who I am, both professionally and personally. It offers a comprehensive overview of my journey, presenting my projects, work experience, education and the skills I have developed over time. More than just a digital portfolio, the website is also a space for sharing knowledge, reflecting on my experiences and documenting my continuous growth as a Software Developer and individual. It is designed for anyone who wants to better understand what I do, what I care about and what I am capable of delivering. Integrated with Google Analytics to enable easy and effective tracking of user traffic and engagement. Built with SEO best practises to ensure strong visibility in search engines.
 
 ## 🔧 Tech Stack
 

@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-orange-500 shadow-lg">
             <Image
               src="/me.jpg"
-              alt="Wiktor's photo"
+              alt="Wiktor Chudy"
               fill
               className="object-cover object-top"
             />

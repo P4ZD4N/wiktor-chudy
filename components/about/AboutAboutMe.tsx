@@ -58,7 +58,7 @@ export default function AboutAboutMe() {
           <div className="relative w-80 h-80 sm:w-120 md:h-120 lg:w-90 lg:h-120 2xl:w-120 aspect-square overflow-hidden shadow-2xl shadow-orange-900/50 transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
             <Image
               src="/me2.jpeg"
-              alt="Wiktor's photo"
+              alt="Wiktor Chudy"
               fill
               className="object-cover object-top"
             />

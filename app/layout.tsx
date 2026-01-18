@@ -13,12 +13,12 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Wiktor Chudy | Full Stack Software Engineer",
   description:
-    "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+    "Hey, I'm Wiktor Chudy — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
   metadataBase: new URL("https://wiktorchudy.me"),
   openGraph: {
     title: "Wiktor Chudy | Full Stack Software Engineer",
     description:
-      "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+      "Hey, I'm Wiktor Chudy — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
     url: "https://wiktorchudy.me",
     siteName: "Wiktor Chudy",
     locale: "pl_PL",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wiktor Chudy | Full Stack Software Engineer",
     description:
-      "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+      "Hey, I'm Wiktor Chudy — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
     images: ["/og-image.png"],
   },
   applicationName: "Wiktor Chudy | Full Stack Software Engineer",

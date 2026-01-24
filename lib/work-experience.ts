@@ -8,14 +8,16 @@ const workExperience = [
     location: "",
     location_type: "Remote",
     description: [
-        "Reduced frontend error and bug occurrences from 100+ per day to zero, through deep log analysis and root cause identification with Kibana — significantly improved platform stability, security and user experience.",
-        "Took ownership of frontend development for one of the biggest module of application in cybersecurity department — refactored legacy code, created new versions of audit-related forms and improved UI components used by auditors.",
+        "Collaborated with Cybersecurity Analysts and Backend Engineers (Django) to translate complex security requirements into intuitive UI features more precisely. Presented end-to-end ownership mindset to meet feature delivery deadlines and exact business criteria.",
+        "Successfully launched frontend test CI pipeline for the first time in project history. ",
+        "Modernized frontend testing infrastructure by migrating from Jasmine/Karma to Vitest, resulting in faster test execution.",
+        "Reduced frontend error and bug occurrences from 100+ per day to zero, through deep log analysis and root cause identification with Kibana — significantly improved platform stability, security and user experience. Gained proactive monitoring habit to identify potential issues before they impact users.",
+        "Took ownership of frontend development for one of the biggest module of application in cybersecurity department — refactored legacy code, created new versions of audit-related forms and improved UI components used by auditors. Proactively collaborated with users of module to propose and implement enhancements that simplified complex tasks and improved operational efficiency.",
         "Developed and enhanced key frontend features for Vulnerability & Compliance management application in cybersecurity department using Angular, directly supporting Cybersecurity Analysts in more effective tracking and resolving security threats.",
-        "Contributed to multi-version Angular migration from v9 to v21.",
-        "dentified and refactored legacy modules, took part in migration to standalone components and to functional resolvers/interceptors.",
-        "Collaborated closely with Cybersecurity Analysts and Backend Engineers (Django) to translate complex security requirements into intuitive UI features more precisely."
+        "Contributed to multi-version Angular upgrade from v9 to v21.",
+        "Identified and refactored legacy modules — took part in multiple large-scale migrations, including transition from Modules to Standalone Components and from class to functional resolvers/interceptors."
     ],
-    tech_stack: ["TypeScript", "Angular", "Jasmine", "HTML", "SCSS", "Linux", "GitLab", "Kibana"],
+    tech_stack: ["Angular", "TypeScript", "Vitest", "Jasmine", "HTML", "SCSS", "Linux", "GitLab", "Kibana"],
   },
   {
     title: "Apprentice Frontend Developer",

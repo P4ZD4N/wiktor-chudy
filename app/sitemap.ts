@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/articles", lastModified: "2025-12-27" },
     { path: "/contact", lastModified: "2025-12-27" },
     { path: "/work", lastModified: "2025-12-27" },
-    { path: "/about", lastModified: "2025-12-27" },
+    { path: "/about", lastModified: "2026-04-13" },
   ];
 
   return pages.map((page) => ({

@@ -28,7 +28,7 @@ export default function Navbar() {
                 regular ? "fa-regular" : "fa-solid"
               } ${icon} text-2xl lg:text-3xl`}
             />
-            <span className="absolute left-8 lg:left-10 whitespace-nowrap text-sm bg-neutral-800 text-white px-3 py-1 rounded-md opacity-0 invisible translate-x-2 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 transition-all duration-200 z-50 shadow-lg">
+            <span className="absolute left-8 lg:left-10 whitespace-nowrap text-sm bg-secondary text-white px-3 py-1 rounded-md opacity-0 invisible translate-x-2 group-hover:opacity-100 group-hover:visible group-hover:translate-x-0 transition-all duration-200 z-50 shadow-lg">
               {label}
             </span>
           </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Open navigation menu" : "Close navigation menu"}
           className={`cursor-pointer text-white p-4 rounded-full shadow-xl transition ${
-            isOpen ? "bg-blue-800" : "bg-primary hover:bg-blue-700"
+            isOpen ? "bg-blue-800" : "bg-secondary hover:bg-blue-700"
           }`}
         >
           <i className="fa-solid fa-bars text-lg" />
@@ -61,7 +61,7 @@ export default function Navbar() {
                 key={label}
                 href={href}
                 onClick={() => setIsOpen(false)}
-                className="w-full bg-primary p-3 rounded-full flex items-center gap-2 text-white hover:text-primary transition"
+                className="w-full bg-secondary p-3 rounded-full flex items-center gap-2 text-white hover:bg-blue-950 transition"
               >
                 <i
                   className={`${

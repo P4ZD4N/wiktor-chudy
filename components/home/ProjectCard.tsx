@@ -40,26 +40,26 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
         <div className="p-4 space-y-3">
           <div>
-            <h3 className="mb-0 text-2xl font-semibold text-white">{title}</h3>
-            <h4 className="italic text-xl font-medium text-gray-300 mb-2 tracking-wide">
+            <h3 className="mb-0 text-xl sm:text-2xl font-semibold text-white">{title}</h3>
+            <h4 className="italic text-lg sm:text-xl font-medium text-gray-300 mb-2 tracking-wide">
               {industry}
             </h4>
           </div>
 
-          <p className="text-lg text-neutral-400">{description}</p>
+          <p className="text-base sm:text-lg text-neutral-400">{description}</p>
 
-          <ul className="flex flex-wrap gap-2 text-md">
+          <ul className="flex flex-wrap gap-2 text-base">
             {technologies.map((tech) => (
               <li
                 key={tech}
-                className="px-3 py-1 text-sm bg-primary border border-neutral-700 rounded-full text-white"
+                className="px-3 py-1 text-sm border border-neutral-700 rounded-full text-white"
               >
                 {tech}
               </li>
             ))}
           </ul>
 
-          <hr className="border-t-2 border-zinc-700 mb-5 mt-5" />
+          <hr className="border-t-2 border-primary mb-5 mt-5" />
 
           <div className="grid grid-cols-3 items-center">
             <div className="flex justify-start">

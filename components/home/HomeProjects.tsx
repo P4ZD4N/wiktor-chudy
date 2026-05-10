@@ -11,9 +11,9 @@ const PARAGRAPH = `My work is not just about coding. It's also about understandi
 export default function HomeProjects() {
   return (
     <div className="bg-background-2">
-      <section className="mt-20 mb-20 mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 flex flex-col gap-8">
+      <section className="mt-20 mb-20 mx-auto w-9/10 md:w-3/4 lg:w-2/3 xl:w-7/12 flex flex-col gap-8">
         <SlideBlur duration="0.4s">
-          <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold leading-none tracking-tight  text-white">
             {HEADER_FIRST_PART}
             <span className="underline underline-offset-3 decoration-6 decoration-primary">
               {HEADER_SECOND_PART}
@@ -22,7 +22,7 @@ export default function HomeProjects() {
         </SlideBlur>
 
         <SlideBlur duration="0.4s">
-          <p className="text-lg text-center text-neutral-400">
+          <p className="text-base sm:text-lg text-center text-neutral-400">
             {PARAGRAPH}
           </p>
         </SlideBlur>

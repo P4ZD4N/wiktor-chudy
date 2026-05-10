@@ -23,10 +23,10 @@ const SECOND_PARAGRAPH_SECOND_PART = `. I am also passionate about various sport
 
 export default function AboutAboutMe() {
   return (
-    <section className="mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 relative flex flex-col gap-10 lg:flex-row lg:gap-16 items-center">
+    <section className="mx-auto w-9/10 md:w-3/4 lg:w-2/3 xl:w-7/12 relative flex flex-col gap-10 lg:flex-row lg:gap-16 items-center">
       <div className="lg:w-3/5">
         <FadeUp duration="0.5s" delay="0s" threshold={0.1}>
-          <h1 className="text-center lg:text-left text-4xl font-bold mb-4">
+          <h1 className="text-center lg:text-left text-2xl sm:text-3xl font-bold mb-4">
             {FIRST_HEADER_FIRST_PART}
             <span className="underline underline-offset-3 decoration-6 decoration-primary">
               {FIRST_HEADER_SECOND_PART}
@@ -35,11 +35,11 @@ export default function AboutAboutMe() {
         </FadeUp>
 
         <FadeUp duration="0.5s" delay="0.2s" threshold={0.1}>
-          <p className="text-lg text-neutral-400 mb-4">{FIRST_PARAGRAPH}</p>
+          <p className="text-base sm:text-lg text-neutral-400 mb-4">{FIRST_PARAGRAPH}</p>
         </FadeUp>
 
         <FadeUp duration="0.5s" delay="0.4s" threshold={0.1}>
-          <p className="text-lg text-neutral-400 mt-4 mb-6 md:mb-0">
+          <p className="text-base sm:text-lg text-neutral-400 mt-4 mb-6 md:mb-0">
             {SECOND_PARAGRAPH_FIRST_PART}
             <a
               className="hover:text-primary transition duration-150 text-primary md:text-neutral-400 font-medium"

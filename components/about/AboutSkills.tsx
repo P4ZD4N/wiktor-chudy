@@ -11,10 +11,10 @@ const PARAGRAPH = `Because I enjoy selecting the right tools tailored to the spe
 
 export default function AboutSkills() {
   return (
-    <section className="mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12">
+    <section className="mx-auto w-9/10 md:w-3/4 lg:w-2/3 xl:w-7/12">
       <div className="mb-10">
         <SlideBlur duration="0.4s" delay="0s" threshold={0.2}>
-          <h2 className="text-center text-4xl font-bold mb-4">
+          <h2 className="text-center text-2xl sm:text-3xl font-bold mb-4">
             <span className="underline underline-offset-3 decoration-6 decoration-primary">
               {HEADER}
             </span>
@@ -22,7 +22,7 @@ export default function AboutSkills() {
         </SlideBlur>
 
         <SlideBlur duration="0.4s" delay="0.2s" threshold={0.1}>
-          <p className="text-center text-lg text-neutral-400 mb-4">
+          <p className="text-center text-base sm:text-lg text-neutral-400 mb-4">
             {PARAGRAPH}
           </p>
         </SlideBlur>

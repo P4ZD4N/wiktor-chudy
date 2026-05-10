@@ -24,23 +24,23 @@ export default function WorkExperienceRow({ experience }: Props) {
   return (
     <div className="flex flex-col md:flex-row">
       <div
-        className="space-y-3 bg-neutral-900 rounded-2xl p-5 shadow-md shadow-primary/10
+        className="space-y-3 bg-background-1 rounded-2xl p-5 shadow-md shadow-primary/10
           transition-all duration-200 ease-out
           hover:-translate-y-2
           hover:shadow-primary/30 hover:shadow-xl"
       >
         <div className="flex gap-3 lg:justify-between flex-col lg:flex-row">
-          <h2 className="text-center text-2xl font-bold text-primary">
+          <h2 className="text-center text-lg sm:text-xl font-bold text-primary">
             {experience.title}
           </h2>
 
-          <div className="flex items-center justify-center gap-2 text-neutral-300 font-semibold text-lg">
+          <div className="flex items-center justify-center gap-2 text-neutral-300 font-semibold text-base sm:text-lg">
             <CalendarDays size={20} />
             <span>{dateRange}</span>
           </div>
         </div>
 
-        <div className="flex items-center gap-2 text-neutral-300 text-lg">
+        <div className="flex items-center gap-2 text-neutral-300 text-base sm:text-lg">
           <Briefcase size={20} />
           <span>
             {experience.company} — {experience.employment_type}
@@ -55,7 +55,7 @@ export default function WorkExperienceRow({ experience }: Props) {
           </span>
         </div>
 
-        <ul className="text-neutral-300 text-lg space-y-3 leading-relaxed mt-4">
+        <ul className="text-neutral-300 text-base sm:text-lg space-y-3 leading-relaxed mt-4">
           {experience.description.map((item, idx) => (
             <li key={idx} className="flex gap-3">
               <span className="text-primary text-2xl">•</span>
@@ -69,7 +69,7 @@ export default function WorkExperienceRow({ experience }: Props) {
             {experience.tech_stack.map((tech, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1 text-sm bg-neutral-900 border border-neutral-700 rounded-full text-neutral-300"
+                className="px-3 py-1 text-sm bg-background-2 border border-neutral-700 rounded-full text-neutral-300"
               >
                 {tech}
               </span>

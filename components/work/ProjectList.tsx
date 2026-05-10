@@ -53,10 +53,10 @@ export default function ProjectList({
           >
             {SECOND_BUTTON}
           </button>
-          <h1 className="text-4xl font-bold mt-4 xl:mt-0 mb-4 text-center underline underline-offset-3 decoration-6 decoration-primary">
+          <h1 className="text-3xl font-bold mt-4 xl:mt-0 mb-4 text-center underline underline-offset-3 decoration-6 decoration-primary">
             {header}
           </h1>
-          <p className="hidden xl:block text-lg text-neutral-400 text-center mb-6">
+          <p className="hidden xl:block text-base text-neutral-400 text-center mb-6">
             {paragraph}
           </p>
         </GentlePop>

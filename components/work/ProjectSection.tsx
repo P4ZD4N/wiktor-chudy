@@ -34,12 +34,12 @@ const ProjectSection: FC<ProjectCardProps> = ({
   liveUrl,
 }) => {
   return (
-    <div className="overflow-hidden bg-transparent">
+    <div className="overflow-hidden bg-transparent py-10 md:py-0">
       <FadeUp duration="0.5s" threshold={0}>
         <div>
-          <h3 className="text-center text-4xl sm:text-6xl font-bold text-white">{title}</h3>
+          <h3 className=" text-center text-2xl sm:text-4xl font-bold text-white">{title}</h3>
 
-          <h4 className="mt-2 text-center italic text-xl sm:text-3xl font-medium text-gray-300 tracking-wide">
+          <h4 className="mt-2 text-center italic text-xl sm:text-2xl font-medium text-gray-300 tracking-wide">
             {industry}
           </h4>
         </div>
@@ -47,7 +47,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
         <div className="justify-center flex gap-4 mt-2">
           {repoUrl && (
             <a
-              className="group p-1 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-primary transition duration-150"
+              className="group p-2 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-primary transition duration-150"
               href={repoUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
           )}
           {liveUrl && (
             <a
-              className="group p-1 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-primary transition duration-150"
+              className="group p-2 sm:p-3 border border-2 border-gray-300 rounded-full flex items-center gap-1 hover:border-primary transition duration-150"
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -67,23 +67,23 @@ const ProjectSection: FC<ProjectCardProps> = ({
           )}
         </div>
 
-        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-primary text-center font-bold text-2xl sm:text-3xl">
+        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full p-1 bg-primary text-center font-bold text-xl sm:text-2xl">
           <PencilLine className="w-6 h-6 sm:w-8 sm:h-8" />
           Description
         </h3>
 
-        <p className="whitespace-pre-line text-neutral-400 text-md sm:text-lg">{description}</p>
+        <p className="whitespace-pre-line text-neutral-400 text-base sm:text-lg">{description}</p>
 
-        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-primary text-center font-bold text-2xl sm:text-3xl">
+        <h3 className="flex justify-center items-center gap-3 my-10 rounded-full p-1 bg-primary text-center font-bold text-xl sm:text-2xl">
           <Wrench className="w-6 h-6 sm:w-8 sm:h-8" />
           Tech stack
         </h3>
 
-        <ul className="flex flex-wrap gap-2 text-md">
+        <ul className="flex flex-wrap gap-2 text-base">
           {technologies.map((tech) => (
             <li
               key={tech}
-              className="px-3 py-1 text-md sm:text-lg bg-neutral-950 border border-neutral-700 rounded-full text-white"
+              className="px-3 py-1 text-base sm:text-lg bg-background-2 border border-neutral-700 rounded-full text-white"
             >
               {tech}
             </li>
@@ -91,13 +91,13 @@ const ProjectSection: FC<ProjectCardProps> = ({
         </ul>
 
         {features.length > 0 && (
-          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-primary text-center font-bold text-2xl sm:text-3xl">
+          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full p-1 bg-primary text-center font-bold text-xl sm:text-2xl">
             <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8" />
             Features
           </h3>
         )}
 
-        <ul className="flex flex-col gap-2 text-md sm:text-lg mt-4">
+        <ul className="flex flex-col gap-2 text-base sm:text-lg mt-4">
           {features.map((feat) => (
             <li key={feat}>
               <span className="text-primary text-xl">•</span> {feat}
@@ -106,7 +106,7 @@ const ProjectSection: FC<ProjectCardProps> = ({
         </ul>
 
         {images.length > 0 && (
-          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full bg-primary text-center font-bold text-2xl sm:text-3xl">
+          <h3 className="flex justify-center items-center gap-3 my-10 rounded-full p-1 bg-primary text-center font-bold text-xl sm:text-2xl">
             <Camera className="w-6 h-6 sm:w-8 sm:h-8" />
             Gallery
           </h3>

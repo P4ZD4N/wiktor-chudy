@@ -13,9 +13,9 @@ export default async function HomeArticles() {
   const articles = await getCategoriesArticles();
 
   return (
-    <section className="mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 :w-4/4 flex flex-col gap-8">
+    <section className="mx-auto w-9/10 md:w-3/4 lg:w-2/3 xl:w-7/12 :w-4/4 flex flex-col gap-8">
       <FadeUp duration="0.8s">
-        <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
+        <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold leading-none tracking-tight  text-white">
           {HEADER_FIRST_PART}
           <span className="underline underline-offset-3 decoration-6 decoration-primary">
             {HEADER_SECOND_PART}
@@ -24,7 +24,7 @@ export default async function HomeArticles() {
       </FadeUp>
 
       <FadeUp duration="0.8s">
-        <p className="text-lg text-center text-neutral-400">{PARAGRAPH}</p>
+        <p className="ttext-base sm:text-lg text-center text-neutral-400">{PARAGRAPH}</p>
       </FadeUp>
 
       <RecentArticles allArticles={articles} />

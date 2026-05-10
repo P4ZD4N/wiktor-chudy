@@ -14,7 +14,7 @@ export default function Statistic({ title, subtitle, delay }: StatisticProps) {
       transition={{ duration: 0.8, ease: "easeOut", delay: delay }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <h3 className="text-3xl font-bold">{title}</h3>
+      <h3 className="text-2xl sm:text-3xl font-bold">{title}</h3>
       <p className="text-neutral-400">{subtitle}</p>
     </motion.div>
   );

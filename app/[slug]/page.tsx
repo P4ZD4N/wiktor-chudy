@@ -14,7 +14,7 @@ const Article = async ({ params }: PageProps) => {
   if (!articleData) notFound();
 
   return (
-    <section className="mx-auto w-10/12 md:w-1/2 mt-20 flex flex-col gap-5">
+    <section className="mx-auto w-9/10 md:w-1/2 mt-20 flex flex-col gap-5">
 
       <div className="flex justify-between">
         <Link

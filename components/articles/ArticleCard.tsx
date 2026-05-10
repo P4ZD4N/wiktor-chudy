@@ -31,20 +31,20 @@ const ArticleCard: FC<ArticleCardProps> = ({
         className="flex items-center h-full gap-4 p-4 rounded-xl bg-background-2 border border-zinc-700 hover:border-primary transition-all duration-300 hover:shadow-lg group"
       >
         <div className="p-4 space-y-3">
-          <h3 className="text-xl font-semibold text-white">{title}</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-white">{title}</h3>
 
           <div className="flex flex-wrap gap-2">
             {categories.map((category: string) => (
               <span
                 key={category}
-                className="text-md font-medium px-2.5 py-0.5 rounded bg-primary text-natural"
+                className="text-sm sm:text-base font-medium px-2.5 py-0.5 rounded bg-primary text-natural"
               >
                 #{category}
               </span>
             ))}
           </div>
 
-          <p className="text-lg text-neutral-400">
+          <p className="text-base sm:text-lg text-neutral-400">
             {moment(date, "DD-MM-YYYY").format("Do MMMM YYYY")}
           </p>
         </div>

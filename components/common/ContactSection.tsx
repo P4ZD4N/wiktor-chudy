@@ -18,8 +18,8 @@ const ContactSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h3 className="text-2xl text-white mb-2">Let&apos;s Connect</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <h3 className="text-xl sm:text-2xl text-white mb-2">Let&apos;s Connect</h3>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 I&apos;m always open to discussing new opportunities,
                 collaborations or just having a chat about technology and
                 development.
@@ -55,10 +55,10 @@ const ContactSection = () => {
                       <IconComponent size={36} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-medium text-white">
+                      <h4 className="text-base sm:text-lg font-medium text-white">
                         {contact.label}
                       </h4>
-                      <p className="text-neutral-400 text-md">
+                      <p className="text-sm sm:text-base text-neutral-400">
                         {contact.value}
                       </p>
                     </div>
@@ -76,8 +76,8 @@ const ContactSection = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h3 className="text-2xl text-white mb-2">Get in Touch</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <h3 className="text-xl sm:text-2xl text-white mb-2">Get in Touch</h3>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 Feel free to reach out through any of these channels. I
                 typically respond within 24 hours.
               </p>
@@ -112,10 +112,10 @@ const ContactSection = () => {
                       <IconComponent size={36} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-medium text-white">
+                      <h4 className="text-base sm:text-lg font-medium text-white">
                         {contact.label}
                       </h4>
-                      <p className="text-gray-300 text-md">{contact.value}</p>
+                      <p className="text-sm md:text-base text-gray-300">{contact.value}</p>
                     </div>
                   </a>
                 );
@@ -131,26 +131,26 @@ const ContactSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h3 className="text-2xl font-bold mb-4">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4">
             Ready to start your project?
           </h3>
-          <p className="text-lg mb-6 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg mb-6 max-w-2xl mx-auto">
             Whether you need a website, web application, or just want to discuss
             your ideas, I&apos;m here to help bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+48880219318"
-              className="text-lg inline-flex items-center gap-2 bg-white text-primary font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
+              className="text-base sm:text-lg inline-flex items-center gap-2 bg-white text-primary font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
-              <Phone size={36} />
+              <Phone size={28} />
               Call Now
             </a>
             <a
               href="mailto:wiktorchudy@proton.me"
-              className="text-lg inline-flex items-center gap-2 bg-blue-800 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-900 transition-all duration-300 transform hover:scale-105"
+              className="text-base sm:text-lg inline-flex items-center gap-2 bg-blue-800 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-900 transition-all duration-300 transform hover:scale-105"
             >
-              <Mail size={36} />
+              <Mail size={28} />
               Send Email
             </a>
           </div>

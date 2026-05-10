@@ -16,7 +16,7 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
   return (
     <section >
       <SlideBlur duration="0.4s" delay="0.2s" threshold={0.1}>
-        <h2 className="text-center lg:text-left text-2xl font-bold mb-6">
+        <h2 className="text-center lg:text-left text-lg sm:text-xl font-bold mb-6">
           <mark className="px-2 text-white bg-primary rounded-sm">
             {header}
           </mark>
@@ -29,7 +29,7 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
             <GentlePopThreshold delay={`${index * 0.2}s`} threshold={0.1}>
               <div
                 className="
-                  h-30 p-5 bg-background-2 rounded-2xl flex flex-col items-center justify-center
+                  h-30 bg-background-2 rounded-2xl flex flex-col items-center justify-center
                   gap-3
                   shadow-md shadow-primary/10
                   transition-all duration-200 ease-out
@@ -37,14 +37,16 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
                   hover:shadow-primary/30 hover:shadow-xl
                 "
               >
-                <Image
-                  src={tech.icon}
-                  alt={tech.name}
-                  width={60}
-                  height={60}
-                  title={tech.name}
-                />
-                <span className="text-center font-semibold text-neutral-200 tracking-wide">
+                <div className="relative w-12 h-12 xl:w-14 xl:h-14">
+                  <Image
+                    src={tech.icon}
+                    alt={tech.name}
+                    title={tech.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-sm sm:text-base text-center font-semibold text-neutral-200 tracking-wide">
                   {tech.name}
                 </span>
               </div>

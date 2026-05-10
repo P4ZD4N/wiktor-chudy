@@ -44,12 +44,12 @@ const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
 
   return (
     <div className="space-y-4">
-      <div className="rounded bg-neutral-950 border border-zinc-700 hover:border-primary transition-all duration-300 hover:shadow-lg shadow-sm cursor-pointer">
+      <div className="rounded bg-background-2 border border-zinc-700 hover:border-primary transition-all duration-300 hover:shadow-lg shadow-sm cursor-pointer">
         <button
           className="cursor-pointer w-full flex items-center justify-between gap-2 p-3 text-white transition-colors"
           onClick={() => setOpen(!open)}
         >
-          <span className="text-xl font-bold">Category</span>
+          <span className="text-lg sm:text-xl font-bold">Category</span>
           <motion.span
             initial={false}
             animate={{ rotate: open ? 180 : 0 }}
@@ -100,7 +100,7 @@ const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
                         onChange={() => handleCheckboxChange(category)}
                         checked={selectedCategories.includes(category)}
                       />
-                      <span className="text-lg font-medium text-white">
+                      <span className="text-base sm:text-lg font-medium text-white">
                         {category}
                       </span>
                     </label>
@@ -121,7 +121,7 @@ const HorizontalArticleFilter: React.FC<HorizontalArticleFilterProps> = ({
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="text-xl font-medium px-2 py-2 rounded bg-primary text-neutral-50 cursor-pointer"
+              className="text-base sm:text-lg font-medium px-2 py-2 rounded bg-primary text-neutral-50 cursor-pointer"
               onClick={() => handleCheckboxChange(category)}
             >
               #{category}

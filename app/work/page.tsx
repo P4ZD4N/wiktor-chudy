@@ -24,7 +24,7 @@ export default async function WorkPage(props: { searchParams: Params }) {
         paragraph={PARAGRAPH}
       />
 
-      <div className="col-span-2 p-10 md:p-20 h-full overflow-y-auto scrollbar-hidden">
+      <div className="col-span-2 p-5 md:p-20 h-full overflow-y-auto scrollbar-hidden">
         <ProjectSection key={selectedProject.title} {...selectedProject} />
       </div>
     </section>

@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={jetbrainsMono.className}>
-      <body className={`bg-neutral-900 text-white antialiased`}>
+      <body className={`bg-background-1 text-white antialiased`}>
         <Navbar />
 
         <main id="main-content">{children}</main>

@@ -2,7 +2,7 @@ const workExperience = [
   {
     title: "Frontend Developer",
     employment_type: "Contract",
-    company: "Santander Bank Polska",
+    company: "Erste Bank Polska",
     start_date: "April 2026",
     end_date: "",
     location: "",

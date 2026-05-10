@@ -26,7 +26,7 @@ export default function ProjectList({
   return (
     <>
       <button
-        className="xl:hidden w-full p-4 bg-orange-500 text-white text-xl font-bold"
+        className="xl:hidden w-full p-4 bg-primary text-white text-xl font-bold"
         onClick={() => setOpenSidebar((prev) => !prev)}
       >
         {FIRST_BUTTON}
@@ -34,7 +34,7 @@ export default function ProjectList({
 
       <div
         className={`
-          bg-neutral-950 flex flex-col gap-4 overflow-y-auto scrollbar-hidden
+          bg-background-2 flex flex-col gap-4 overflow-y-auto scrollbar-hidden
           p-10 md:p-20
 
           xl:col-span-1 xl:relative xl:block
@@ -48,12 +48,12 @@ export default function ProjectList({
       >
         <GentlePop>
           <button
-            className="xl:hidden w-full px-3 py-1 bg-orange-500 text-white font-bold rounded-md"
+            className="xl:hidden w-full px-3 py-1 bg-primary text-white font-bold rounded-md"
             onClick={() => setOpenSidebar(false)}
           >
             {SECOND_BUTTON}
           </button>
-          <h1 className="text-4xl font-bold mt-4 xl:mt-0 mb-4 text-center underline underline-offset-3 decoration-6 decoration-orange-500">
+          <h1 className="text-4xl font-bold mt-4 xl:mt-0 mb-4 text-center underline underline-offset-3 decoration-6 decoration-primary">
             {header}
           </h1>
           <p className="hidden xl:block text-lg text-neutral-400 text-center mb-6">
@@ -71,8 +71,8 @@ export default function ProjectList({
                   cursor-pointer py-2 px-3 rounded-lg transform transition-all duration-200 block
                   ${
                     selectedProjectUrl === project.url
-                      ? "bg-orange-500 text-white font-bold shadow-lg scale-105"
-                      : "bg-neutral-900 hover:bg-neutral-800 hover:scale-105 hover:shadow-md"
+                      ? "bg-primary text-white font-bold shadow-lg scale-105"
+                      : "bg-background-1 hover:bg-blue-900 hover:scale-105 hover:shadow-md"
                   }
                 `}
                 onClick={() => setOpenSidebar(false)}

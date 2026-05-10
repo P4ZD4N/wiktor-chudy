@@ -21,7 +21,7 @@ export default function Navbar() {
             key={label}
             href={href}
             aria-label={label}
-            className="group relative flex items-center justify-center text-neutral-400 hover:text-orange-500 transition"
+            className="group relative flex items-center justify-center text-neutral-400 hover:text-primary transition"
           >
             <i
               className={`${
@@ -40,7 +40,7 @@ export default function Navbar() {
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label={isOpen ? "Open navigation menu" : "Close navigation menu"}
           className={`cursor-pointer text-white p-4 rounded-full shadow-xl transition ${
-            isOpen ? "bg-orange-700" : "bg-orange-500 hover:bg-orange-600"
+            isOpen ? "bg-blue-800" : "bg-primary hover:bg-blue-700"
           }`}
         >
           <i className="fa-solid fa-bars text-lg" />
@@ -61,7 +61,7 @@ export default function Navbar() {
                 key={label}
                 href={href}
                 onClick={() => setIsOpen(false)}
-                className="w-full bg-orange-500 p-3 rounded-full flex items-center gap-2 text-white hover:text-orange-500 transition"
+                className="w-full bg-primary p-3 rounded-full flex items-center gap-2 text-white hover:text-primary transition"
               >
                 <i
                   className={`${

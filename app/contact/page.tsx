@@ -7,7 +7,7 @@ export default function ContactPage() {
       <FadeInOnScroll direction="right" threshold={0.2}>
         <h1 className="text-4xl font-bold text-center">
           Contact{" "}
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+          <span className="underline underline-offset-3 decoration-6 decoration-primary">
             {" "}
             me
           </span>

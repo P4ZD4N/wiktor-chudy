@@ -24,13 +24,13 @@ export default function WorkExperienceRow({ experience }: Props) {
   return (
     <div className="flex flex-col md:flex-row">
       <div
-        className="space-y-3 bg-neutral-900 rounded-2xl p-5 shadow-md shadow-orange-500/10
+        className="space-y-3 bg-neutral-900 rounded-2xl p-5 shadow-md shadow-primary/10
           transition-all duration-200 ease-out
           hover:-translate-y-2
-          hover:shadow-orange-500/30 hover:shadow-xl"
+          hover:shadow-primary/30 hover:shadow-xl"
       >
         <div className="flex gap-3 lg:justify-between flex-col lg:flex-row">
-          <h2 className="text-center text-2xl font-bold text-orange-500">
+          <h2 className="text-center text-2xl font-bold text-primary">
             {experience.title}
           </h2>
 
@@ -58,7 +58,7 @@ export default function WorkExperienceRow({ experience }: Props) {
         <ul className="text-neutral-300 text-lg space-y-3 leading-relaxed mt-4">
           {experience.description.map((item, idx) => (
             <li key={idx} className="flex gap-3">
-              <span className="text-orange-500 text-2xl">•</span>
+              <span className="text-primary text-2xl">•</span>
               <span className="text-neutral-400">{item}</span>
             </li>
           ))}

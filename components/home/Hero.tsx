@@ -5,7 +5,7 @@ import Image from "next/image";
 const FIRST_HEADER = "Hey, my name is";
 const SECOND_HEADER = "Wiktor Chudy.";
 const PARAGRAPH = `Full Stack Software Engineer specializing in Java and 
-  Angular. Aimed at providing real value to projects while 
+  Angular. Aimed at providing real value to businesses while 
   constantly learning new skills and refining currently acquired. 
   Passionate about clean code, best user experience 
   and delivering highest quality solutions.
@@ -16,12 +16,12 @@ export default function Hero() {
     <header className="pt-10 sm:pt-0 mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-7/12 flex flex-col items-center justify-center h-screen text-center">
       <FadeScale duration="0.5s" delay="0s">
         <div className="mb-6 md:mb-8 flex justify-center">
-          <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-orange-500 shadow-lg">
+          <div className="w-42 h-42 md:w-64 md:h-64 lg:w-64 lg:h-64 relative rounded-full overflow-hidden ring-4 ring-primary shadow-lg">
             <Image
-              src="/me.jpg"
+              src="/me1.jpg"
               alt="Wiktor Chudy"
               fill
-              className="object-cover object-top"
+              className="object-cover"
             />
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function Hero() {
 
       <FadeScale duration="0.4s" delay="0.2s">
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-6xl lg:text-7xl text-white slide-in-from-left">
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+          <span className="underline underline-offset-3 decoration-6 decoration-primary">
             {SECOND_HEADER}
           </span>
         </h1>

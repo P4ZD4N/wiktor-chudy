@@ -52,7 +52,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             {technologies.map((tech) => (
               <li
                 key={tech}
-                className="px-3 py-1 text-sm bg-orange-500 border border-neutral-700 rounded-full text-white"
+                className="px-3 py-1 text-sm bg-primary border border-neutral-700 rounded-full text-white"
               >
                 {tech}
               </li>
@@ -65,7 +65,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             <div className="flex justify-start">
               {repoUrl && (
                 <a
-                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  className="flex items-center gap-1 hover:text-primary transition duration-150"
                   href={repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             <div className="flex justify-center">
               {projectUrl && (
                 <a
-                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  className="flex items-center gap-1 hover:text-primary transition duration-150"
                   href={`/work?project=${projectUrl}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -95,7 +95,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
             <div className="flex justify-end">
               {liveUrl && (
                 <a
-                  className="flex items-center gap-1 hover:text-orange-500 transition duration-150"
+                  className="flex items-center gap-1 hover:text-primary transition duration-150"
                   href={liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"

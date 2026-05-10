@@ -19,7 +19,7 @@ const Article = async ({ params }: PageProps) => {
       <div className="flex justify-between">
         <Link
           href={"/articles"}
-          className="flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150"
+          className="flex flex-row gap-1 place-items-center hover:text-primary transition duration-150"
         >
           <ArrowLeftIcon width={20} />
           <p>Back</p>
@@ -31,7 +31,7 @@ const Article = async ({ params }: PageProps) => {
         {articleData.categories.map((category: string) => (
           <span
             key={category}
-            className="text-xs font-medium px-2.5 py-0.5 rounded bg-orange-500 text-natural"
+            className="text-xs font-medium px-2.5 py-0.5 rounded bg-primary text-natural"
           >
             #{category}
           </span>
@@ -45,7 +45,7 @@ const Article = async ({ params }: PageProps) => {
 
       <Link
         href={"/articles"}
-        className="mb-10 flex flex-row gap-1 place-items-center hover:text-orange-500 transition duration-150"
+        className="mb-10 flex flex-row gap-1 place-items-center hover:text-primary transition duration-150"
       >
         <ArrowLeftIcon width={20} />
         <p>Back to articles</p>

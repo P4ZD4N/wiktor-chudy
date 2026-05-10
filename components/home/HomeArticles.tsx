@@ -17,7 +17,7 @@ export default async function HomeArticles() {
       <FadeUp duration="0.8s">
         <h2 className="text-center text-3xl font-bold leading-none tracking-tight md:text-3xl lg:text-4xl text-white">
           {HEADER_FIRST_PART}
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+          <span className="underline underline-offset-3 decoration-6 decoration-primary">
             {HEADER_SECOND_PART}
           </span>
         </h2>

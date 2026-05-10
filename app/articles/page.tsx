@@ -64,7 +64,7 @@ export default async function ArticlesPage({
     <section className="relative mx-auto w-10/12 md:w-3/4 lg:w-2/3 xl:w-8/12 mt-20 flex flex-col gap-16 mb-20">
       <FadeScale duration="0.6s" threshold={0.2}>
         <h1 className="text-4xl font-semibold text-center">
-          <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+          <span className="underline underline-offset-3 decoration-6 decoration-primary">
             {HEADER}
           </span>
         </h1>
@@ -89,7 +89,7 @@ export default async function ArticlesPage({
                 categories: selectedCategories.join(","),
               }).toString()}`}
             >
-              <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-orange-500 shadow flex items-center justify-center transition-all duration-200">
+              <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-primary shadow flex items-center justify-center transition-all duration-200">
                 <ChevronLeft className="text-black" />
               </div>
             </a>
@@ -105,7 +105,7 @@ export default async function ArticlesPage({
                 categories: selectedCategories.join(","),
               }).toString()}`}
             >
-              <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-orange-500 shadow flex items-center justify-center transition-all duration-200">
+              <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-primary shadow flex items-center justify-center transition-all duration-200">
                 <ChevronRight className="text-black" />
               </div>
             </a>

@@ -28,7 +28,7 @@ export default function AboutAboutMe() {
         <FadeUp duration="0.5s" delay="0s" threshold={0.1}>
           <h1 className="text-center lg:text-left text-4xl font-bold mb-4">
             {FIRST_HEADER_FIRST_PART}
-            <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+            <span className="underline underline-offset-3 decoration-6 decoration-primary">
               {FIRST_HEADER_SECOND_PART}
             </span>
           </h1>
@@ -42,7 +42,7 @@ export default function AboutAboutMe() {
           <p className="text-lg text-neutral-400 mt-4 mb-6 md:mb-0">
             {SECOND_PARAGRAPH_FIRST_PART}
             <a
-              className="hover:text-orange-500 transition duration-150 text-orange-500 md:text-neutral-400 font-medium"
+              className="hover:text-primary transition duration-150 text-primary md:text-neutral-400 font-medium"
               href="https://www.goodreads.com/user/show/185563841-wiktor-chudy"
               target="_blank"
             >
@@ -55,14 +55,14 @@ export default function AboutAboutMe() {
 
       <div className="slide-in-from-right flex justify-center items-center mt-8 lg:mt-0 lg:w-2/5">
         <FadeUp duration="0.5s" delay="0.6s" threshold={0.1}>
-          <div className="relative w-80 h-80 sm:w-120 md:h-120 lg:w-90 lg:h-120 2xl:w-120 aspect-square overflow-hidden shadow-2xl shadow-orange-900/50 transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
+          <div className="relative w-80 h-80 sm:w-120 md:h-120 lg:w-90 lg:h-120 2xl:w-120 aspect-square overflow-hidden shadow-2xl shadow-primary/50 transform rotate-3 hover:rotate-0 transition duration-500 ease-in-out">
             <Image
               src="/me2.jpeg"
               alt="Wiktor Chudy"
               fill
               className="object-cover object-top"
             />
-            <div className="absolute inset-0 border-8 border-orange-500 opacity-70 transform -rotate-6 transition duration-500 hover:rotate-3"></div>
+            <div className="absolute inset-0 border-8 border-primary opacity-70 transform -rotate-6 transition duration-500 hover:rotate-3"></div>
           </div>
         </FadeUp>
       </div>

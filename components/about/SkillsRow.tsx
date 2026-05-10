@@ -17,7 +17,7 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
     <section >
       <SlideBlur duration="0.4s" delay="0.2s" threshold={0.1}>
         <h2 className="text-center lg:text-left text-2xl font-bold mb-6">
-          <mark className="px-2 text-white bg-orange-500 rounded-sm">
+          <mark className="px-2 text-white bg-primary rounded-sm">
             {header}
           </mark>
         </h2>
@@ -29,12 +29,12 @@ export default function SkillsRow({ skills, header }: SkillsRowProps) {
             <GentlePopThreshold delay={`${index * 0.2}s`} threshold={0.1}>
               <div
                 className="
-                  h-30 p-5 bg-neutral-950 rounded-2xl flex flex-col items-center justify-center
+                  h-30 p-5 bg-background-2 rounded-2xl flex flex-col items-center justify-center
                   gap-3
-                  shadow-md shadow-orange-500/10
+                  shadow-md shadow-primary/10
                   transition-all duration-200 ease-out
                   hover:-translate-y-2
-                  hover:shadow-orange-500/30 hover:shadow-xl
+                  hover:shadow-primary/30 hover:shadow-xl
                 "
               >
                 <Image

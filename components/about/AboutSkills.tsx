@@ -15,7 +15,7 @@ export default function AboutSkills() {
       <div className="mb-10">
         <SlideBlur duration="0.4s" delay="0s" threshold={0.2}>
           <h2 className="text-center text-4xl font-bold mb-4">
-            <span className="underline underline-offset-3 decoration-6 decoration-orange-500">
+            <span className="underline underline-offset-3 decoration-6 decoration-primary">
               {HEADER}
             </span>
           </h2>

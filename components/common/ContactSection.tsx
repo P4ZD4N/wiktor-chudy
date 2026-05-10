@@ -47,7 +47,7 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-background-1 border border-zinc-700 hover:border-primary transition-all duration-300 group"
                   >
                     <div
                       className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}
@@ -104,7 +104,7 @@ const ContactSection = () => {
                         ? "noopener noreferrer"
                         : ""
                     }
-                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-neutral-950 border border-zinc-700 hover:border-orange-500 transition-all duration-300 hover:shadow-lg group"
+                    className="break-all flex items-center gap-4 p-4 rounded-xl bg-background-1 border border-zinc-700 hover:border-primary transition-all duration-300 hover:shadow-lg group"
                   >
                     <div
                       className={`${contact.color} group-hover:scale-110 transition-transform duration-300`}
@@ -125,7 +125,7 @@ const ContactSection = () => {
         </div>
 
         <motion.div
-          className="text-center mt-16 p-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl text-white"
+          className="text-center mt-16 p-8 bg-primary rounded-2xl text-white"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -134,21 +134,21 @@ const ContactSection = () => {
           <h3 className="text-2xl font-bold mb-4">
             Ready to start your project?
           </h3>
-          <p className="text-lg text-orange-100 mb-6 max-w-2xl mx-auto">
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
             Whether you need a website, web application, or just want to discuss
             your ideas, I&apos;m here to help bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+48880219318"
-              className="text-lg inline-flex items-center gap-2 bg-white text-orange-600 font-medium px-6 py-3 rounded-lg hover:bg-orange-50 transition-all duration-300 transform hover:scale-105"
+              className="text-lg inline-flex items-center gap-2 bg-white text-primary font-medium px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               <Phone size={36} />
               Call Now
             </a>
             <a
               href="mailto:wiktorchudy@proton.me"
-              className="text-lg inline-flex items-center gap-2 bg-orange-700 text-white font-medium px-6 py-3 rounded-lg hover:bg-orange-800 transition-all duration-300 transform hover:scale-105"
+              className="text-lg inline-flex items-center gap-2 bg-blue-800 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-900 transition-all duration-300 transform hover:scale-105"
             >
               <Mail size={36} />
               Send Email

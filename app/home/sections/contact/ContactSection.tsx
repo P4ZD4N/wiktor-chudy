@@ -2,14 +2,9 @@ import FadeIn from '@/app/home/common/animations/FadeIn';
 import SectionTitle from '@/app/home/common/components/SectionTitle';
 import SectionWrapper from '@/app/home/common/components/SectionWrapper';
 import Link from 'next/link';
-import {
-  FaGithub,
-  FaLinkedin,
-  FaLongArrowAltUp,
-  FaPhoneAlt,
-} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaLongArrowAltUp } from 'react-icons/fa';
 import { FiPhone } from 'react-icons/fi';
-import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+import { MdOutlineEmail } from 'react-icons/md';
 
 export default function ContactSection() {
   return (
@@ -25,7 +20,7 @@ export default function ContactSection() {
               <h2 className="text-left w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Let's Connect
               </h2>
-              <p className="text-left text-lg md:text-xl text-gray-300">
+              <p className="text-left text-base md:text-xl text-gray-300">
                 I'm always open to discussing new opportunities, collaborations
                 or just having a chat about technology and development.
               </p>
@@ -81,7 +76,7 @@ export default function ContactSection() {
                 <h2 className="text-left w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                   Get in Touch
                 </h2>
-                <p className="text-left text-lg md:text-xl text-gray-300">
+                <p className="text-left text-base md:text-xl text-gray-300">
                   Feel free to reach out through any of these channels. I
                   typically respond within 24 hours.
                 </p>

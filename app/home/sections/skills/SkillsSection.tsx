@@ -42,7 +42,7 @@ export default function SkillsSection() {
       </FadeIn>
 
       <FadeIn>
-        <p className="text-lg md:text-xl text-gray-300 mt-10">
+        <p className="text-base md:text-xl text-gray-300 mt-10">
           As a Software Engineer I have worked with a wide range of technologies
           (both through my personal projects and professional work)
           demonstrating a high level of proficiency in both frontend and backend

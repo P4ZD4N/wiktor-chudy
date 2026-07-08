@@ -20,7 +20,7 @@ export default function Navbar() {
                 inline-block
                 bg-gradient-to-r from-primary to-secondary
                 bg-clip-text text-transparent 
-                text-2xl font-semibold tracking-tight"
+                text-2xl font-semibold tracking-tight [font-variant-ligatures:none]"
             >
               {'<Wiktor />'}
             </Link>

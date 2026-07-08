@@ -1,4 +1,4 @@
-import { Briefcase, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import FadeIn from '../common/animations/FadeIn';
 import SectionWrapper from '../common/components/SectionWrapper';
 import SingleColorAnchor from '../common/components/SignleColorAnchor';
@@ -32,14 +32,14 @@ export default function HeroSection() {
           inline-block
           bg-gradient-to-r from-primary to-secondary
           bg-clip-text text-transparent  
-          mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight"
+          mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none tracking-tight [font-variant-ligatures:none]"
           >
             <span>{'<Wiktor Chudy />'}</span>
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.4}>
-          <p className="w-3/4 mx-auto text-gray-300 mb-8 text-lg md:text-xl">
+          <p className="xl:w-3/4 mx-auto text-gray-300 mb-8 text-base md:text-xl">
             Frontend Developer with 1+ years of commercial experience, aspiring
             to become a Full-Stack Developer. Aimed at providing real value to
             businesses and delivering highest quality solutions.

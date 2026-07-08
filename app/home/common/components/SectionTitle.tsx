@@ -8,7 +8,7 @@ export default function SectionTitle(props: SectionTitleProps) {
       className="
       bg-gradient-to-r from-primary to-secondary
       bg-clip-text text-transparent
-      text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight"
+      text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight [font-variant-ligatures:none]"
     >
       {props.title}
     </h2>

@@ -12,7 +12,7 @@ export default function ArticlesSection() {
       </FadeIn>
 
       <FadeIn>
-        <p className="text-lg md:text-xl text-gray-300 mt-10 mb-10">
+        <p className="text-base md:text-xl text-gray-300 mt-10 mb-10">
           Blog is place where I shared my experiences, wrote about technologies
           and offered self-development tips. Currently I am not developing this
           section but sharing for you as an archive!

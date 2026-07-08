@@ -18,7 +18,7 @@ export default function AboutSection() {
               <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Summary
               </h2>
-              <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              <p className="text-base md:text-xl text-gray-300 leading-relaxed">
                 Full of energy and commitment Software Engineer who combine
                 solid full-stack development skills with a clear focus on
                 business impact. Currently pursuing degree in Computer Science
@@ -40,17 +40,17 @@ export default function AboutSection() {
               <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 What sets me apart
               </h2>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — End-to-End thinking. I don't just code only my part of new
                 functionality; I focus on the final product. I analyze user
                 needs, business goals and take full ownership of entire feature
                 from day one.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — UX Sensitivity. I bridge gap between technology and design,
                 ensuring that my code delivers an excellent user experience.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Proactivity. I don't wait for issues to escalate. I actively
                 propose improvements and drive initiatives that benefit product
                 and client.
@@ -67,18 +67,18 @@ export default function AboutSection() {
               <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Recent impact
               </h2>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Successful launch of frontend test CI pipeline for the first
                 time in project history.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Multi-version Angular upgrade from v9 to v21.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Frontend error and bug occurrences reduction from 100+ per day
                 to zero.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Complete UI modernization for critical cybersecurity
                 application in Erste Bank Polska.
               </p>
@@ -94,16 +94,16 @@ export default function AboutSection() {
               <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Current focus
               </h2>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Expanding my expertise in both backend and frontend
                 development, with a strong emphasis on Spring Framework
                 ecosystem and Angular.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Deepening my knowledge of DevOps tools and best practices in
                 software architecture / Clean Code.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Business-oriented approach to effectively translate customer
                 needs into high-quality and impactful solutions.
               </p>
@@ -119,13 +119,13 @@ export default function AboutSection() {
               <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Open to
               </h2>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Full-stack, Frontend or Backend Engineer roles.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Projects with Spring / Angular tech stack.
               </p>
-              <p className="text-lg md:text-xl text-gray-300">
+              <p className="text-base md:text-xl text-gray-300">
                 — Collaborate with teams focused on solving meaningful problems.
               </p>
             </div>

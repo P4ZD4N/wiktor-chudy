@@ -27,7 +27,7 @@ function JobEntry({ job }: { job: Job }) {
           <div className="pt-2">
             <button
               onClick={() => setIsOpen(true)}
-              className="text-md font-medium text-primary hover:text-secondary transition-colors cursor-pointer flex items-center gap-1"
+              className="text-base font-medium text-primary hover:text-secondary transition-colors cursor-pointer flex items-center gap-1"
             >
               ➔ Click HERE to read description
             </button>

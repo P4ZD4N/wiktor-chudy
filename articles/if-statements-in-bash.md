@@ -1,16 +1,16 @@
 ---
 title: 'If statements in Bash'
-date: "28-05-2024"
+date: '28-05-2024'
 categories:
-    - Programming
-    - Bash
+  - Programming
+  - Bash
 ---
 
 # If statements in Bash
 
 ![Blog image](/programming/programming-if-bash.png)
 
-Like in other languages, in **Bash** we have **IF conditional statement**, which is key tool  if you want to write more advanced scripts. It enables you to execute proper block of code, depends on certain conditions.
+Like in other languages, in **Bash** we have **IF conditional statement**, which is key tool if you want to write more advanced scripts. It enables you to execute proper block of code, depends on certain conditions.
 
 ## Basic syntax
 
@@ -77,7 +77,7 @@ Now, when we know more about conditional operators I can introduce logical opera
 - **!** -> negation
 - **-a** -> and
 - **&&** -> and
-- **-o**  -> or
+- **-o** -> or
 - **||** -> or
 
 ![Blog image](/programming/utils/ifbash-10.png)
@@ -92,7 +92,7 @@ Now, when we know more about conditional operators I can introduce logical opera
 
 I introduced basic if statements so far. We can handle with it basic and simple conditions. However, there is a **more advanced** version of if statement. It offers better support for conditional and logical operators, flexibility, security and susceptibility to syntax errors.
 
-How to use this more advanced option? Only difference is that the condition must be between **two square brackets** instead of one. 
+How to use this more advanced option? Only difference is that the condition must be between **two square brackets** instead of one.
 
 Now I will show yousome examples, where traditional if statement won't work, but this more advanced will.
 
@@ -118,6 +118,6 @@ Now I will show yousome examples, where traditional if statement won't work, but
 
 ## Summary
 
-Thank you for reading this article! We discovered all the secrets that if statements hide. Remember, that using if statements in Bash is key to write scripts, which are able to react on various situations and conditions. It is also necessary tool to start write more complex scripts. 
+Thank you for reading this article! We discovered all the secrets that if statements hide. Remember, that using if statements in Bash is key to write scripts, which are able to react on various situations and conditions. It is also necessary tool to start write more complex scripts.
 
 I hope that after reading this article you are able to create proper conditions and improve your scripts with usage of this tool. I also encourage you to start practise and play with if statements to master this extremely important concept.

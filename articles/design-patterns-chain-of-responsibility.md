@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Chain of Responsibility'
-date: "29-01-2025"
+date: '29-01-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Chain of Responsibility
@@ -47,9 +47,9 @@ class MotherRequest(val shelf: Shelf)
 
 ```kotlin
 abstract class Child {
- 
+
     lateinit var tallerChild: Child
- 
+
     abstract fun processRequest(motherRequest: MotherRequest)
 }
 ```
@@ -58,7 +58,7 @@ abstract class Child {
 
 ```kotlin
 class Anna : Child() {
- 
+
     override fun processRequest(motherRequest: MotherRequest) {
         if (motherRequest.shelf == Shelf.LOW) {
             println("Anna reached jar from shelf!")
@@ -71,7 +71,7 @@ class Anna : Child() {
 
 ```kotlin
 class Tomek : Child() {
- 
+
     override fun processRequest(motherRequest: MotherRequest) {
         if (motherRequest.shelf == Shelf.MEDIUM) {
             println("Tomek reached jar from shelf!")
@@ -84,7 +84,7 @@ class Tomek : Child() {
 
 ```kotlin
 class Antek : Child() {
- 
+
     override fun processRequest(motherRequest: MotherRequest) {
         if (motherRequest.shelf == Shelf.HIGH) {
             println("Antek reached jar from shelf!")
@@ -98,14 +98,14 @@ class Antek : Child() {
 ```kotlin
 fun main() {
     val motherRequest = MotherRequest(Shelf.HIGH)
- 
+
     val tomek: Child = Tomek()
     val ania: Child = Anna()
     val antek: Child = Antek()
- 
+
     ania.tallerChild = tomek
     tomek.tallerChild = antek
- 
+
     ania.processRequest(motherRequest)
 }
 ```

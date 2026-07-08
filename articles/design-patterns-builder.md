@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Builder'
-date: "11-12-2024"
+date: '11-12-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Builder
@@ -137,7 +137,7 @@ This class contains only **private constructor**, which receive object of **Hous
 
 **HouseBuilder** class consists of the same fields as **House** class and methods, which enable us to "build" house. **buildSomeStuff()** methods works in the same way: receives object and assigns it to appropriate field in **HouseBuilder** class. Each construction must end with invocation of **build()** method, which returns ready **House** object. Actually, we create **House** object now, from values assigned previously in **HouseBuilder** method. Code inside the **init {}** block is run.
 
-*In main method* firstly we create two houses:
+_In main method_ firstly we create two houses:
 
 - First house consists of walls, floors, roof and windows.
 - Second house consists of walls, floors, roof, windows, rooms and garage.
@@ -279,7 +279,7 @@ fun main() {
 
 Classic implementation seems to be much more complicated but nothing could be further from the truth! In fact, it is also really simple, if you understand it correctly.
 
-So let's start with ***HouseBuilder***. It is interface, which has a couple of **buildSomeStuff()** methods for constructing the respective parts of the house and **getHouse()** method, which will return **House** object after construction.
+So let's start with _**HouseBuilder**_. It is interface, which has a couple of **buildSomeStuff()** methods for constructing the respective parts of the house and **getHouse()** method, which will return **House** object after construction.
 
 Next, **HouseDirector** class is responsible for directing the construction process. It has private constructor, which takes object of class, which implement interface described previously. This class has two methods:
 

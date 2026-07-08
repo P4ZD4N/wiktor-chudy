@@ -1,9 +1,9 @@
 ---
 title: 'Basics of Swing and AWT'
-date: "03-06-2024"
+date: '03-06-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Basics of Swing and AWT
@@ -107,24 +107,24 @@ On the end I added **panelNorth** at the top of **ClockPanel** and **panelCenter
 
 As you can see on second screen, with **add()** method I added new instance of **ClockPanel** class to the **ClockFrame** and that's the effect after running program:
 
-![Blog image](/programming/utils/basicsswingawt-4.png)  
+![Blog image](/programming/utils/basicsswingawt-4.png)
 
 ## JLabel
 
 **JLabel**, as you can guess, is class which represents labels. With **JLabel** we can display text, images or both in the same time. In our app I will use **JLabel** to display clock on screen. Let's create clock label in our code:
 
-![Blog image](/programming/utils/basicsswingawt-5.png)  
+![Blog image](/programming/utils/basicsswingawt-5.png)
 
 - I created **timeLabel** private field, whose type is **JLabel**.
-- In constructor I assigned new **JLabel** object to this field and changed some properties. 
-- With **setFont()** method I changed font of our clock (font name, font type and font size). 
+- In constructor I assigned new **JLabel** object to this field and changed some properties.
+- With **setFont()** method I changed font of our clock (font name, font type and font size).
 - With **setForeground()** I set font color to green. On the end I added this new field to center panel with add() method.
 
 ## Timer
 
 To update our clock every second, we can use **Timer** class. This class simply executes certain operations in specified time intervals, so It is perfect solution for us.
 
-![Blog image](/programming/utils/basicsswingawt-6.png)  
+![Blog image](/programming/utils/basicsswingawt-6.png)
 
 - I created timer private field, whose type is **Timer**.
 - I created **SimpleDateFormat** to spicify time format.
@@ -134,7 +134,7 @@ To update our clock every second, we can use **Timer** class. This class simply 
 
 And now, after running app we can see our live clock in frame 😎. Good job!
 
-![Blog image](/programming/utils/basicsswingawt-7.png) 
+![Blog image](/programming/utils/basicsswingawt-7.png)
 
 ## JButton
 
@@ -167,8 +167,8 @@ Now consider both methods:
 
 Both are similar, but sets different time format.
 
-- Firstly these methods determine desired time format. 
-- Then stops current timer and then they are updating It to display time in desired format. 
+- Firstly these methods determine desired time format.
+- Then stops current timer and then they are updating It to display time in desired format.
 - On the end new timer is started.
 
 And our clock is finally ready to use!

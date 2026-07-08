@@ -1,9 +1,9 @@
 ---
 title: 'Storing images with Spring Boot and AWS S3'
-date: "07-08-2024"
+date: '07-08-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Storing images with Spring Boot and AWS S3
@@ -99,7 +99,7 @@ Firstly add these dependencies (if you don't have them yet) to your **pom.xml** 
 
 Next step is to add to our application access and secret keys generated previously as **secrets**. What are secrets? Secrets refers to **sensitive data** such as passwords, API keys, certificates, database credentials, etc. The goal is to store and access this data securely to prevent accidental disclosure or unauthorized access. In this case - imagine, that you have your project on GitHub. You don't want to share our access and secret key in public repo. So to prevent It we will use secrets.
 
-There are many ways to store sensitive data as secrets, but I would like to show you probably simplest for beginners (with CLI arguments). 
+There are many ways to store sensitive data as secrets, but I would like to show you probably simplest for beginners (with CLI arguments).
 
 - Open your project in IntelliJ
 - **Main menu** in the upper left corner -> **Run** -> **Edit Configurations**

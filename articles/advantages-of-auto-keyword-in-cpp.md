@@ -1,9 +1,9 @@
 ---
 title: 'Advantages of auto keyword in C++'
-date: "16-10-2024"
+date: '16-10-2024'
 categories:
-    - Programming
-    - C++
+  - Programming
+  - C++
 ---
 
 # Advantages of auto keyword in C++
@@ -19,7 +19,7 @@ This keyword performs actually **two** functions, but we will focus on one of th
 ```cpp
 #include <iostream>
 auto main() -> int {
-    auto x = 2;  
+    auto x = 2;
     std::cout << x;
 }
 ```
@@ -45,7 +45,7 @@ Now guess what will behavior of program be with auto keyword:
 ```cpp
 #include <iostream>
 auto main() -> int {
-    auto z;  
+    auto z;
     std::cout << z;
 }
 ```
@@ -54,13 +54,13 @@ Maybe you don't know, but in this case code won't compile. This keyword will sec
 
 ```cpp
 auto main() -> int {
-    auto a = 0; 
+    auto a = 0;
     auto b = int();
     auto c = int(0);
     auto d = 3.14;
     auto e = 'A';
     auto str = std::string("Hello");
-    auto vec1 = std::vector<int>{1, 2, 3}; 
+    auto vec1 = std::vector<int>{1, 2, 3};
     auto vec2 = std::vector<std::string>{"one", "two", "three"};
     auto it = vec.begin();
 }

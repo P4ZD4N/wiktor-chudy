@@ -1,15 +1,23 @@
-import Hero from "@/components/home/Hero";
-import HomeProjects from "@/components/home/HomeProjects";
-import HomeArticles from "@/components/home/HomeArticles";
-import HomeContact from "@/components/home/HomeContact";
+import Navbar from './home/common/navbar/Navbar';
+import AboutSection from './home/sections/AboutSection';
+import ArticlesSection from './home/sections/articles/ArticlesSection';
+import ContactSection from './home/sections/contact/ContactSection';
+import ExperienceSection from './home/sections/experience/ExperienceSection';
+import HeroSection from './home/sections/HeroSection';
+import SkillsSection from './home/sections/skills/SkillsSection';
+import StatisticsSection from './home/sections/statistics/StatisticsSection';
 
 const HomePage = async () => {
   return (
-    <section className="relative flex flex-col gap-16">
-      <Hero />
-      <HomeProjects />
-      <HomeArticles />
-      <HomeContact />
+    <section>
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <StatisticsSection />
+      <SkillsSection />
+      <ExperienceSection />
+      <ArticlesSection />
+      <ContactSection />
     </section>
   );
 };

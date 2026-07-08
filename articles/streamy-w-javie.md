@@ -1,9 +1,9 @@
 ---
 title: 'Streamy w Javie'
-date: "26-04-2024"
+date: '26-04-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Streamy w Javie
@@ -78,7 +78,7 @@ Tak jak wcześniej było pokazane i opisane, jest to fundamentalna metoda, któr
 
 Metoda ta służy do filtrowania (wybierania) tylko tych elementów strumienia, które spełniają określone kryterium. Kryterium określamy w argumencie tej metody. Argumentem tej metody może być tylko obiekt typu Predicate, lub wyrażenie lambda z racji tego, że Predicate jest interfejsem funkcyjnym.
 
-#### Wypisanie liczb podzielnych przez 3 i 5 za pomocą pętli foreach. 
+#### Wypisanie liczb podzielnych przez 3 i 5 za pomocą pętli foreach.
 
 ![Image](/programming/utils/javastream-7.png)
 
@@ -100,7 +100,7 @@ Wywołałem na strumieniu metodę filter(), w której jako argument podałem wyr
 
 Metoda ta służy do przekształcania każdego elementu strumienia zgodnie z określonymi wymaganiami, które są definiowane w argumencie tej metody. Argumentem tej metody może być tylko obiekt typu Function, lub wyrażenie lambda z racji tego, że Function jest interfejsem funkcyjnym.
 
-#### Wypisanie wszystkich liczb pomnożonych przez 2 za pomocą pętli foreach. 
+#### Wypisanie wszystkich liczb pomnożonych przez 2 za pomocą pętli foreach.
 
 ![Image](/programming/utils/javastream-10.png)
 
@@ -181,6 +181,6 @@ Opisane szczegółowo przeze mnie metody strumieniowe to tylko garstka, patrząc
 
 Przedstawiłem wszystko co najważniejsze związane ze strumieniami w Javie. Poruszyłem temat tego, czym są strumienie, jakie mają cechy, jakie są sposoby na ich tworzenie oraz pokazałem powiązane z nimi metody.
 
-Strumienie to bardzo potężne narzędzie, które umożliwia wygodne i wydajne przetwarzanie danych. Korzystając z metod strumieniowych możemy pisać bardziej czytelny kod, który jest łatwiejszy w utrzymaniu i rozszerzaniu. Warto dobrze zrozumieć przedstawione tutaj podstawy strumieni oraz zacząć stosować je w swoich projektach. 
+Strumienie to bardzo potężne narzędzie, które umożliwia wygodne i wydajne przetwarzanie danych. Korzystając z metod strumieniowych możemy pisać bardziej czytelny kod, który jest łatwiejszy w utrzymaniu i rozszerzaniu. Warto dobrze zrozumieć przedstawione tutaj podstawy strumieni oraz zacząć stosować je w swoich projektach.
 
 🙏 **Zadanie ode mnie:** Z pewnością w swoich projektach używałeś pętli for/foreach do filtrowania danych. Zacznij od zastąpienia ich strumieniami. Najlepiej zrobić to z wykorzystaniem metody filter(). Później idź dalej i zacznij robić ze strumieniami bardziej zaawansowane operacje. Powodzenia!

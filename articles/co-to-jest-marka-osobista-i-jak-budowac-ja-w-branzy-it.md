@@ -1,9 +1,9 @@
 ---
 title: 'Co to jest marka osobista i po co budować ją w branży IT?'
-date: "17-09-2024"
+date: '17-09-2024'
 categories:
-    - Self-development
-    - Business
+  - Self-development
+  - Business
 ---
 
 # Co to jest marka osobista i po co budować ją w branży IT?

@@ -1,9 +1,9 @@
 ---
 title: 'From many tries to one triumph - why should you create as many opportunities as possible?'
-date: "11-08-2025"
+date: '11-08-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # From many tries to one triumph - why should you create as many opportunities as possible?
@@ -20,7 +20,7 @@ Imagine an investor who buy shares in many companies over time. Most make a litt
 
 🟠 **One well-organized marketing campaign** can bring better results ten earlier ones.
 
-🟠 **One strategic partnership** can open a market you have tried to enter for years. 
+🟠 **One strategic partnership** can open a market you have tried to enter for years.
 
 🟠 **One honest, deep conversation** can repair a relationship more than years of polite small talk.
 
@@ -30,7 +30,7 @@ Imagine an investor who buy shares in many companies over time. Most make a litt
 
 🟢 **Try many things** - Every attempt is a lottery ticket. Most of them won't hit the jackpot, but a few will. Don't bet everything on one idea - spread your efforts so that one big win can balance out the rest.
 
-🟢 **Stay in the game** - Stay consistent. Success is often a matter of time and persistence. You only truly lose when you quit. 
+🟢 **Stay in the game** - Stay consistent. Success is often a matter of time and persistence. You only truly lose when you quit.
 
 🟢 **Spot the leverage points** - Look for opportunities where a small, well-placed effort can create outsized results. These moments are rare - try to recognize and act on them when they appear.
 

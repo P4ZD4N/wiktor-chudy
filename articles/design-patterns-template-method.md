@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Template Method'
-date: "01-02-2025"
+date: '01-02-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Template MEthod
@@ -33,34 +33,34 @@ enum class TypeOfTransport {
 
 ```kotlin
 abstract class TypicalWeekDay {
- 
+
     final fun everyDayIsExactlyTheSame(typeOfTransport: TypeOfTransport) {
         wakeUp()
         getReady()
- 
+
         val time = goToWork(typeOfTransport)
- 
+
         summary(time)
         work()
         goHome()
     }
- 
+
     private fun goHome() {
         println("Going to home...")
     }
- 
+
     private fun summary(time: Int) {
         println("Trip to home took $time minutes...")
     }
- 
+
     private fun getReady() {
         println("Preparing to leave home...")
     }
- 
+
     private fun wakeUp() {
         println("Waking up...")
     }
- 
+
     protected abstract fun work()
     protected abstract fun goToWork(typeOfTransport: TypeOfTransport): Int
 }
@@ -70,13 +70,13 @@ abstract class TypicalWeekDay {
 
 ```kotlin
 open class MyTypicalWeekDay : TypicalWeekDay() {
- 
+
     override fun work() {
         println("Code another feature...")
     }
- 
+
     override fun goToWork(typeOfTransport: TypeOfTransport): Int {
- 
+
         return when(typeOfTransport) {
             TypeOfTransport.ON_FOOT -> 40
             TypeOfTransport.TRAM -> 20
@@ -92,7 +92,7 @@ open class MyTypicalWeekDay : TypicalWeekDay() {
 
 ```kotlin
 class MyFriendTypicalWeekDay : MyTypicalWeekDay() {
- 
+
     override fun work() {
         println("Repairing next car...")
     }
@@ -103,13 +103,13 @@ class MyFriendTypicalWeekDay : MyTypicalWeekDay() {
 
 ```kotlin
 fun main() {
- 
+
     val myTypicalWeekDay = MyTypicalWeekDay()
     val myFriendDay = MyFriendTypicalWeekDay()
- 
+
     println("My day:")
     myTypicalWeekDay.everyDayIsExactlyTheSame(TypeOfTransport.CAR)
- 
+
     println()
     println("My friend's day: ")
     myFriendDay.everyDayIsExactlyTheSame(TypeOfTransport.TRAM)
@@ -119,7 +119,6 @@ fun main() {
 ### Output
 
 ![Output](/programming/utils/template-method-2.png)
-
 
 ### Explanation
 

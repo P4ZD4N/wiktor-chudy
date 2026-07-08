@@ -1,8 +1,8 @@
 ---
 title: 'Types of relationships in Relational Databases'
-date: "24-10-2024"
+date: '24-10-2024'
 categories:
-    - Databases
+  - Databases
 ---
 
 # Types of relationships in Relational Databases
@@ -36,13 +36,13 @@ It is case, when entity is related to itself. It means, that one record in the t
 - **One-To-Many** - Represented by foreign key from the same table.
 - **Many-To-Many** - Represented by intermediate, additional table between two instances of the same table.
 
-### One-To-Many Recursive Relationship example 
+### One-To-Many Recursive Relationship example
 
 Each employee of some company is assigned to the boss, who is simultaneously employee of the same company. This relationship is created with usage of **One-To-Many** relationship, because one employee has one boss, but one boss can supervise multiple employees
 
 ![Blog image](/databases/utils/relationships-2.png)
 
-### Many-To-Many Recursive Relationship example 
+### Many-To-Many Recursive Relationship example
 
 Imagine scenario, where employees can mentor other employees, and each employee can be mentored by multiple employees. This relationship is created with additional table and **One-To-Many** relationships (to achieve **Many-To-Many**).
 
@@ -52,7 +52,7 @@ Imagine scenario, where employees can mentor other employees, and each employee 
 
 It is situation, in which three different entities are related to each other in a single relationship. In the opposite to commonly used binary relationships (between two tables) here we need to combine three elements.
 
-### Example 
+### Example
 
 We have three entities: Student, Subject and Teacher. Ternary Relationship would occur, when we would like to record, which teacher teaches a specific student a particular subject. To achieve it, we need to create additional table, which combine those three entities.
 

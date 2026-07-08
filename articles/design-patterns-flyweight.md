@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Flyweight'
-date: "23-12-2024"
+date: '23-12-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Flyweight
@@ -63,20 +63,20 @@ enum class TreeSize {
 
 ```kotlin
 class TreePropertiesRepository private constructor() {
- 
+
     companion object {
         private val oakProperties = TreeProperties("Oak", "Green", TreeSize.BIG)
         private val birchProperties = TreeProperties("Birch", "Green", TreeSize.MEDIUM)
         private val mapleProperties = TreeProperties("Maple", "Red", TreeSize.MEDIUM)
- 
+
         fun getOakProperties(): TreeProperties {
             return oakProperties
         }
- 
+
         fun getBirchProperties(): TreeProperties {
             return birchProperties
         }
- 
+
         fun getMapleProperties(): TreeProperties {
             return mapleProperties
         }
@@ -88,35 +88,35 @@ class TreePropertiesRepository private constructor() {
 
 ```kotlin
 fun main() {
- 
+
     val trees: MutableList<Tree> = mutableListOf()
- 
+
     var temp = 0
     for (i in 0..10_000_000) {
         trees.add(Oak(temp++, temp++))
         trees.add(Birch(temp++, temp++))
         trees.add(Maple(temp++, temp++))
     }
- 
+
     val oak1 = trees[0] as Oak
     val oak2 = trees[3] as Oak
- 
+
     println("Oak1 coordinates: (${oak1.x}, ${oak1.y})")
     println("Oak2 coordinates: (${oak2.x}, ${oak2.y})")
     println("Oak1 properties == Oak2 properties: ${oak1.properties == oak2.properties}")
     println()
- 
+
     val birch1 = trees[1] as Birch
     val birch2 = trees[4] as Birch
- 
+
     println("Birch1 coordinates: (${birch1.x}, ${birch1.y})")
     println("Birch2 coordinates: (${birch2.x}, ${birch2.y})")
     println("Birch1 properties == Birch2 properties: ${birch1.properties == birch2.properties}")
     println()
- 
+
     val maple1 = trees[2] as Maple
     val maple2 = trees[5] as Maple
- 
+
     println("Maple1 coordinates: (${maple1.x}, ${maple1.y})")
     println("Maple2 coordinates: (${maple2.x}, ${maple2.y})")
     println("Maple1 properties == Maple2 properties: ${maple1.properties == maple2.properties}")
@@ -128,6 +128,7 @@ fun main() {
 ![Output](/programming/utils/flyweight-2.png)
 
 ### Explanation
+
 In our app we have three species of trees: **Oak**, **Birch** and **Maple**, which are represented with appropriate classes. Each tree has its unique location expressed by its distinct **x** and **y** coordinates. Solution assumes, that common tree data is separated into a different class (**TreeProperties.kt**). Common data includes properties such as species, leaf color and tree size. Even though we actually have 30 million trees in our forest, we can save a lot of memory space thanks to **Flyweight**. How? Each of these 30 million trees shares the same properties which are stored once in the **TreeProperties** class, rather than duplicating them for every individual tree. Only the unique coordinates of each tree are stored separately, reducing memory usage while still maintaining a large number of tree objects in memory.
 
 **Your implementation can be different! Treat this as a typical demonstration example.**

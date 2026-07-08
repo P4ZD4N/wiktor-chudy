@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Singleton'
-date: "06-12-2024"
+date: '06-12-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Singleton
@@ -81,7 +81,6 @@ fun main() {
 
 ![Output](/programming/utils/singleton-2.png)
 
-
 ### Explanation
 
 This is simple implementation of guess game. **GuessGame** class is our game class, which is also our game engine. Class is implemented with **Singleton** pattern to ensure, that there is only one instance of the game engine throughout the application's lifecycle.
@@ -90,7 +89,7 @@ One of the most important things and key concept of **Singleton** is that class 
 
 ```kotlin
 class GuessGame private constructor() {
-    
+
     companion object {
         private var instance: GuessGame = GuessGame()
 

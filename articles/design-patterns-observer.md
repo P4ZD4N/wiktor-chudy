@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Observer'
-date: "04-12-2024"
+date: '04-12-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Observer

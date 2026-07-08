@@ -1,9 +1,9 @@
 ---
 title: 'Interfejsy i Lambdy w Javie'
-date: "11-04-2024"
+date: '11-04-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Interfejsy i Lambdy w Javie

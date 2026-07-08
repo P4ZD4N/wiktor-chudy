@@ -1,9 +1,9 @@
 ---
 title: 'Differences between JVM, JRE and JDK'
-date: "16-07-2024"
+date: '16-07-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Differences between JVM, JRE and JDK
@@ -36,8 +36,8 @@ Not only Java uses these three elements. There are also a few other, so-called *
 - Groovy
 - Clojure
 
-So why? Because these three components offers strong support for cross-platform application launch, automatic memory management and robust runtime environment. 
+So why? Because these three components offers strong support for cross-platform application launch, automatic memory management and robust runtime environment.
 
-**JVM** is crucial, because it allows bytecode to run regardless of the hardware platform, which means that application written in different languages can run on any system with the JVM installed. 
+**JVM** is crucial, because it allows bytecode to run regardless of the hardware platform, which means that application written in different languages can run on any system with the JVM installed.
 
 **JDK** and **JRE** provide the tools and libraries necessary to compile and run programs, advanced memory management and security mechanisms, which attract developers of other languages ​​to use this infrastructure. For example, languages ​​such as Scala or Kotlin are allowed to take full advantage of existing Java libraries and the ecosystem, while offering different language paradigms and improvements.

@@ -1,11 +1,11 @@
-import HorizontalArticleFilter from "@/components/articles/HorizontalArticleFilter";
-import PaginatedArticles from "@/components/articles/PaginatedArticles";
-import FadeInOnScroll from "@/components/common/animations/FadeInOnScroll";
-import FadeScale from "@/components/common/animations/FadeScale";
-import { getCategoriesArticles } from "@/lib/articles";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import HorizontalArticleFilter from '@/app/articles/components/HorizontalArticleFilter';
+import PaginatedArticles from '@/app/articles/components/PaginatedArticles';
+import FadeInOnScroll from '@/app/articles/components/FadeInOnScroll';
+import FadeScale from '@/app/articles/components/FadeScale';
+import { getCategoriesArticles } from '@/app/articles/articles';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const HEADER = "Articles";
+const HEADER = 'Articles';
 
 interface ArticlesPageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -20,25 +20,29 @@ export default async function ArticlesPage({
   const selectedCategories: string[] = params.categories
     ? Array.isArray(params.categories)
       ? params.categories.filter(
-          (cat): cat is string => typeof cat === "string"
+          (cat): cat is string => typeof cat === 'string'
         )
-      : typeof params.categories === "string"
-      ? params.categories
-          .split(",")
-          .filter(
-            (cat): cat is string => typeof cat === "string" && cat.trim() !== ""
-          )
-      : []
+      : typeof params.categories === 'string'
+        ? params.categories
+            .split(',')
+            .filter(
+              (cat): cat is string =>
+                typeof cat === 'string' && cat.trim() !== ''
+            )
+        : []
     : [];
 
   const filteredArticles =
     selectedCategories.length > 0
       ? Object.keys(articles)
           .filter((category) => selectedCategories.includes(category))
-          .reduce((acc, category) => {
-            acc[category] = articles[category];
-            return acc;
-          }, {} as typeof articles)
+          .reduce(
+            (acc, category) => {
+              acc[category] = articles[category];
+              return acc;
+            },
+            {} as typeof articles
+          )
       : articles;
 
   const flatArticles = filteredArticles
@@ -49,8 +53,8 @@ export default async function ArticlesPage({
             array.findIndex((a) => a.id === article.id) === index
         )
         .sort((a, b) => {
-          const dateA = a.date.split("-").reverse().join("-");
-          const dateB = b.date.split("-").reverse().join("-");
+          const dateA = a.date.split('-').reverse().join('-');
+          const dateB = b.date.split('-').reverse().join('-');
           return dateB.localeCompare(dateA);
         })
     : [];
@@ -86,7 +90,7 @@ export default async function ArticlesPage({
               href={`?${new URLSearchParams({
                 ...params,
                 page: (page - 1).toString(),
-                categories: selectedCategories.join(","),
+                categories: selectedCategories.join(','),
               }).toString()}`}
             >
               <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-primary shadow flex items-center justify-center transition-all duration-200">
@@ -102,7 +106,7 @@ export default async function ArticlesPage({
               href={`?${new URLSearchParams({
                 ...params,
                 page: (page + 1).toString(),
-                categories: selectedCategories.join(","),
+                categories: selectedCategories.join(','),
               }).toString()}`}
             >
               <div className="w-10 h-10 rounded-full bg-white/50 hover:bg-primary shadow flex items-center justify-center transition-all duration-200">

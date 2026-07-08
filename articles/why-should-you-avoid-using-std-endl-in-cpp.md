@@ -1,9 +1,9 @@
 ---
 title: 'Why should you avoid using std::endl in C++?'
-date: "15-10-2024"
+date: '15-10-2024'
 categories:
-    - Programming
-    - C++
+  - Programming
+  - C++
 ---
 
 # Why should you avoid using std::endl in C++?
@@ -48,7 +48,7 @@ auto main() -> int {
 #include <iostream>
 
 auto main() -> int {
-    std::cout << "Hello, World!" << '\n'; 
+    std::cout << "Hello, World!" << '\n';
 
     return 0;
 }

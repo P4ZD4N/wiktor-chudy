@@ -1,9 +1,9 @@
 ---
 title: 'Loops in Bash'
-date: "30-05-2024"
+date: '30-05-2024'
 categories:
-    - Programming
-    - Bash
+  - Programming
+  - Bash
 ---
 
 # Loops in Bash

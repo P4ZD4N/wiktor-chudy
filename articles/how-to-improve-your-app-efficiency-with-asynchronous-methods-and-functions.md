@@ -1,9 +1,9 @@
 ---
 title: 'How to improve your app efficiency with asynchronous methods and functions?'
-date: "25-03-2025"
+date: '25-03-2025'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # How to improve your app efficiency with asynchronous methods and functions?
@@ -16,7 +16,7 @@ Recently, during [Miesiany Miesiany Kebab](https://github.com/P4ZD4N/miesiany-mi
 
 As I said before, I came across this problem while developing my application for gastronomic industry. More specifically, I created newletter with email verification and notifications about new promotions – some util classes and services responsible for notifying subscribers. Everything worked fine, emails were sent correctly and business logic was in line with expectations. There was one problem: poor performance. More specifically, each email was sent **synchronously**, which means, that the application had to wait for each email to be processed before proceeding the next one. This led to a situation where sending emails to a large number of subscribers **significantly slowed down the system**, causing large delays.
 
-## Solution 
+## Solution
 
 To solve this issue, I decided to try asynchronous programming. Backend of my application is built with usage of Spring and other related technologies, so all my work relied on enabling global async support (by adding **@EnableAsync** annotation in my main application class) and adding **@Async** annotation over appropriate methods definitions. You can see examples below.
 
@@ -38,7 +38,7 @@ public void sendEng(NewsletterSubscriber subscriber, Promotion promotion) throws
 
   mimeMessageHelper.setTo(subscriber.getEmail());
   mimeMessageHelper.setSubject(SUBJECT_ENG);
-    
+
   Context context = getPromotionContext(subscriber, promotion, NewsletterMessagesLanguage.ENGLISH);
   String htmlContent = templateEngine.process("promotion-mail", context);
   mimeMessageHelper.setText(htmlContent, true);

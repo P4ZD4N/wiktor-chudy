@@ -1,13 +1,17 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @theme {
-  --color-primary: #2870ED;
-  --color-secondary: #0b4cbb;
+  --color-primary: #2870ed;
+  --color-secondary: #981cd1;
   --color-background-1: #070a16;
   --color-background-2: #03050a;
+
+  --gradient-primary:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(90deg, rgba(40, 112, 237, 1) 0%, rgba(152, 28, 209, 1) 100%);
 }
 
 .scrollbar-hidden {
@@ -60,20 +64,21 @@
 }
 
 .article > pre::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary);;
+  background-color: var(--color-primary);
   border-radius: 10px;
   border: 2px solid #1c1917;
 }
 
 .article > pre::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-primary);;
+  background-color: var(--color-primary);
 }
 
 .article > blockquote {
   @apply text-gray-400 pl-5 italic border-l-2 border-neutral-600;
 }
 
-.article > p, ul {
+.article > p,
+ul {
   @apply text-gray-400;
 }
 
@@ -111,14 +116,14 @@
 .fade-scale {
   animation-name: fadeScale;
   animation-fill-mode: both;
-  animation-duration: var(--duration, .6s);
+  animation-duration: var(--duration, 0.6s);
   animation-delay: var(--delay, 0s);
 }
 
 .slide-blur {
   animation-name: slideBlur;
   animation-fill-mode: both;
-  animation-duration: var(--duration, .8s);
+  animation-duration: var(--duration, 0.8s);
   animation-delay: var(--delay, 0s);
 }
 
@@ -178,7 +183,7 @@
 @keyframes fadeScale {
   0% {
     opacity: 0;
-    transform: translateY(20px) scale(.95);
+    transform: translateY(20px) scale(0.95);
   }
   100% {
     opacity: 1;

@@ -1,8 +1,8 @@
 ---
 title: 'Why should you know your opponent better before confrontation?'
-date: "06-03-2025"
+date: '06-03-2025'
 categories:
-    - Self-development
+  - Self-development
 ---
 
 # What is the “Make It Obvious" law and how can you use it in business context?
@@ -47,7 +47,6 @@ Everyone, who ever came across the **The Art of War** book, author of which is S
 
 &nbsp;
 
-
 ### **Job interview**
 
 ### Without preparation
@@ -68,7 +67,7 @@ Everyone, who ever came across the **The Art of War** book, author of which is S
 
 &nbsp;
 
-You can probably compare infinite number of such cases, but with help of these two you will definitely agree, that there is **significant difference**. It show us directly, how important is knowledge about your opponent before the battle. 
+You can probably compare infinite number of such cases, but with help of these two you will definitely agree, that there is **significant difference**. It show us directly, how important is knowledge about your opponent before the battle.
 
 ## Let’s switch to practical part of this article! Let me tell you, how to do value research before your battle.
 

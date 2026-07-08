@@ -1,8 +1,8 @@
 ---
 title: 'Czysty kod - czym jest, dlaczego jest tak ważny i jak nadawać nazwy w kodzie?'
-date: "25-03-2024"
+date: '25-03-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Czysty kod - czym jest, dlaczego jest tak ważny i jak nadawać nazwy w kodzie?
@@ -20,7 +20,7 @@ Czysty kod to czytelny, zorganizowany i zrozumiały kod źródłowy, który jest
 - Umożliwia stworzenie **łatwego** do zrozumienia, utrzymania i rozszerzenia kodu, który będzie **czytelny** i **przystępny** dla innych oraz dla nas samych.
 - Przyczynia się do **poprawy komunikacji** oraz **ułatwienia współpracy** w zespole programistycznym.
 - Sprawi, że napisany przez nas kod będą po części **rozumieć** osoby niezwiązane z technologią.
-- **Ułatwi** nam powrót do kodu po czasie (gdy w przyszłości wymyślimy jakąś nową funkcjonalność dla naszej aplikacji czy zwyczajnie będziemy chcieli zrefaktoryzować kod, to znacznie łatwiej będzie nam się za to zabrać). 
+- **Ułatwi** nam powrót do kodu po czasie (gdy w przyszłości wymyślimy jakąś nową funkcjonalność dla naszej aplikacji czy zwyczajnie będziemy chcieli zrefaktoryzować kod, to znacznie łatwiej będzie nam się za to zabrać).
 - Zmniejszy ryzyko **błędów i nieporozumień**.
 - Zwiększy wydajność zespołu i oszczędność czasu za pomocą **wyeliminowania** zbędnych analiz niejasnego kodu.
 
@@ -100,6 +100,6 @@ Z pewnością zgodzisz się, że kod z pierwszego obrazka nie jest zbyt znacząc
 
 Jak sam widzisz, wiele konwencji nazywania powtarza się w przypadku pól, metod oraz klas, więc ich nauka i przyswojenie powinny być jeszcze prostsze.
 
-To dopiero pierwszy post z serii czystego kodu, jednak bardzo istotny, ponieważ przedstawiłem w nim jeden z najważniejszych konceptów tego podejścia. Omówiliśmy sobie także krótko czym jest i dlaczego jest on tak ważny. W kolejnych wpisach zajmiemy się opisem pozostałych, ważnych konceptów czystego kodu, które pomogą ci go lepiej opanować. 
+To dopiero pierwszy post z serii czystego kodu, jednak bardzo istotny, ponieważ przedstawiłem w nim jeden z najważniejszych konceptów tego podejścia. Omówiliśmy sobie także krótko czym jest i dlaczego jest on tak ważny. W kolejnych wpisach zajmiemy się opisem pozostałych, ważnych konceptów czystego kodu, które pomogą ci go lepiej opanować.
 
 Na ten moment proponuję i bardzo polecam ci zajrzeć do twoich projektów, a następnie spojrzeć na nazwy które tam zastosowałeś. Sprawdź, czy wszystkie są czytelne i opisowe. Upewnij się także, czy gdy odłożysz projekt i wrócisz do niego za miesiąc, to czy pozwolą ci na swobodną analizę kodu. Jeśli nie, to już dziś przeprowadź refaktoryzację, ulepsz swój projekt i uczyń swoj

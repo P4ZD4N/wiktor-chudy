@@ -1,9 +1,9 @@
 ---
 title: 'Typy generyczne i wylicznikowe w Javie'
-date: "16-04-2024"
+date: '16-04-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Typy generyczne i wylicznikowe w Javie

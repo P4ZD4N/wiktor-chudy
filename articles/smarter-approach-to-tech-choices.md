@@ -1,8 +1,8 @@
 ---
 title: 'Smarter approach to tech choices'
-date: "27-04-2025"
+date: '27-04-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Smarter approach to tech choices
@@ -66,4 +66,3 @@ Ignoring these aspects and blindly favoring popular or trendy technologies often
 Instead of engaging in debates about the superiority of one technology over another, let’s focus on what really matters – **delivering effective solutions**. Choice of technology should be based on the specific requirements of the project, business context and available resources. Almost never on personal preferences or fashion.
 
 Remember – true professionalism lies in the ability to match the right tool to the specific problem. Understanding this will definitely make you a more valuable programmer and lead to better project results.
-

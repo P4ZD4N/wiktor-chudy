@@ -1,11 +1,11 @@
 {
-  "name": "Wiktor Chudy | Full Stack Software Engineer",
+  "name": "Wiktor Chudy | Software Engineer",
   "short_name": "Wiktor Chudy",
-  "description": "Hey, I'm Wiktor — Full Stack Software Engineer specializing in Java and Angular aimed at providing real value to projects through strong business-oriented approach.",
+  "description": "Hey, I'm Wiktor — Frontend Developer with 1+ years of commercial experience, aspiring to become a Full-Stack Developer.",
   "start_url": "/",
   "display": "fullscreen",
   "background_color": "#000000",
-  "theme_color": "#f97316",
+  "theme_color": "#2870ed",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

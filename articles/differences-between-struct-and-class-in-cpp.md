@@ -1,9 +1,9 @@
 ---
 title: 'Differences between struct and class keywords in C++'
-date: "14-11-2024"
+date: '14-11-2024'
 categories:
-    - Programming
-    - C++
+  - Programming
+  - C++
 ---
 
 # Differences between struct and class keywords in C++
@@ -13,13 +13,13 @@ categories:
 In C++ we have actually two ways to create something, that is understand as "class". There are two keywords, which enable us to do it: **class** and **struct**.
 
 ```cpp
-class Person { 
+class Person {
   // ...
 };
 ```
 
 ```cpp
-struct Person { 
+struct Person {
   // ...
 };
 ```
@@ -41,7 +41,7 @@ struct MyStruct {
 
 class MyClass {
     int x; // private by default
-     
+
     public:
       int y;  // public
 };
@@ -52,7 +52,6 @@ class MyClass {
 **struct** keyword must exist in **C++** mainly for compatibility with **C** programming language. This keyword was used in C to group simple data and create slightly more complex structures with them. It did not support methods or other OOP mechanisms.
 
 Addition of class keyword was intended to help programmers distinguish between two concepts: "simple structure" **(struct)** and "class in the sense of object-oriented programming" **(class)**. Struct was intended to create simple groups of data and class was intended to be used for full OOP. However, in practice this distinction turned out to be unimportant, because struct in C++ supports all OOP mechanisms. As a result, we were left with two keywords that are almost functionally identical.
-
 
 ## Which one is better to use?
 

@@ -1,9 +1,9 @@
 ---
 title: 'How to use labeling technique to find out what they really want?'
-date: "26-10-2025"
+date: '26-10-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # How to use labeling technique to find out what they really want?
@@ -24,7 +24,7 @@ You really want to know what is other person thinking about. When you hear "I ha
 
 ### **2. Be quiet**
 
-Most important -  don’t  add "am I right?" or something similar. Just be silent.
+Most important - don’t add "am I right?" or something similar. Just be silent.
 
 ### **3. Wait for your extra information**
 
@@ -32,8 +32,8 @@ Other person will fill silence, either confirm and explain ("That's right, becau
 
 ## Why does it work?
 
-By naming a negative emotion like frustration or fear you defuse it. 
+By naming a negative emotion like frustration or fear you defuse it.
 
-Other person feels heard and understood what switches off their defensive mode. Instead of fighting, they just start explaining. 
+Other person feels heard and understood what switches off their defensive mode. Instead of fighting, they just start explaining.
 
 With this simple method you create possibility to extract information without asking a additional questions.

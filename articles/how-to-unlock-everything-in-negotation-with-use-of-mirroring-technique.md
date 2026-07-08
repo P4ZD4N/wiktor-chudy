@@ -1,9 +1,9 @@
 ---
 title: 'How to unlock everything in a negotiation with use of mirroring technique?'
-date: "12-10-2025"
+date: '12-10-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # How to unlock everything in a negotiation with use of mirroring technique?

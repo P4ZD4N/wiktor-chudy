@@ -1,9 +1,9 @@
 ---
 title: 'Podstawy programowania współbieżnego w Javie'
-date: "09-05-2024"
+date: '09-05-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Podstawy programowania współbieżnego w Javie
@@ -62,11 +62,12 @@ Zastosowanie słowa kluczowego **synchronized** w sygnaturze metody zapewnia, ż
 
 ![Blog image](/programming/utils/javapodswspo-9.png)
 
-####  Counter
+#### Counter
 
 Klasa posiadająca pole count, które będzie modyfikowane przez dwa wątki jednocześnie oraz metody increment(), która jest synchronizowana do inkrementacji pola i getCount() do uzyskania wartości pola.
 
 #### MyThread
+
 Klasa rozszerzająca klasę Thread. Posiada pole counter, inicjowane w konstruktorze, który przyjmuje obiekt klasy Counter jako argument. Nadpisuje metodę run(), dostarczając pętlę, która inkrementuje pole count 10000 razy.
 
 #### Main

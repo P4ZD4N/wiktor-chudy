@@ -1,8 +1,8 @@
 ---
 title: 'Never resign from 1% growth!'
-date: "18-02-2025"
+date: '18-02-2025'
 categories:
-    - Self-development
+  - Self-development
 ---
 
 # Never resign from 1% growth!

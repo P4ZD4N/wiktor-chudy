@@ -1,8 +1,8 @@
 ---
 title: 'JWT vs Session Authentication'
-date: "27-08-2024"
+date: '27-08-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # JWT vs Session Authentication

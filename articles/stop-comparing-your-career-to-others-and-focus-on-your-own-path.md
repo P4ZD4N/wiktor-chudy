@@ -1,8 +1,8 @@
 ---
 title: 'Stop comparing your career to others and focus on your own path!'
-date: "19-03-2025"
+date: '19-03-2025'
 categories:
-    - Self-development
+  - Self-development
 ---
 
 # Stop comparing your career to others and focus on your own path!

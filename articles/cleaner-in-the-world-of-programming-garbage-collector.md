@@ -1,9 +1,9 @@
 ---
 title: 'Cleaner in the world of programming - Garbage Collector'
-date: "15-06-2024"
+date: '15-06-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Cleaner in the world of programming - Garbage Collector
@@ -22,8 +22,8 @@ There are also programming languages, which have build-it **garbage collector** 
 
 - When you create new things in your code (objects, arrays etc.) computer allocates memory space for them.
 - After running your app in Java, Python, C#, JavaScript (or other language having built-in garbage collector), garbage collector start working in appropriate moments. In short, it depends on applied gc algorithm and current memory load.
-- It keeps track of which things (which you created earlier in you code) are currently used by your program. 
-- These, which are used are untouched, but things, which are not, are collected by garbage collector and removed (gc frees memory used by currently not used things). 
+- It keeps track of which things (which you created earlier in you code) are currently used by your program.
+- These, which are used are untouched, but things, which are not, are collected by garbage collector and removed (gc frees memory used by currently not used things).
 - This process repeats itself the entire time your program is running. Garbage Collector tries to optimize memory usage so that the application runs quickly and efficiently.
 
 ## Advantages and disadvantages
@@ -44,6 +44,6 @@ There are also programming languages, which have build-it **garbage collector** 
 
 Thank you for reading this short article!
 
-Now you already know more about garbage collector - important element of modern development, which helps programmers in memory management with managing memory in applications automatically, removing unused objects and preventing memory leaks. 
+Now you already know more about garbage collector - important element of modern development, which helps programmers in memory management with managing memory in applications automatically, removing unused objects and preventing memory leaks.
 
 I hope, that knowledge from my article let you understand, how memory is managed in most modern programming languages. Remember, that garbage collector is really complex mechanism and there are many more topics, that you can explore about it. For example there are dozens of algorithms, which can be used by different garbage collectors. If you are interested, then feel free to explore!

@@ -1,20 +1,20 @@
 ---
 title: 'The most crucial element of a plan is planning for its failure'
-date: "31-08-2025"
+date: '31-08-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # The most crucial element of a plan is planning for its failure
 
 ![Blog image](/ro-biznes/blog-ro-biznes-planning-failure.png)
 
-*"The most important element of any plan is to plan what you will do when things don’t go as expected."* said Morgan Housel in his The Psychology of Money book. This simple but powerful quote reminds us that even the most carefully designed strategies are vulnerable to surprises. In business or personal life things rarely evolve exactly as predicted.
+_"The most important element of any plan is to plan what you will do when things don’t go as expected."_ said Morgan Housel in his The Psychology of Money book. This simple but powerful quote reminds us that even the most carefully designed strategies are vulnerable to surprises. In business or personal life things rarely evolve exactly as predicted.
 
 ## Why planning for failure matters?
 
-We can of course do our best to maximize chances for our success, but not everything depends on us. For this reason we should always leave margin of safety which can be understood in different way depending on specific case - extra cash, more time, buffer of energy. Without it, even the smartest strategy can fail. It protects us from surprises when the unexpected happens. 
+We can of course do our best to maximize chances for our success, but not everything depends on us. For this reason we should always leave margin of safety which can be understood in different way depending on specific case - extra cash, more time, buffer of energy. Without it, even the smartest strategy can fail. It protects us from surprises when the unexpected happens.
 
 Think of successful companies - what sets them apart is not just their ambition, but their ability to survive long enough for that ambition to come true. They can survive in unexpected situations - whether that is economic crisis, failed product launch or sudden expenses - because they included safety mechanisms in their plans. The same principle can be applied by any person or company.
 

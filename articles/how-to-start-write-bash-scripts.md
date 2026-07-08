@@ -1,9 +1,9 @@
 ---
 title: 'How to start write Bash scripts?'
-date: "15-05-2024"
+date: '15-05-2024'
 categories:
-    - Programming
-    - Bash
+  - Programming
+  - Bash
 ---
 
 # How to start write Bash scripts?
@@ -18,7 +18,7 @@ Hello! In this article I would like to tell you a little about bacics of bash sc
 ## Conditions
 
 - It is not obligatory to use Unix-based system like Linux or macOS to write bash scripts. You can even create your scripts on Windows, but in this article I will focus on writing scripts in Unix-based environment.
-- Your file with bash script should have .sh extension. 
+- Your file with bash script should have .sh extension.
 - Your file with .sh extension should have appropriate rights. It should have right to execute for user. You can give this right with the **following command**: chmod u+x [file.sh]
 
 ## How to run script?

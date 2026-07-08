@@ -1,8 +1,8 @@
 ---
 title: 'Basic concepts of Relational Databases'
-date: "10-10-2024"
+date: '10-10-2024'
 categories:
-    - Databases
+  - Databases
 ---
 
 # Basic concepts of Relational Databases
@@ -14,7 +14,7 @@ Hello! Today I will describe to you some basic definitions and concepts, which a
 ## Really basic definitions
 
 - **Data** - Values, which can be processed. This is something, what we save and record in any form.
-- **Information** - Data with its semantics - the key to its interpretation. The inability to correctly interpret the data makes it useless.  
+- **Information** - Data with its semantics - the key to its interpretation. The inability to correctly interpret the data makes it useless.
 - **Redundancy** - Case when the data has too detailed, unnecessary properties.
 - **Data model** - Data storage structure, that allows predicting where and in what form data is saved. Popular data models are hierarchical model, network model, relational model or object-oriented model.
 - **Primary key** - One or more columns, which clearly identify entire row. Value of primary key can't be empty and must be unique.
@@ -84,7 +84,7 @@ One actor can act in many movies and each movie can have many actors.
 
 ## NULL
 
-NULL is special **object (so-called pseudovalue)**, which means no value. We can insert NULL at the intersection of row and column, if value is not known yet or if we know, that value does not exist. 
+NULL is special **object (so-called pseudovalue)**, which means no value. We can insert NULL at the intersection of row and column, if value is not known yet or if we know, that value does not exist.
 
 ### Examples
 
@@ -113,7 +113,7 @@ One of the elements, that is defined at the stage of preparing data model is det
 
 **Indexes** are structures, which speeds up searching data in tables with creating additional indicators on columns. Thanks to indexes, queries to database can be realized faster. Cost of index is increase of time and resources needed to insert, update and remove data operations.
 
-### Example 
+### Example
 
 Imagine, that you have really huge telephone book with millions of phone numbers. If you want to call to your friend, without a table of contents you would have to go through page by page, so it would be really difficult. But if telephone book has an alphabetical list of contacts, you can quickly go to the appropriate section and find you friend's number. Index works similarly. When you create index on a column in table, database creates a table of contents for that column, so you can find data you are interested in more quickly. Thanks to this, queries, that search for information in this column run much faster because the database does not have to search all records one by one.
 
@@ -129,7 +129,7 @@ Ensures, that all operations of transaction are performed in full or none of the
 
 Transaction involving the transfer of money between two accounts must involve both a debit to one account and a credit to the other. If one of these operations fails, the entire transaction should be canceled.
 
-### (C) Consistency 
+### (C) Consistency
 
 Guarantee, that transaction changes data from one consistent state to another consistent state. This means, that when the transaction completes, database must be in a state, that is logically correct.
 
@@ -137,7 +137,7 @@ Guarantee, that transaction changes data from one consistent state to another co
 
 If a bank account has a minimum balance, the transaction will fail if the withdrawal makes the balance drop below that limit.
 
-### (I) Isolation 
+### (I) Isolation
 
 Parallel transactions should not affect each other. Transactions executed simultaneously should be trated as if they were executed sequentially.
 
@@ -145,7 +145,7 @@ Parallel transactions should not affect each other. Transactions executed simult
 
 If one transaction updates data and the other reads the same data, isolation ensures that the read is based on the state before or after the update is completed, rather than on a partially changed state.
 
-### (D) Durabiity 
+### (D) Durabiity
 
 Ensures, that after transaction completed and commited, changes will be permanently saved.
 

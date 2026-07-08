@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Decorator'
-date: "14-01-2025"
+date: '14-01-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Decorator
@@ -25,7 +25,7 @@ Imagine, that you are chef in certain restaurant. You, as a chef, should prepare
 
 ```kotlin
 abstract class Meal {
- 
+
     open fun prepareMeal() {
         println("Preparing meal...")
     }
@@ -36,7 +36,7 @@ abstract class Meal {
 
 ```kotlin
 class PotatoMeal : Meal() {
- 
+
     override fun prepareMeal() {
         println("Preparing potato meal...")
     }
@@ -47,7 +47,7 @@ class PotatoMeal : Meal() {
 
 ```kotlin
 class RiceMeal : Meal() {
- 
+
     override fun prepareMeal() {
         println("Preparing rice meal...")
     }
@@ -58,7 +58,7 @@ class RiceMeal : Meal() {
 
 ```kotlin
 open class MealDecorator(private val decoratedMeal: Meal) : Meal() {
- 
+
     override fun prepareMeal() {
         decoratedMeal.prepareMeal()
     }
@@ -69,11 +69,11 @@ open class MealDecorator(private val decoratedMeal: Meal) : Meal() {
 
 ```kotlin
 class ChickenMealDecorator(private val decoratedMeal: Meal) : MealDecorator(decoratedMeal) {
- 
+
     private fun addChicken() {
         println("Adding chicken to meal...")
     }
- 
+
     override fun prepareMeal() {
         decoratedMeal.prepareMeal()
         addChicken()
@@ -85,11 +85,11 @@ class ChickenMealDecorator(private val decoratedMeal: Meal) : MealDecorator(deco
 
 ```kotlin
 class SauceMealDecorator(private val decoratedMeal: Meal) : MealDecorator(decoratedMeal) {
- 
+
     private fun addSauce() {
         println("Adding sauce to meal...")
     }
- 
+
     override fun prepareMeal() {
         decoratedMeal.prepareMeal()
         addSauce()
@@ -101,11 +101,11 @@ class SauceMealDecorator(private val decoratedMeal: Meal) : MealDecorator(decora
 
 ```kotlin
 class ShrimpMealDecorator(private val decoratedMeal: Meal) : MealDecorator(decoratedMeal) {
- 
+
     private fun addShrimp() {
         println("Adding shrimp to meal...")
     }
- 
+
     override fun prepareMeal() {
         decoratedMeal.prepareMeal()
         addShrimp()
@@ -120,11 +120,11 @@ fun main() {
     println("New meal: ")
     val riceMeal: Meal = RiceMeal()
     riceMeal.prepareMeal()
- 
+
     println("\nNew meal: ")
     val riceMealWithShrimp: Meal = ShrimpMealDecorator(RiceMeal())
     riceMealWithShrimp.prepareMeal()
- 
+
     println("\nNew meal: ")
     val potatoMealWithChickenAndSauce: Meal = SauceMealDecorator(ChickenMealDecorator(PotatoMeal()))
     potatoMealWithChickenAndSauce.prepareMeal()

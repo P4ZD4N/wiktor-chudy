@@ -1,8 +1,8 @@
 ---
 title: 'Why is it worth running blog?'
-date: "16-01-2025"
+date: '16-01-2025'
 categories:
-    - Self-development
+  - Self-development
 ---
 
 # Why is it worth running blog?

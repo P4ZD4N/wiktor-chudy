@@ -1,9 +1,9 @@
 ---
 title: 'What is the “Make It Obvious" law and how can you use it in business context?'
-date: "04-05-2025"
+date: '04-05-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # What is the “Make It Obvious" law and how can you use it in business context?

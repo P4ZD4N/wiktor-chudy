@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Command'
-date: "12-02-2025"
+date: '12-02-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Command
@@ -41,7 +41,7 @@ interface MusicPlayerCommand {
 
 ```kotlin
 class PlayFirstTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayerCommand {
- 
+
     override fun play() {
         musicPlayer.playFirstTrack()
     }
@@ -52,7 +52,7 @@ class PlayFirstTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayerC
 
 ```kotlin
 class PlayNextTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayerCommand {
- 
+
     override fun play() {
         musicPlayer.playNextTrack()
     }
@@ -63,7 +63,7 @@ class PlayNextTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayerCo
 
 ```kotlin
 class PlayRandomTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayerCommand {
- 
+
     override fun play() {
         musicPlayer.playRandomTrack()
     }
@@ -74,20 +74,20 @@ class PlayRandomTrackCommand(private val musicPlayer: MusicPlayer) : MusicPlayer
 
 ```kotlin
 class MusicPlayer {
- 
+
     private val tracks: MutableList<String> = mutableListOf("Chin Check", "Candy Shop", "Gin N Juice", "Still D.R.E.", "Xxplosive")
     private var currentTrackNumber = 0
- 
+
     fun playFirstTrack() {
         println("Playing first track: " + tracks[0])
     }
- 
+
     fun playNextTrack() {
         currentTrackNumber++
         if (currentTrackNumber > 4) currentTrackNumber = 0
         println("Playing next track: ${tracks[currentTrackNumber]}")
     }
- 
+
     fun playRandomTrack() {
         val randomNumber = (0..4).random()
         println("Playing random track: ${tracks[randomNumber]}")
@@ -99,9 +99,9 @@ class MusicPlayer {
 
 ```kotlin
 class MusicPlayerRemote {
- 
+
     lateinit var musicPlayerCommand: MusicPlayerCommand
- 
+
     fun pressButton() {
         musicPlayerCommand.play()
     }
@@ -114,10 +114,10 @@ class MusicPlayerRemote {
 fun main() {
     val musicPlayer = MusicPlayer()
     val remote = MusicPlayerRemote()
- 
+
     remote.musicPlayerCommand = PlayFirstTrackCommand(musicPlayer)
     remote.pressButton()
- 
+
     remote.musicPlayerCommand = PlayNextTrackCommand(musicPlayer)
     remote.pressButton()
     remote.pressButton()
@@ -125,7 +125,7 @@ fun main() {
     remote.pressButton()
     remote.pressButton()
     remote.pressButton()
- 
+
     remote.musicPlayerCommand = PlayRandomTrackCommand(musicPlayer)
     remote.pressButton()
     remote.pressButton()
@@ -150,4 +150,4 @@ Implementation consists of **MusicPlayerCommand interface**, which is implemente
 
 ❌ Each command should be created as separated class. It can lead to mess in our project.
 
-❌ 	Using without caution can lead to excessive complexity in simple cases, where we don’t need to have high level of flexibility.
+❌ Using without caution can lead to excessive complexity in simple cases, where we don’t need to have high level of flexibility.

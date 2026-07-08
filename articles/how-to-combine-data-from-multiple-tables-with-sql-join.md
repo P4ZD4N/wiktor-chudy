@@ -1,8 +1,8 @@
 ---
 title: 'How to combine data from multiple tables with SQL JOIN?'
-date: "20-11-2024"
+date: '20-11-2024'
 categories:
-    - Databases
+  - Databases
 ---
 
 # How to combine data from multiple tables with SQL JOIN?
@@ -19,15 +19,15 @@ To explain majority of JOIN types I would like to use this simple database schem
 
 ### Clients
 
-- id: 1 | first_name: Anna  
-- id: 2 | first_name: Marek  
-- id: 3 | first_name: Jan  
+- id: 1 | first_name: Anna
+- id: 2 | first_name: Marek
+- id: 3 | first_name: Jan
 
 ### Orders
 
-- id: 1 | client_id: 1   | product | Laptop  
-- id: 2 | client_id: 3   | product | Printer  
-- id: 3 | client_id: NULL | product | Telephone  
+- id: 1 | client_id: 1 | product | Laptop
+- id: 2 | client_id: 3 | product | Printer
+- id: 3 | client_id: NULL | product | Telephone
 
 ## INNER JOIN
 
@@ -123,17 +123,17 @@ CROSS JOIN Orders;
 
 ## Combining table with itself (Self-Join)
 
-Imagine, that you have [recursive relationship](https://wiktorchudy.me/types-of-relationships-in-relational-databases/). Then you may need to join the table with itself. Self-join is useful when you need to compare rows within the same table or establish relationships between rows in the same dataset. To differentiate between the "copies" of the table, you use table aliases. 
+Imagine, that you have [recursive relationship](https://wiktorchudy.me/types-of-relationships-in-relational-databases/). Then you may need to join the table with itself. Self-join is useful when you need to compare rows within the same table or establish relationships between rows in the same dataset. To differentiate between the "copies" of the table, you use table aliases.
 
 ## Database schema
 
 ### Students
 
-- id: 1 | name: Alice | mentor_id: NULL  
-- id: 2 | name: Bob | mentor_id: 1  
-- id: 3 | name: Charlie | mentor_id: 1  
-- id: 4 | name: David | mentor_id: 2  
-- id: 5| name: Emma | mentor_id: 3  
+- id: 1 | name: Alice | mentor_id: NULL
+- id: 2 | name: Bob | mentor_id: 1
+- id: 3 | name: Charlie | mentor_id: 1
+- id: 4 | name: David | mentor_id: 2
+- id: 5| name: Emma | mentor_id: 3
 
 ### Example query
 
@@ -162,9 +162,9 @@ With **JOINs** we can of course combine more than two tables. Now I would like t
 
 ### Orders
 
-- id: 1 | client_id: 1 | product_id: 2  
-- id: 2 | client_id: 3 | product_id: 1  
-- id: 3 | client_id: 2 | product_id: 3 
+- id: 1 | client_id: 1 | product_id: 2
+- id: 2 | client_id: 3 | product_id: 1
+- id: 3 | client_id: 2 | product_id: 3
 
 ### Products
 
@@ -175,7 +175,7 @@ With **JOINs** we can of course combine more than two tables. Now I would like t
 ### Example query with INNER JOIN
 
 ```sql
-SELECT 
+SELECT
     Clients.first_name AS Client,
     Products.product AS Product,
     Products.price AS Price
@@ -188,7 +188,6 @@ INNER JOIN Products ON Orders.product_id = Products.id;
 
 ![Example query](/databases/utils/joins-10.png)
 
-
 ### Venn diagram of the result
 
 ![Example query](/databases/utils/joins-11.png)
@@ -196,20 +195,20 @@ INNER JOIN Products ON Orders.product_id = Products.id;
 ## Joins based on parameters other than the foreign and primary keys
 
 Not every join is a foreign key / primary key based. We can also join tables based on other properties, for example range of values (range of numbers, dates or others). This particular case is achievable with **BETWEEN** condition within **ON** clause. Database schema for this example:
+
 ## Database schema
 
 ### Employees
 
-- id: 1 | name: John  | salary: 5000  
-- id: 2 | name: Alice | salary: 7000  
-- id: 3 | name: Bob   | salary: 10000  
-
+- id: 1 | name: John | salary: 5000
+- id: 2 | name: Alice | salary: 7000
+- id: 3 | name: Bob | salary: 10000
 
 ### Salary_Ranges
 
-- id: 1 | category: Low income    | min_salary: 0    | max_salary: 6000  
-- id: 2 | category: Medium Income | min_salary: 6001 | max_salary: 8000  
-- id: 3 | category: High Income   | min_salary: 8001 | max_salary: 12000  
+- id: 1 | category: Low income | min_salary: 0 | max_salary: 6000
+- id: 2 | category: Medium Income | min_salary: 6001 | max_salary: 8000
+- id: 3 | category: High Income | min_salary: 8001 | max_salary: 12000
 
 ### Example query
 

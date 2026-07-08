@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Factory'
-date: "20-12-2024"
+date: '20-12-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Factory
@@ -12,8 +12,8 @@ categories:
 **Factory** is one of creational design patterns. Main concept of this pattern is to facilitate process of creating objects and to delegate responsibility for it to special classes. With usage of **Factory** there is no need to directly write code responsible for creating them every time.
 
 ## Problem
-Imagine, that you own a car factory. Your factory specializes in producing cars from two specific brands: Ford and BMW. Each car produced by the factory is distinguished by key attributes such as engine capacity, fuel type and year of production. Challenge appear when you need to manage production of these cars in a scalable and efficient way. The factory must be able to produce cars based on the brand and ensure that the correct attributes (engine capacity, fuel type, year of production) are assigned to each car. Factory pattern can help by providing certain mechanism for creating cars. It will be responsible for instantiating cars based on the requested brand, ensuring, that all required attributes are correctly assigned and simplifying the process of car production. It also allows you to easy extensions when new car brands are introduced in the future.
 
+Imagine, that you own a car factory. Your factory specializes in producing cars from two specific brands: Ford and BMW. Each car produced by the factory is distinguished by key attributes such as engine capacity, fuel type and year of production. Challenge appear when you need to manage production of these cars in a scalable and efficient way. The factory must be able to produce cars based on the brand and ensure that the correct attributes (engine capacity, fuel type, year of production) are assigned to each car. Factory pattern can help by providing certain mechanism for creating cars. It will be responsible for instantiating cars based on the requested brand, ensuring, that all required attributes are correctly assigned and simplifying the process of car production. It also allows you to easy extensions when new car brands are introduced in the future.
 
 ## Factory Method implementation (Kotlin)
 
@@ -24,7 +24,7 @@ Imagine, that you own a car factory. Your factory specializes in producing cars 
 ### Car.kt
 
 ```kotlin
-	
+
 abstract class Car(engineCapacity: Double, fuelType: FuelType, productionYear: Int)
 ```
 
@@ -74,7 +74,7 @@ abstract class Factory {
 
 ```kotlin
 class CarFactory : Factory() {
- 
+
     override fun createCar(carBrand: CarBrand): Car {
         return when (carBrand) {
             CarBrand.BMW -> BMW(3.0, FuelType.DIESEL, 2009)
@@ -90,10 +90,10 @@ class CarFactory : Factory() {
 fun main() {
     val fordFactory = FordFactory()
     val bmwFactory = BMWFactory()
- 
+
     val bmw: Car = bmwFactory.buildBMW(BMWModel.E60)
     bmw.startEngine()
- 
+
     val ford: Car = fordFactory.buildFord(FordModel.CMAX)
     ford.startEngine()
 }
@@ -133,7 +133,7 @@ class Ford(engineCapacity: Double,
            productionYear: Int,
            private var steeringWheelPosition: SteeringWheelPosition
 ) : Car(engineCapacity, fuelType, productionYear) {
- 
+
     override fun getSteeringWheelPosition(): SteeringWheelPosition {
         return steeringWheelPosition
     }
@@ -156,7 +156,7 @@ class BMW(engineCapacity: Double,
           productionYear: Int,
           private var steeringWheelPosition: SteeringWheelPosition
 ) : Car(engineCapacity, fuelType, productionYear) {
- 
+
     override fun getSteeringWheelPosition(): SteeringWheelPosition {
         return steeringWheelPosition
     }
@@ -200,7 +200,7 @@ interface Factory {
 
 ```kotlin
 class CommonwealthFactory : Factory {
- 
+
     override fun buildBMW(bmwModel: BMWModel): Car {
         when (bmwModel) {
             BMWModel.X5 -> {
@@ -213,7 +213,7 @@ class CommonwealthFactory : Factory {
             }
         }
     }
- 
+
     override fun buildFord(fordModel: FordModel): Car {
         when (fordModel) {
             FordModel.CMAX -> {
@@ -233,7 +233,7 @@ class CommonwealthFactory : Factory {
 
 ```kotlin
 class ContinentalFactory : Factory {
- 
+
     override fun buildBMW(bmwModel: BMWModel): Car {
         when (bmwModel) {
             BMWModel.X5 -> {
@@ -246,7 +246,7 @@ class ContinentalFactory : Factory {
             }
         }
     }
- 
+
     override fun buildFord(fordModel: FordModel): Car {
         when (fordModel) {
             FordModel.CMAX -> {
@@ -268,13 +268,13 @@ class ContinentalFactory : Factory {
 fun main() {
     val commonwealthFactory: Factory = CommonwealthFactory()
     val continentalFactory: Factory = ContinentalFactory()
- 
+
     val bmw: Car = commonwealthFactory.buildBMW(BMWModel.E60)
     println(bmw.getSteeringWheelPosition())
- 
+
     val ford1: Car = continentalFactory.buildFord(FordModel.CMAX)
     println(ford1.getSteeringWheelPosition())
- 
+
     val ford2: Car = commonwealthFactory.buildFord(FordModel.Focus)
     println(ford2.getSteeringWheelPosition())
 }

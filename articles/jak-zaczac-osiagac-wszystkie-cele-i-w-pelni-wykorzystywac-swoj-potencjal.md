@@ -1,9 +1,9 @@
 ---
 title: 'Jak zacząć osiągać wszystkie cele i w pełni wykorzystywać swój potencjał?'
-date: "02-07-2024"
+date: '02-07-2024'
 categories:
-    - Self-development
-    - Business
+  - Self-development
+  - Business
 ---
 
 # Jak zacząć osiągać wszystkie cele i w pełni wykorzystywać swój potencjał?

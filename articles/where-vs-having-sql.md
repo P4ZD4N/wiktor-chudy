@@ -1,8 +1,8 @@
 ---
 title: 'WHERE vs. HAVING in SQL'
-date: "03-12-2024"
+date: '03-12-2024'
 categories:
-    - Databases
+  - Databases
 ---
 
 # WHERE vs. HAVING in SQL

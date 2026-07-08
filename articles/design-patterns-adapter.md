@@ -1,8 +1,8 @@
 ---
 title: 'Design patterns: Adapter'
-date: "06-01-2025"
+date: '06-01-2025'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Design patterns: Adapter
@@ -25,21 +25,21 @@ Imagine, that you live in future and you have really modern laptop, which only h
 
 ```kotlin
 class Laptop {
- 
+
     private var usbCPort: UsbC? = null
- 
+
     fun connectDevice(usbCPort: UsbC) {
         this.usbCPort = usbCPort
         println("Laptop: Connected device through USB-C port")
         usbCPort.connect()
     }
- 
+
     fun checkConnection() {
         if (usbCPort == null) {
             println("Laptop: USB-C port is not connected")
             return
         }
- 
+
         println("Laptop: USB-C port is already connected")
     }
 }
@@ -49,7 +49,7 @@ class Laptop {
 
 ```kotlin
 class UsbAMouse {
- 
+
     fun connect() {
         println("USB-A Mouse: Mouse connected to USB-A port")
     }
@@ -68,7 +68,7 @@ interface UsbC {
 
 ```kotlin
 class UsbAToUsbCAdapter(private val usbADevice: UsbAMouse) : UsbC {
- 
+
     override fun connect() {
         println("Adapter: Adapter connected to USB-C port")
         usbADevice.connect()
@@ -83,7 +83,7 @@ fun main() {
     val laptop = Laptop()
     val usbAMouse = UsbAMouse()
     val adapter = UsbAToUsbCAdapter(usbAMouse)
- 
+
     laptop.checkConnection()
     laptop.connectDevice(adapter)
     laptop.checkConnection()

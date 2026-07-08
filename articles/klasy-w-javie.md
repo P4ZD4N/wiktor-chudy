@@ -1,9 +1,9 @@
 ---
 title: 'Klasy w Javie'
-date: "03-04-2024"
+date: '03-04-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # Klasy w Javie
@@ -37,7 +37,7 @@ Klasa wewnętrzna niestatyczna to klasa zawarta w innej klasie, która jest zade
 ### Cechy
 
 - Mają dostęp do wszystkich modyfikatorów dostępu (public, private, protected) oraz mogą być pakietowe.
-- Mają dostęp do wszystkich pól i metod klasy otaczającej, nawet jeśli pola i metody te są ustawione na prywatne. 
+- Mają dostęp do wszystkich pól i metod klasy otaczającej, nawet jeśli pola i metody te są ustawione na prywatne.
 - Nie możemy stworzyć obiektu klasy wewnętrznej bez stworzenia obiektu klasy, która ją otacza.
 - Przed Java 16 nie można było deklarować w klasach wewnętrznych pól, metod, ani klas statycznych oraz interfejsów. Od Javy 16 jest już to możliwe.
 
@@ -54,7 +54,7 @@ Klasa wewnętrzna statyczna jest czasem nazywana klasą zanurzoną. To klasa zaw
 ### Cechy
 
 - W przeciwieństwie do klasy wewnętrznej niestatycznej, klasa zanurzona nie jest powiązana z instancją klasy, która ją otacza. Można tworzyć zatem obiekty klasy zanurzonej bez konieczności posiadania instancji klasy otaczającej.
-- Klasy te mają dostęp do wszystkich pól i metod klasy otaczającej (nawet tych, które sa prywatne) ale tylko wtedy, gdy pola i metody te są statyczne. 
+- Klasy te mają dostęp do wszystkich pól i metod klasy otaczającej (nawet tych, które sa prywatne) ale tylko wtedy, gdy pola i metody te są statyczne.
 - Mają dostęp do wszystkich modyfikatorów dostępu (public, private, protected) oraz mogą być pakietowe.
 - Mogą zawierać tylko składniki statyczne.
 - Nie mają dostępu do intancji klasy otaczającej.

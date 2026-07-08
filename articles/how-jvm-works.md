@@ -1,9 +1,9 @@
 ---
 title: 'How JVM works?'
-date: "23-07-2024"
+date: '23-07-2024'
 categories:
-    - Programming
-    - Java
+  - Programming
+  - Java
 ---
 
 # How JVM works?
@@ -20,7 +20,7 @@ JVM is **virtual machine** and environment **capable of executing** compiled app
 
 There are a couple of **JVM** architecture elements, which you should know to better understand how it works.
 
-- **Class Loader** is mainly responsible for loading classes from disk to memory. It loads .class files (they contains bytecode), verifies integrity of bytecode and then checks, whether it meet security requirements. 
+- **Class Loader** is mainly responsible for loading classes from disk to memory. It loads .class files (they contains bytecode), verifies integrity of bytecode and then checks, whether it meet security requirements.
 - **Execution Engine** is the heart of JVM. As you can guess, It execute bytecode. The most important elements are **interpreter** (which translates bytecode to machine code) and **Just-In-Time (JIT) compiler** (which dynamically compiles parts of bytecode, which are often used, what makes execution faster).
 - **Garbage Collector** manages memory by removing unused objects from memory automatically. It prevents memory leaks and improves application performance. I have article about Garbage Collector, so if you are excited about this amazing mechanism take a look at [my article about it](https://www.wiktorchudy.me/cleaner-in-the-world-of-programming-garbage-collector).
 - **Java Native Interface (JNI)** allows Java code to work with code written in other languages, such as C or C++. With JNI developers can use libraries written in other languages in their Java applications.

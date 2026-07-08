@@ -1,8 +1,8 @@
 ---
 title: 'Understanding HTTP: statelessness, methods, headers and many more!'
-date: "28-10-2024"
+date: '28-10-2024'
 categories:
-    - Programming
+  - Programming
 ---
 
 # Understanding HTTP: statelessness, methods, headers and many more!
@@ -18,6 +18,7 @@ It is one of many protocols, which belongs to **application layer in TCP/IP mode
 In other words **HTTP** is using for communication between client and server. With this protocol clients communicate with servers to order files that make up websites and provide the necessary information e.g. content entered in forms. It determines the form of the client's requests for data and the form of the server's response to these requests.
 
 Other important information about HTTP:
+
 - It is **stateless** protocol.
 - Port used by HTTP is **80** (**443** by HTTPS).
 
@@ -45,7 +46,7 @@ HTTP protocol uses various methods to effectively manage communication between c
 - **GET** - Fetching resources like HTML files, images, documents and others from the server. Exists in each HTTP version. GET is idempotent.
 - **POST** - Sending data (for example from form) to the server for further processing. Mainly for creating new resource. Exists in each HTTP version from HTTP/1.0. POST is not idempotent.
 - **PUT** - Creates a new resource or replaces a representation of the target resource with the request content (update). Exists in each HTTP version from HTTP/1.0. PUT is idempotent and this is difference between POST.
-- **DELETE** - Removing resources from the server. Exists in each HTTP version  from HTTP/1.1. DELETE is idempotent.
+- **DELETE** - Removing resources from the server. Exists in each HTTP version from HTTP/1.1. DELETE is idempotent.
 - **HEAD** - Fetching HTTP headers without resource content. Helps with verification of resource existence or with checking metadata (for example resource length or last modification data). Exists in each HTTP version from HTTP/1.0. HEAD is idempotent.
 - **OPTIONS** - Checking, which HTTP methods are supported for a specific resource or the entire server. Helps client with find out what operations are possible without taking specific actions. Exists in each HTTP version from HTTP/1.1. OPTIONS is idempotent.
 - **PATCH** - Updating existing resource partially (changing only particular field or parts of resource specified by request). Exists in each HTTP version from HTTP/1.1. PATCH is partially idempotent.
@@ -76,7 +77,7 @@ Header: value
 
 Nowadays, in the newest versions of protocol there are **over 80 headers available**, but I would like to list you a couple of the most important ones. We can divide them into following categories.
 
-### General Headers 
+### General Headers
 
 Can occur both in request and in response. They are referring to the general qualities of communication.
 
@@ -84,7 +85,7 @@ Can occur both in request and in response. They are referring to the general qua
 - **Cache-Control** - Specifies policy for resource caching by browsers or proxy servers. Can contain values such as no-cache, no-store or max-age=3600.
 - **Date** - Indicates date and time of request creation.
 
-### Request Headers 
+### Request Headers
 
 Used by client to deliver additional information about request and preferences.
 
@@ -94,23 +95,23 @@ Used by client to deliver additional information about request and preferences.
 - **Authorization** - Used to sending authentication data. Value can be for example Basic dXNlcjpwYXNzd29yZA==, where data is encoded with Base64 algorithm.
 - **Content-Type** - Specifies type of content, which is sending in request. For example application/json.
 
-### Response Headers 
+### Response Headers
 
 Deliver information about server and response to the client.
 
 - **Content-Type** - Specifies type of content, which is sending in response. For example text/html; charset=UTF-8.
 - **Content-Length** - Informs about length of entire content of response in bytes. For example Content-Length: 348
 - Server - Identify server's software and operating system. For example Apache/2.4.1 (Unix)
-- **Set-Cookie** - Sends to the browser  information about cookies, which should be saved. Example value can be sessionId=abc123, HttpOnly; Secure
+- **Set-Cookie** - Sends to the browser information about cookies, which should be saved. Example value can be sessionId=abc123, HttpOnly; Secure
 
-### Security Headers 
+### Security Headers
 
 Helps with application protection against typical hacker's attacks like XSS or CSRF.
 
 - **Strict-Transport-Security** - Forces browser to always connect with usage of HTTPS. Value can be for example max-age=31536000
 - **X-Content-Type-Options** - Protects against interpretation of content as other type than specified in Content-Type header.
 
-### Headers related to caching and session control 
+### Headers related to caching and session control
 
 - **Expires** - Date, after which resource is recognized as deprecated.
 - **Last-Modified** - Date, which indicates, when resource was last modified.

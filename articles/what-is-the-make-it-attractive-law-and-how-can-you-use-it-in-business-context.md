@@ -1,9 +1,9 @@
 ---
 title: 'What is the “Make It Attractive” law and how can you use it in business context?'
-date: "08-06-2025"
+date: '08-06-2025'
 categories:
-    - Business
-    - Self-development
+  - Business
+  - Self-development
 ---
 
 # What is the “Make It Attractive” law and how can you use it in business context?
@@ -36,9 +36,9 @@ As I said, the more appealing the habit feels, the more likely your brain will c
 
 The law is related with **craving**. People don't buy products - they buy prediction of satisfaction, which product can create in their mind. To make something attractive, you need to clearly communicate benefits in a way, which convinces the customer both emotionally and personally. But how?
 
-Most important element is **personalization**. Using someone's name or tailoring the message to their role or identity increases relevance and appeal. Big companies works in exactly that way - they show you items based on your behavior and personality. 
+Most important element is **personalization**. Using someone's name or tailoring the message to their role or identity increases relevance and appeal. Big companies works in exactly that way - they show you items based on your behavior and personality.
 
-You can also make product more attractive by **linking it to a strong identity** (like associating Toyota Prius with environmentalism or Apple iPhone with creative, modern and cutting-edge technology). 
+You can also make product more attractive by **linking it to a strong identity** (like associating Toyota Prius with environmentalism or Apple iPhone with creative, modern and cutting-edge technology).
 
 **Highlighting social norms** also boosts attractiveness - when you showing people, that others like them use the product you create trust and motivates them to join in.
 

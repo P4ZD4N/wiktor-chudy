@@ -1,8 +1,8 @@
 ---
 title: 'Three questions that made my dialogue more meaningful'
-date: "23-09-2025"
+date: '23-09-2025'
 categories:
-    - Self-development
+  - Self-development
 ---
 
 # Three questions that made my dialogue more meaningful

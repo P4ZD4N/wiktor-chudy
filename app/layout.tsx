@@ -12,12 +12,12 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Wiktor Chudy | Software Engineer',
   description:
-    "Hey, I'm Wiktor Chudy — Frontend Developer with 1+ years of commercial experience, aspiring to become a Full-Stack Developer.",
+    "Hey, I'm Wiktor Chudy — Full of energy and commitment Software Engineer who combine solid frontend and backend skills with a strong focus on user experience.",
   metadataBase: new URL('https://wiktorchudy.me'),
   openGraph: {
     title: 'Wiktor Chudy | Software Engineer',
     description:
-      "Hey, I'm Wiktor Chudy — Frontend Developer with 1+ years of commercial experience, aspiring to become a Full-Stack Developer.",
+      "Hey, I'm Wiktor Chudy — Full of energy and commitment Software Engineer who combine solid frontend and backend skills with a strong focus on user experience.",
     url: 'https://wiktorchudy.me',
     siteName: 'Wiktor Chudy',
     locale: 'pl_PL',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Wiktor Chudy | Software Engineer',
     description:
-      "Hey, I'm Wiktor Chudy — Frontend Developer with 1+ years of commercial experience, aspiring to become a Full-Stack Developer.",
+      "Hey, I'm Wiktor Chudy — Full of energy and commitment Software Engineer who combine solid frontend and backend skills with a strong focus on user experience.",
     images: ['/og-image.png'],
   },
   applicationName: 'Wiktor Chudy | Software Engineer',
@@ -70,13 +70,13 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
 
         <Script
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-LK9SSLL39N"
         />
 
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -87,11 +87,6 @@ export default function RootLayout({
               });
             `,
           }}
-        />
-
-        <Script
-          src="https://kit.fontawesome.com/f2b1b3d7ed.js"
-          crossOrigin="anonymous"
         />
       </body>
     </html>

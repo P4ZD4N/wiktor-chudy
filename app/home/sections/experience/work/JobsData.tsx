@@ -9,10 +9,18 @@ export type Job = {
 
 export const jobsData: Job[] = [
   {
+    id: 4,
+    role: 'Junior Software Developer (Angular) — Workflow Systems',
+    company: 'BNP Paribas Bank Polska',
+    period: 'Sep 2026 — Present',
+    description: `— Reduced frontend application bundle size by 85% (16.2MB to 2.5MB) and decreased build time by 50% by upgrading Angular from v17 to v21, removing unused libraries and migrating bundler from Webpack to esbuild + Vite.`,
+    skills: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Bootstrap', 'PrimeNG'],
+  },
+  {
     id: 3,
     role: 'Frontend Developer (Angular) — Cybersecurity Systems',
     company: 'Erste Bank Polska',
-    period: 'Apr 2026 — Present',
+    period: 'Apr 2026 — Aug 2026',
     description: `— Took full ownership of frontend for key application in cybersecurity department. Acted as a standalone engineer collaborating closely with Backend Developers and Analysts to ensure seamless end-to-end feature delivery and high quality solutions.
       — Redesigned and modernized user interface for key application in cybersecurity department. Migrated project from Angular Material 2 to v3 and improved UX by refreshing components. Replaced previous Santander design and colors to align Erste brand identity.
       — Optimized tsconfig.json configuration to enable stricter type checking and eliminate potential bug occurrences early at the code creation stage.`,

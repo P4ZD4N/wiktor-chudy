@@ -1,5 +1,7 @@
 'use client';
 
+import FadeIn from '@/app/home/common/animations/FadeIn';
+import { ExternalLink, Github } from 'lucide-react';
 import { useState } from 'react';
 import { projectsData } from './ProjectsData';
 
@@ -10,64 +12,110 @@ export default function ProjectExperience() {
     projectsData[0];
 
   return (
-    <div className="w-full py-8 px-4 animate-fade-in">
-      <div className="grid grid-cols-1 xl:grid-cols-4 gap-8 min-h-[300px]">
-        <div className="xl:self-start xl:h-fit flex flex-row xl:flex-col overflow-x-auto xl:overflow-x-visible border-b xl:border-b-0 xl:border-l border-white/30 pb-2 xl:pb-0 scrollbar-none gap-2">
+    <div className="w-full animate-fade-in-subtle">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        <div className="lg:col-span-3 flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0 scrollbar-none">
           {projectsData.map((project) => (
             <button
               key={project.id}
               onClick={() => setActiveProjectId(project.id)}
-              className={`flex-1 xl:flex-none text-left px-2 py-2 md:px-4 md:py-3 rounded-xl transition-all whitespace-nowrap xl:whitespace-normal cursor-pointer text-sm xl:text-base ${
-                activeProjectId === project.id
-                  ? 'bg-white/10 text-white font-medium border-l-0 xl:border-l-4 xl:border-l-blue-500 xl:rounded-l-none'
-                  : 'text-white/40 hover:text-white/70 hover:bg-white/10 hover:rounded-l-none'
-              }`}
+              className={`
+                cursor-pointer group relative flex flex-col items-start px-6 py-5 rounded-3xl transition-all duration-300 shrink-0 lg:shrink w-64 lg:w-full text-left overflow-hidden
+                ${
+                  activeProjectId === project.id
+                    ? 'bg-white/[0.06] border border-white/10 shadow-lg'
+                    : 'bg-white/[0.02] border border-white/[0.02] hover:bg-white/[0.04] hover:border-white/10'
+                }
+              `}
             >
+              {activeProjectId === project.id && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1.5 h-12 bg-primary rounded-r-full" />
+              )}
+
+              <div className="text-sm font-medium text-gray-500 mb-1 group-hover:text-gray-400 transition-colors">
+                {project.industry}
+              </div>
               <div
-                className="bg-gradient-to-r from-primary to-secondary
-                  bg-clip-text text-transparent text-base md:text-lg font-semibold"
+                className={`text-base font-bold transition-colors ${
+                  activeProjectId === project.id
+                    ? 'text-white'
+                    : 'text-gray-400 group-hover:text-gray-200'
+                }`}
               >
                 {project.title}
-              </div>
-              <div className="text-white/50 hidden xl:block mt-0.5">
-                {project.industry}
               </div>
             </button>
           ))}
         </div>
 
-        <div className="xl:col-span-3 flex flex-col justify-between py-2">
-          <div key={activeProjectId} className="animate-fade-in-subtle">
-            <div className="flex justify-between sm:flex-row sm:items-center justify-between gap-2 mb-4">
-              <h3 className="flex flex-col items-start text-2xl font-bold text-gray-300 tracking-tight">
-                <span
-                  className="bg-gradient-to-r from-primary to-secondary
-                      bg-clip-text text-transparent text-lg md:text-xl font-medium"
-                >
-                  {activeProject.industry}
-                </span>
-                <span className="text-xl md:text-2xl text-gray-300">
-                  {activeProject.title}
-                </span>
-              </h3>
-            </div>
+        <div className="lg:col-span-9">
+          {/* Zmieniono div na FadeIn, dodano key oraz delay={0} */}
+          <FadeIn
+            key={activeProjectId}
+            direction="up"
+            delay={0}
+            blur={false}
+            className="relative h-fit flex flex-col p-8 md:p-10 backdrop-blur-xl bg-white/[0.02] border border-white/10 rounded-3xl group overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[120px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none" />
 
-            <p className="text-left text-gray-300 leading-relaxed text-base md:text-lg mb-8 whitespace-pre-line">
-              {activeProject.description}
-            </p>
-
-            <div className="flex flex-wrap gap-2">
-              {activeProject.skills.map((skill) => (
-                <div
-                  key={skill}
-                  className="relative overflow-hidden text-sm md:text-base font-mono text-gray-300 bg-white/5 px-2.5 py-1 rounded-md border border-white/5"
-                >
-                  <div className="absolute -top-10 -right-10 h-70 w-70 rounded-full bg-gradient-to-r from-primary to-secondary opacity-50 blur-[110px]" />
-                  <span>{skill}</span>
+            <div className="relative z-10">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-8">
+                <div className="flex flex-col">
+                  <h3 className="text-left text-lg md:text-xl font-semibold tracking-wider text-primary uppercase mb-1">
+                    {activeProject.industry}
+                  </h3>
+                  <h2 className="text-left text-xl md:text-2xl font-bold text-white">
+                    {activeProject.title}
+                  </h2>
                 </div>
-              ))}
+
+                <div className="flex flex-wrap items-center gap-3">
+                  {activeProject.repoUrl && (
+                    <a
+                      href={activeProject.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.05] border border-white/10 text-sm font-semibold text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300"
+                    >
+                      <Github size={16} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                  {activeProject.liveUrl && (
+                    <a
+                      href={activeProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary/10 border border-primary/20 text-sm font-semibold text-primary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+                    >
+                      <ExternalLink size={16} />
+                      <span>Live</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              <div className="w-full h-px bg-white/[0.08] mb-8" />
+
+              <p className="text-left text-gray-400 leading-relaxed text-base mb-8 whitespace-pre-line">
+                {activeProject.description}
+              </p>
             </div>
-          </div>
+
+            <div className="relative z-10 pt-8 border-t border-white/[0.08]">
+              <div className="flex flex-wrap gap-2">
+                {activeProject.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1.5 rounded-lg bg-white/[0.03] border border-white/[0.08] text-sm font-medium text-gray-400 hover:bg-white/[0.08] hover:border-white/20 hover:text-white transition-all duration-300 cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </div>

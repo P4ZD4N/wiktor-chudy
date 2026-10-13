@@ -1,6 +1,5 @@
 import Navbar from './home/common/navbar/Navbar';
 import AboutSection from './home/sections/AboutSection';
-import ArticlesSection from './home/sections/articles/ArticlesSection';
 import ContactSection from './home/sections/contact/ContactSection';
 import ExperienceSection from './home/sections/experience/ExperienceSection';
 import HeroSection from './home/sections/HeroSection';
@@ -16,7 +15,6 @@ const HomePage = async () => {
       <StatisticsSection />
       <SkillsSection />
       <ExperienceSection />
-      <ArticlesSection />
       <ContactSection />
     </section>
   );

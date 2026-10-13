@@ -1,6 +1,5 @@
 'use client';
 
-import FadeIn from '@/app/home/common/animations/FadeIn';
 import { ExperienceView } from './ExperienceView';
 
 interface ExperienceToggleButtonProps {
@@ -12,40 +11,33 @@ export default function ExperienceToggleButton({
   activeTab,
   onChange,
 }: ExperienceToggleButtonProps) {
+  const tabs = [
+    { id: ExperienceView.Work, label: 'Work' },
+    { id: ExperienceView.Projects, label: 'Projects' },
+    { id: ExperienceView.Education, label: 'Education' },
+  ];
+
   return (
-    <div className="flex w-full max-w-md backdrop-blur-sm bg-white/5 border border-white/20 shadow-sm rounded-3xl p-1">
-      <button
-        onClick={() => onChange(ExperienceView.Work)}
-        className={`flex-1 py-1 md:py-3 sm:text-lg font-medium rounded-l-2xl transition-all ${
-          activeTab === ExperienceView.Work
-            ? 'bg-gradient-to-r from-primary to-secondary shadow-sm text-gray-300'
-            : 'text-white/20 hover:text-gray-300 cursor-pointer'
-        }`}
-      >
-        Work
-      </button>
-
-      <button
-        onClick={() => onChange(ExperienceView.Projects)}
-        className={`flex-1 py-1 md:py-3 sm:text-lg font-medium transition-all ${
-          activeTab === ExperienceView.Projects
-            ? 'bg-gradient-to-r from-primary to-secondary shadow-sm text-gray-300'
-            : 'text-white/20 hover:text-gray-300 cursor-pointer'
-        }`}
-      >
-        Projects
-      </button>
-
-      <button
-        onClick={() => onChange(ExperienceView.Education)}
-        className={`flex-1 py-1 md:py-3 sm:text-lg font-medium rounded-r-2xl transition-all ${
-          activeTab === ExperienceView.Education
-            ? 'bg-gradient-to-r from-primary to-secondary shadow-sm text-gray-300'
-            : 'text-white/20 hover:text-gray-300 cursor-pointer'
-        }`}
-      >
-        Education
-      </button>
+    <div className="flex w-full max-w-[450px] p-1.5 backdrop-blur-xl bg-white/[0.03] border border-white/10 rounded-2xl relative">
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          onClick={() => onChange(tab.id)}
+          className={`
+            cursor-pointer relative flex-1 py-2.5 sm:py-3 text-sm sm:text-base font-semibold rounded-xl transition-all duration-300 z-10
+            ${
+              activeTab === tab.id
+                ? 'text-white'
+                : 'text-gray-400 hover:text-gray-200 hover:bg-white/[0.02]'
+            }
+          `}
+        >
+          {activeTab === tab.id && (
+            <div className="absolute inset-0 bg-white/10 border border-white/10 rounded-xl shadow-[0_0_15px_rgba(255,255,255,0.05)] -z-10" />
+          )}
+          {tab.label}
+        </button>
+      ))}
     </div>
   );
 }

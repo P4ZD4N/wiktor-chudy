@@ -1,3 +1,6 @@
+import FadeIn from '@/app/home/common/animations/FadeIn';
+import { BiLogoTypescript } from 'react-icons/bi';
+import { DiMysql, DiPostgresql } from 'react-icons/di';
 import {
   FaAngular,
   FaAws,
@@ -10,10 +13,9 @@ import {
   FaJava,
   FaSass,
 } from 'react-icons/fa6';
-import SectionTitle from '../../common/components/SectionTitle';
-import SectionWrapper from '../../common/components/SectionWrapper';
-import SkillTile from './SkillTile';
-import { BiLogoTypescript } from 'react-icons/bi';
+import { FiServer } from 'react-icons/fi';
+import { MdOutlineViewQuilt } from 'react-icons/md';
+import { PiGearSixBold } from 'react-icons/pi';
 import { RiDatabase2Line, RiTailwindCssFill } from 'react-icons/ri';
 import {
   SiApachemaven,
@@ -26,186 +28,148 @@ import {
   SiThymeleaf,
   SiVitest,
 } from 'react-icons/si';
-import { VscTerminalLinux } from 'react-icons/vsc';
 import { TbSql } from 'react-icons/tb';
-import { DiMysql, DiPostgresql } from 'react-icons/di';
-import { MdOutlineViewQuilt } from 'react-icons/md';
-import { FiServer } from 'react-icons/fi';
-import { PiGearSixBold } from 'react-icons/pi';
-import FadeIn from '@/app/home/common/animations/FadeIn';
+import { VscTerminalLinux } from 'react-icons/vsc';
+import SectionTitle from '../../common/components/SectionTitle';
+import SectionWrapper from '../../common/components/SectionWrapper';
+import SkillTile from './SkillTile';
 
 export default function SkillsSection() {
   return (
     <SectionWrapper bgColor="background-1" id="skills">
-      <FadeIn>
-        <SectionTitle title="<Skills />" />
-      </FadeIn>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[30%] left-[10%] h-[500px] w-[500px] rounded-full bg-primary opacity-[0.03] blur-[150px]" />
+        <div className="absolute bottom-[20%] right-[10%] h-[500px] w-[500px] rounded-full bg-secondary opacity-[0.03] blur-[150px]" />
+      </div>
 
-      <FadeIn>
-        <p className="text-base md:text-xl text-gray-300 mt-10">
-          As a Software Engineer I have worked with a wide range of technologies
-          (both through my personal projects and professional work)
-          demonstrating a high level of proficiency in both frontend and backend
-          development.
-        </p>
-      </FadeIn>
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12">
+          <FadeIn direction="up">
+            <SectionTitle subtitle="My tech stack" title="Skills" />
+          </FadeIn>
+        </div>
 
-      <div className="flex flex-col gap-10 mt-10">
-        <FadeIn>
-          <div className="relative overflow-hidden flex flex-col lg:flex-row gap-6 w-full p-6 backdrop-blur-sm bg-white/5 border border-white/20 shadow-sm rounded-xl">
-            <div className="absolute -top-12 -right-12 -z-10 h-72 w-72 rounded-full bg-gradient-to-r from-primary to-secondary opacity-60 blur-[100px]" />
-            <span className="flex items-center gap-3 lg:w-1/3">
-              <MdOutlineViewQuilt className="text-3xl xl:text-5xl text-primary" />
-              <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl xl:text-4xl font-bold">
-                Frontend
-              </h2>
-            </span>
-            <div className="flex flex-wrap gap-8 lg:w-2/3">
-              <SkillTile
-                icon={<BiLogoTypescript className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="TypeScript"
-              />
-              <SkillTile
-                icon={<FaAngular className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Angular"
-              />
-              <SkillTile
-                icon={<FaHtml5 className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="HTML"
-              />
-              <SkillTile
-                icon={<FaCss3Alt className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="CSS"
-              />
-              <SkillTile
-                icon={<FaSass className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Sass"
-              />
-              <SkillTile
-                icon={<FaBootstrap className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Bootstrap"
-              />
-              <SkillTile
-                icon={<RiTailwindCssFill className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Tailwind"
-              />
-              <SkillTile
-                icon={<SiVitest className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Vitest"
-              />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <FadeIn
+            direction="up"
+            delay={0.2}
+            blur={false}
+            className="md:col-span-2"
+          >
+            <div className="h-full relative overflow-hidden flex flex-col w-full p-8 backdrop-blur-xl bg-white/[0.02] border border-white/10 rounded-3xl group hover:bg-white/[0.04] transition-colors duration-500">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[100px] opacity-0 group-hover:opacity-50 transition-opacity duration-700 pointer-events-none" />
+
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-primary group-hover:scale-110 transition-transform duration-500">
+                  <MdOutlineViewQuilt className="text-2xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-200">Frontend</h3>
+              </div>
+
+              <div className="flex flex-wrap gap-3 mt-auto relative z-10">
+                <SkillTile
+                  icon={<BiLogoTypescript />}
+                  technologyName="TypeScript"
+                />
+                <SkillTile icon={<FaAngular />} technologyName="Angular" />
+                <SkillTile icon={<FaHtml5 />} technologyName="HTML" />
+                <SkillTile icon={<FaCss3Alt />} technologyName="CSS" />
+                <SkillTile icon={<FaSass />} technologyName="Sass" />
+                <SkillTile icon={<FaBootstrap />} technologyName="Bootstrap" />
+                <SkillTile
+                  icon={<RiTailwindCssFill />}
+                  technologyName="Tailwind"
+                />
+                <SkillTile icon={<SiVitest />} technologyName="Vitest" />
+              </div>
             </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
 
-        <FadeIn>
-          <div className="relative overflow-hidden flex flex-col lg:flex-row gap-6 w-full p-6 backdrop-blur-sm bg-white/5 border border-white/20 shadow-sm rounded-xl">
-            <div className="absolute -top-12 -right-12 -z-10 h-72 w-72 rounded-full bg-gradient-to-r from-primary to-secondary opacity-60 blur-[100px]" />
-            <span className="flex items-center gap-3 lg:w-1/3">
-              <FiServer className="text-3xl xl:text-5xl text-primary" />
-              <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl xl:text-4xl font-bold">
-                Backend
-              </h2>
-            </span>
-            <div className="flex flex-wrap gap-8 lg:w-2/3">
-              <SkillTile
-                icon={<FaJava className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Java"
-              />
-              <SkillTile
-                icon={<SiSpring className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Spring"
-              />
-              <SkillTile
-                icon={<SiHibernate className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Hibernate"
-              />
-              <SkillTile
-                icon={<SiJunit5 className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="JUnit"
-              />
-              <SkillTile
-                icon={<SiThymeleaf className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Thymeleaf"
-              />
-            </div>
-          </div>
-        </FadeIn>
+          <FadeIn
+            direction="up"
+            delay={0.3}
+            blur={false}
+            className="md:col-span-1"
+          >
+            <div className="h-full relative overflow-hidden flex flex-col w-full p-8 backdrop-blur-xl bg-white/[0.02] border border-white/10 rounded-3xl group hover:bg-white/[0.04] transition-colors duration-500">
+              <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/20 blur-[100px] opacity-0 group-hover:opacity-50 transition-opacity duration-700 pointer-events-none" />
 
-        <FadeIn>
-          <div className="relative overflow-hidden flex flex-col lg:flex-row gap-6 w-full p-6 backdrop-blur-sm bg-white/5 border border-white/20 shadow-sm rounded-xl">
-            <div className="absolute -top-12 -right-12 -z-10 h-72 w-72 rounded-full bg-gradient-to-r from-primary to-secondary opacity-60 blur-[100px]" />
-            <span className="flex items-center gap-3 lg:w-1/3">
-              <RiDatabase2Line className="text-3xl xl:text-5xl text-primary" />
-              <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl xl:text-4xl font-bold">
-                Databases
-              </h2>
-            </span>
-            <div className="flex flex-wrap gap-8 lg:w-2/3">
-              <SkillTile
-                icon={<TbSql className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="SQL"
-              />
-              <SkillTile
-                icon={<DiMysql className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="MySQL"
-              />
-              <SkillTile
-                icon={<DiPostgresql className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="PostgreSQL"
-              />
-            </div>
-          </div>
-        </FadeIn>
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-secondary group-hover:scale-110 transition-transform duration-500">
+                  <FiServer className="text-2xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-200">Backend</h3>
+              </div>
 
-        <FadeIn>
-          <div className="relative overflow-hidden flex flex-col lg:flex-row gap-6 w-full p-6 backdrop-blur-sm bg-white/5 border border-white/20 shadow-sm rounded-xl">
-            <div className="absolute -top-12 -right-12 -z-10 h-72 w-72 rounded-full bg-gradient-to-r from-primary to-secondary opacity-60 blur-[100px]" />
-            <span className="flex items-center gap-3 lg:w-1/3">
-              <PiGearSixBold className="text-3xl xl:text-5xl text-primary" />
-              <h2 className="w-fit bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-xl sm:text-2xl xl:text-4xl font-bold">
-                DevOps & Tools
-              </h2>
-            </span>
-            <div className="flex flex-wrap gap-8 lg:w-2/3">
-              <SkillTile
-                icon={<SiApachemaven className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Maven"
-              />
-              <SkillTile
-                icon={<FaGitAlt className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Git"
-              />
-              <SkillTile
-                icon={<VscTerminalLinux className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Linux"
-              />
-              <SkillTile
-                icon={<FaDocker className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Docker"
-              />
-              <SkillTile
-                icon={<SiGnubash className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Bash"
-              />
-              <SkillTile
-                icon={<FaFigma className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Figma"
-              />
-              <SkillTile
-                icon={<SiPostman className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Postman"
-              />
-              <SkillTile
-                icon={<FaAws className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="AWS"
-              />
-              <SkillTile
-                icon={<SiKibana className="w-6 h-6 lg:w-8 lg:h-8" />}
-                technologyName="Kibana"
-              />
+              <div className="flex flex-wrap gap-3 mt-auto relative z-10">
+                <SkillTile icon={<FaJava />} technologyName="Java" />
+                <SkillTile icon={<SiSpring />} technologyName="Spring" />
+                <SkillTile icon={<SiHibernate />} technologyName="Hibernate" />
+                <SkillTile icon={<SiJunit5 />} technologyName="JUnit" />
+                <SkillTile icon={<SiThymeleaf />} technologyName="Thymeleaf" />
+              </div>
             </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+
+          <FadeIn
+            direction="up"
+            delay={0.4}
+            blur={false}
+            className="md:col-span-1"
+          >
+            <div className="h-full relative overflow-hidden flex flex-col w-full p-8 backdrop-blur-xl bg-white/[0.02] border border-white/10 rounded-3xl group hover:bg-white/[0.04] transition-colors duration-500">
+              <div className="absolute top-0 left-0 w-64 h-64 bg-primary/20 blur-[100px] opacity-0 group-hover:opacity-50 transition-opacity duration-700 pointer-events-none" />
+
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-primary group-hover:scale-110 transition-transform duration-500">
+                  <RiDatabase2Line className="text-2xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-200">Databases</h3>
+              </div>
+
+              <div className="flex flex-wrap gap-3 mt-auto relative z-10">
+                <SkillTile icon={<TbSql />} technologyName="SQL" />
+                <SkillTile icon={<DiMysql />} technologyName="MySQL" />
+                <SkillTile
+                  icon={<DiPostgresql />}
+                  technologyName="PostgreSQL"
+                />
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn
+            direction="up"
+            delay={0.5}
+            blur={false}
+            className="md:col-span-2 lg:col-span-2"
+          >
+            <div className="h-full relative overflow-hidden flex flex-col w-full p-8 backdrop-blur-xl bg-white/[0.02] border border-white/10 rounded-3xl group hover:bg-white/[0.04] transition-colors duration-500">
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 blur-[100px] opacity-0 group-hover:opacity-50 transition-opacity duration-700 pointer-events-none" />
+
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/5 border border-white/10 text-secondary group-hover:scale-110 transition-transform duration-500">
+                  <PiGearSixBold className="text-2xl" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-200">
+                  DevOps & Tools
+                </h3>
+              </div>
+
+              <div className="flex flex-wrap gap-3 mt-auto relative z-10">
+                <SkillTile icon={<SiApachemaven />} technologyName="Maven" />
+                <SkillTile icon={<FaGitAlt />} technologyName="Git" />
+                <SkillTile icon={<VscTerminalLinux />} technologyName="Linux" />
+                <SkillTile icon={<FaDocker />} technologyName="Docker" />
+                <SkillTile icon={<SiGnubash />} technologyName="Bash" />
+                <SkillTile icon={<FaFigma />} technologyName="Figma" />
+                <SkillTile icon={<SiPostman />} technologyName="Postman" />
+                <SkillTile icon={<FaAws />} technologyName="AWS" />
+                <SkillTile icon={<SiKibana />} technologyName="Kibana" />
+              </div>
+            </div>
+          </FadeIn>
+        </div>
       </div>
     </SectionWrapper>
   );

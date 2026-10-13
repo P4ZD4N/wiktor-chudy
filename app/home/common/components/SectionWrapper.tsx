@@ -22,9 +22,9 @@ export default function SectionWrapper({
   return (
     <section
       id={id}
-      className={`w-full flex items-center justify-center ${backgroundStyles[bgColor]} ${fullHeight ? 'min-h-screen' : 'py-20'}`}
+      className={`relative w-full flex items-center justify-center ${backgroundStyles[bgColor]} ${fullHeight ? 'min-h-[100dvh]' : 'py-16'}`}
     >
-      <div className="w-9/10 md:w-3/4 lg:w-2/3 xl:w-9/12 flex flex-col items-center justify-center text-center">
+      <div className="w-[90%] md:w-3/4 lg:w-2/3 xl:w-9/12 flex flex-col items-center justify-center text-center">
         {children}
       </div>
     </section>
